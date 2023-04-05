@@ -1,0 +1,58 @@
+# Auth with polkit-gnome:
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Desktop notifications
+exec mako
+
+
+# GTK3 applications take a long time to start
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+     
+# Sway Fader
+# exec python3 ~/.config/sway/scripts/swayfader.py     
+ 
+# Wob
+exec mkfifo $SWAYSOCK.wob
+exec tail -f $SWAYSOCK.wob | wob --border-color '#ffdcbb8c' --background-color '#cc3a3a3a' --bar-color '#ffdcbb8c'
+
+# Autotiling
+exec autotiling
+
+# Wlsunset
+exec ~/.config/sway/scripts/light.sh
+
+# nm-applet
+exec nm-applet --indicator
+
+# Welcome
+exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/
+
+# Clipman
+exec clipman restore
+exec wl-paste -t text --watch clipman store
+
+# Gnome Keyring
+exec gnome-keyring-daemon --daemonize --start --components=gpg,pkcs11,secrets,ssh
+
+# for Touchpad gestures
+exec libinput-gestures-setup start
+
+# Outputs
+exec kanshi
+
+# Xdg DEsktop Portal
+exec /usr/libexec/xdg-desktop-portal
+
+# Tracker daemon for gnome apps
+exec tracker daemon -s
+
+# Cheatsheet
+exec micro ~/.config/sway/cheatsheet
+
+# nwg-drawer
+exec_always nwg-drawer -r 
+
+# swayrd
+exec_always swayrd

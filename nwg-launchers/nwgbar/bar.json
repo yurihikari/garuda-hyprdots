@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Lock screen",
+    "exec": "swaylock",
+    "icon": "/usr/share/nwg-launchers/nwgbar/images/lock.svg"
+  },
+  {
+  	"name": "Suspend",
+    "exec": "systemctl suspend",
+  	"icon": "/usr/share/nwg-launchers/nwgbar/images/suspend.svg"
+  },
+  {
+    "name": "Logout",
+    "exec": "loginctl terminate-session self",
+    "icon": "/usr/share/nwg-launchers/nwgbar/images/logout.svg"
+  },
+  {
+    "name": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/usr/share/nwg-launchers/nwgbar/images/reboot.svg"
+  },
+  {
+    "name": "Shutdown",
+    "exec": "systemctl -i poweroff",
+    "icon": "/usr/share/nwg-launchers/nwgbar/images/shutdown.svg"
+  }
+]

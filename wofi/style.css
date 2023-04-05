@@ -1,0 +1,119 @@
+/*
+scheme: "Nord"
+author: "arcticicestudio"
+*/
+
+@define-color base10 #2E3440;
+@define-color base00 #3B4252;
+@define-color base02 #434C5E;
+@define-color base03 #4C566A;
+@define-color base04 #D8DEE9;
+@define-color base05 #E5E9F0;
+@define-color base06 #ECEFF4;
+@define-color base07 #8FBCBB;
+@define-color base08 #88C0D0;
+@define-color base09 #81A1C1;
+@define-color base0A #5E81AC;
+@define-color base0B #BF616A;
+@define-color base0C #D08770;
+@define-color base0D #EBCB8B;
+@define-color base0E #A3BE8C;
+@define-color base0F #B48EAD;
+
+
+
+@define-color base   #24273a;
+@define-color mantle #1e2030;
+@define-color crust  #181926;
+
+@define-color text     #cad3f5;
+@define-color subtext0 #a5adcb;
+@define-color subtext1 #b8c0e0;
+
+@define-color surface0 #363a4f;
+@define-color surface1 #494d64;
+@define-color surface2 #5b6078;
+
+@define-color overlay0 #6e738d;
+@define-color overlay1 #8087a2;
+@define-color overlay2 #939ab7;
+
+@define-color blue      #8aadf4;
+@define-color lavender  #b7bdf8;
+@define-color sapphire  #7dc4e4;
+@define-color sky       #91d7e3;
+@define-color teal      #8bd5ca;
+@define-color green     #a6da95;
+@define-color yellow    #eed49f;
+@define-color peach     #f5a97f;
+@define-color maroon    #ee99a0;
+@define-color red       #ed8796;
+@define-color mauve     #c6a0f6;
+@define-color pink      #f5bde6;
+@define-color flamingo  #f0c6c6;
+@define-color rosewater #f4dbd6;
+
+
+#entry {
+border-radius: 0px;
+padding: 5px 2px 5px 2px;
+margin: 0px 4px 0px 4px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#entry:selected {
+color: @base;
+background-color: @rosewater;
+padding: 7px;
+}
+ 
+#text:selected {
+color: @base;
+}
+ 
+#window {
+animation-name: fadeIn;
+animation-duration: 0.4s;
+background-color: transparent;
+font-family: Ubuntu Mono;
+font-size:18;
+}
+
+#input {
+border: none;
+background-color: @mantle;
+border-radius: 0px;
+margin: 4px 4px 8px 4px;
+padding: 8px;
+}
+
+#inner-box {
+color: @base;
+border-radius: 0px;
+/* margin-right: 180px; */
+}
+
+#outer-box {
+background-color: @base;
+border-radius: 10px;
+border: 1px solid @flamingo;
+padding: 15px;
+box-shadow: 0px 0px 3px 1px  #0F0F0F;
+margin: 25px;
+}
+
+#scroll {
+}
+
+#text {
+color: @text;
+background-color: transparent;
+} 
+
+#img {
+  background-color: transparent;
+}

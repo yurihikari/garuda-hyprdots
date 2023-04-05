@@ -1,0 +1,43 @@
+button, label, image {
+    background: none;
+    border-style: none;
+    box-shadow: none;
+    color: #e5e9f0;
+}
+
+button {
+    /* box-shadow: 0 0 6 5 #2e3440;
+    background-color: #3b4252; */
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgba(129,161,193,0.7);
+}
+
+button:focus {
+    background-color: #5e81ac;
+}
+#searchbox {
+    border: none;
+    background-color: #2e3440;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #999;
+    color: #ccc;
+    margin-top: 75px;
+}
+
+#separator {
+    background-color: #3b4252;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+#description {
+    margin-top: 20px
+}

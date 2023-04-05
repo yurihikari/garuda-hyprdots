@@ -1,0 +1,61 @@
+include catppuccin-mocha
+# Apply gtk theming
+exec_always ~/.config/sway/scripts/import-gsettings
+
+# Set inner/outer gaps
+gaps inner 5
+gaps outer 5
+
+# Hide titlebar on windows: 
+default_border pixel 1
+
+# Default Font
+# font pango:Noto Sans Regular 10
+font FiraSans Nerd Font 10
+
+# Thin borders:
+smart_borders on
+
+# Set wallpaper:
+# exec ~/.azotebg
+
+# Title format for windows
+for_window [shell="xdg_shell"] title_format "%title (%app_id)"
+for_window [shell="x_wayland"] title_format "%class - %title"
+
+# Set gaps for windows with rounded corners
+for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border radius 30
+
+set $opacity 1
+
+for_window [class=".*"] opacity $opacity
+for_window [app_id=".*"] opacity $opacity
+
+
+## Window decoration
+# class                 border  backgr. text    indicator child_border
+# client.focused           $mauve    $base $text  $mauve $mauve
+# client.focused_inactive  $mauve       $base $text  $mauve $mauve
+# client.unfocused         $mauve        $base $text  $mauve $mauve
+# client.urgent            $peach        $base $peach $overlay0  $peach
+# client.placeholder       $base     $base $text  $overlay0  $overlay0
+# client.background        $base
+
+client.focused           $base     $base $text  $mauve $base
+client.focused_inactive  $base       $base $text  $base $base
+client.unfocused         $base        $base $text  $base $base
+client.urgent            $peach        $base $peach $overlay0  $peach
+client.placeholder       $base     $base $text  $overlay0  $base
+client.background        $base
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+   swaybar_command waybar
+}
+
+# Set the background image
+# output * bg ~/Pictures/the_valley.webp fill

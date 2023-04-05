@@ -1,0 +1,64 @@
+/*
+scheme: "Nord"
+author: "arcticicestudio"
+*/
+
+@define-color base10 #2E3440;
+@define-color base00 #3B4252;
+@define-color base02 #434C5E;
+@define-color base03 #4C566A;
+@define-color base04 #D8DEE9;
+@define-color base05 #E5E9F0;
+@define-color base06 #ECEFF4;
+@define-color base07 #8FBCBB;
+@define-color base08 #88C0D0;
+@define-color base09 #81A1C1;
+@define-color base0A #5E81AC;
+@define-color base0B #BF616A;
+@define-color base0C #D08770;
+@define-color base0D #EBCB8B;
+@define-color base0E #A3BE8C;
+@define-color base0F #B48EAD;
+
+
+*{
+    font-family: UbuntuMono;
+}
+
+#window {
+    margin: 0px 5px 0px 5px;
+
+}
+
+#inner-box {
+    background-color: @back;
+
+}
+
+#outer-box {
+  margin: 5px;
+  padding:10px;
+  background-color: @back;
+  margin-top: -22px;
+}
+
+#scroll {
+}
+
+#text {
+padding: 5px;
+color: #cad3f5;
+}
+
+
+#entry {
+  
+}
+
+#entry:selected {
+    background-color: @base03;
+}
+
+#text:selected {
+}
+
