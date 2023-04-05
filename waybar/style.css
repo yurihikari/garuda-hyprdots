@@ -67,7 +67,7 @@ window#waybar {
     color: @base;
     border-radius: 50%;
     /* background-color: @base; */
-    margin: 0px 3px;
+    margin: 0px 0px;
     padding: 2 3 2 3;
 }
 
@@ -75,20 +75,20 @@ window#waybar {
     color: whitesmoke;
 }
 #workspaces {
-    /* border-style: solid;
-    background-color: shade(@base, 1.4);
-    border-radius: 15px; */
+    border-style: solid;
+    background-color: @base;
+    border-radius: 25px;
     margin: 8px 0px;
     
 }
 
 #workspaces button.focused {
-    color: @base;
+    color: @flamingo;
     border-radius: 20px;
-    background-color: @flamingo;
+    /* background-color: @flamingo; */
 }
 #workspaces button.focused *{
-    color: @base;
+    color: @flamingo;
 }
 #mode {
     color: #ebcb8b;
@@ -124,6 +124,8 @@ window#waybar {
 #battery {
     color: #d8dee9;
     /* border-bottom: 2px solid #d8dee9; */
+    border-radius: 0 20px 20px 0;
+    margin-right: 10px;
 }
 
 #battery.charging {
@@ -169,7 +171,7 @@ window#waybar {
 #network{
     color: @green;
     /* border-bottom: 2px solid @green; */
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px;
     margin-right: 5px;
 }
 
@@ -191,6 +193,7 @@ window#waybar {
 #temperature {
     color: @teal;
     /* border-bottom: 2px solid @teal; */
+    border-radius: 20px 0 0 20px;
 }
 
 #temperature.critical {
@@ -244,6 +247,8 @@ window#waybar {
 #custom-keyboard-layout{
    color: @peach;
     /* border-bottom: 2px solid @peach; */
+    border-radius: 0 20px 20px 0;
+    margin-right: 10px;
 }   
 
 
