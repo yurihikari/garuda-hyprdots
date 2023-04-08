@@ -1,4 +1,4 @@
-# Garuda Sway-WM CheatSheet #
+# Garuda Sway-WM CheatSheet LightCrimson #
 
    = Super Key
 
@@ -6,7 +6,7 @@
            Return      *term* (`alacritty`)
            q           *quit* (kill focused window)
            p           *show activities*
-           d           *show app menu (i3 like)* (`wofi`)
+           d           *show app menu (i3 like)* (`rofi`)
     Shift  d           *show app menu (mac like)* (`...`)
     Shift  e           *show power menu* (lock/suspend/logout/reboot/shutdown)
     Shift  c           *reload config files* (`sway reload`)
@@ -18,7 +18,7 @@
 
 # application shortcuts
            n           *file manager* (`thunar`)
-           o           *browser* (`firedragon`)
+           o           *browser* (`I use google chrome, pick your own`)
 
 # container layout
            b           *split horizontally* (on next open)
@@ -53,8 +53,8 @@
        Return / Escape  *return to default mode*
 
 # scratchpad
-           Minus       *cycle scratchpad*
-    Shift  Minus       *move scratchpad*
+           Equal       *cycle scratchpad*
+    Shift  Equal       *move scratchpad*
 
 # workspaces
            1 .. 0      *switch to workspace 1 .. 10*
