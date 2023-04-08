@@ -1,16 +1,21 @@
-# indicator
+indicator
 # no-unlock-indicator
 # daemonize
 indicator-caps-lock
 # datestr=%A
-image=$HOME/.config/sway/backgrounds/flatppuccin_4k_macchiato.png
-scaling=fill
+# image=$HOME/.config/sway/backgrounds/aesthetic.jpg
+# scaling=fill
+# color=00000000
+screenshots
+clock
+effect-blur=7x5
+effect-vignette=0.5:0.5:0.5:0.5:0
 font=UbuntuMono
 font-size=20
 
 
 # Ring
-indicator-radius=240
+indicator-radius=150
 # line-uses-ring
 line-color=#3b4252
 text-color=#d8dee9

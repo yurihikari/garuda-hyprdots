@@ -1,24 +1,26 @@
 #bar {
     margin: 30px; /* affects top/bottom & left/right alignment */
-    font-size: 16px;
+    font-size: 24px;
     font-family: Product Sans;
 }
 
 button, image {
-    background: none;
-    border-style: none;
+    background: #24273a;
+    border-radius: 5px;
     box-shadow: none;
     color: white;
 }
 
 button {
-    padding-top: 10px;
-    margin: 5px
+    /* padding-top: 10px;
+    margin: 5px */
+    padding: 140px 100px;
+    margin: 10px;
 }
 
 button:hover {
     /* background-color: rgba(0, 0, 0, 0.5); */
-    border-color: #b7bdf8; 
+    border: 2px solid #b7bdf8; 
     color: #b7bdf8;
     
 }
@@ -32,7 +34,7 @@ button:focus {
 grid {
     border-radius: 5px;
     padding: 5px;
-    /* box-shadow: 0 0 5px black; */ 
+    box-shadow: 0 0 5px black; 
     /* e.g. for common background to all buttons */
 }
 

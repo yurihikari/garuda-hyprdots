@@ -2,7 +2,7 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30,
-    "margin": "0 0 0 0",
+    "margin": "5 0 0 0",
     //"width": 1350, // Waybar width
     // Choose the order of the modules idle_inhibitor
     "modules-left": ["custom/launcher", "custom/swap", "clock","sway/mode", "custom/cava-internal", "sway/window"],
