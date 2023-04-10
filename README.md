@@ -34,7 +34,8 @@ Swap between each version of the waybar using the paintbrush icon on the bar.
 ![2023-04-08T16:21:44,696336432+02:00](https://user-images.githubusercontent.com/83579522/230726324-1604313c-3e7d-4402-b4b9-2cb802fcdc37.png)
 
 ### Background Waybar
-![2023-04-08T16:21:30,169720195+02:00](https://user-images.githubusercontent.com/83579522/230726330-6dc36314-cc45-4f2e-80a4-7597c2131a43.png)
+![2023-04-10T23:19:51,401151595+02:00](https://user-images.githubusercontent.com/83579522/231001568-f0fd6ef1-36fb-46f7-8e2e-8a22fa01180f.png)
+
 
 ## Colors
 I'm using primarly Catppuccin Macchiato as my color palette. They also have lot of themes and tutorials
