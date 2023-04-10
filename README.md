@@ -2,6 +2,10 @@
 
 A simple aesthetic (at least for me) sway ricing on Garuda Linux.
 
+## Additional features
+- Waybar background toggling button (Meta+Shift+w also works)
+- Background switch using Meta+Shift+b. (Backgrounds must be in the ~/.config/sway/backgrounds folder
+
 ## Important Dependencies
 I use some apps not pre-included in the default Garuda Linux desktop. Please install them before using my dotfiles
 to avoid any potential graphical issues.
