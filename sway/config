@@ -10,8 +10,7 @@ include $HOME/.config/sway/config.d/*
 # xwayland disable
 
 # Set the background image
-output * bg ~/.config/sway/backgrounds/aesthetic.jpg fill
-# output * exec mpvpaper '*' ~/.config/sway/backgrounds/elaina.mp4 fill
+output * bg /home/lightcrimson/.config/sway/backgrounds/aesthetic.jpg fill
 
 # Set the initial keyboard layout
 input * {
