@@ -55,7 +55,7 @@ author: "arcticicestudio"
 
 
 #entry {
-border-radius: 0px;
+border-radius: 5px;
 padding: 5px 2px 5px 2px;
 margin: 0px 4px 0px 4px;
 }
@@ -66,8 +66,8 @@ margin: 0px 4px 0px 4px;
 }
 
 #entry:selected {
-color: @base;
-background-color: @rosewater;
+color: @text;
+background-color: @mauve;
 padding: 7px;
 }
  
@@ -85,30 +85,35 @@ font-size:18;
 
 #input {
 border: none;
-background-color: @mantle;
-border-radius: 0px;
-margin: 4px 4px 8px 4px;
+background-color: @base;
+border-radius: 5px;
+margin: 4px 4px 16px 4px;
 padding: 8px;
+color: @text;
+}
+
+#input:focus {
+  border: 1px solid @mauve;
 }
 
 #inner-box {
-color: @base;
+color: @crust;
 border-radius: 0px;
 /* margin-right: 180px; */
 }
 
 #outer-box {
-background-color: @base;
+background-color: @crust;
 border-radius: 10px;
-border: 1px solid @flamingo;
-padding: 15px;
-box-shadow: 0px 0px 3px 1px  #0F0F0F;
+border: 1px solid @mauve;
+padding: 25px;
+box-shadow: 0px 0px 3px 1px @base;
 margin: 25px;
 }
 
 #scroll {
+background-color: @crust;
 }
-
 #text {
 color: @text;
 background-color: transparent;
@@ -116,4 +121,6 @@ background-color: transparent;
 
 #img {
   background-color: transparent;
+  margin-right: 15px;
 }
+

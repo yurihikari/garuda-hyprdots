@@ -44,7 +44,7 @@
         "on-click": "~/.config/waybar/scripts/swap.sh",
         "tooltip": "Swap between waybar configs",
         "format": "🖌"
-    },    
+    },
     "custom/mpd": {
         "format": " {title} - {artist}",
         "interval": 5,
