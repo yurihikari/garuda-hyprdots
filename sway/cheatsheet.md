@@ -64,6 +64,10 @@
   - may not work for every keyboard
   - may need to hold down the function (`fn`) key
 
+# custom keybindings
+    Shift  b           *switch between wallpapers*
+    Shift  w           *switch between waybar background/less*
+
 # notes
   - *Sway* is documented through man pages unlike i3.
     To get a overview of what to expect you can read `man 5 sway`.
