@@ -13,7 +13,7 @@ set $term-float alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu rofi -show drun
+set $menu wofi -I
 
 set $launcher nwg-drawer -c 7 -is 70 -spacing 23
 # set $launcher wofi
@@ -40,6 +40,12 @@ bindsym $mod+F9 output eDP-1 transform 0
 bindsym $mod+Ctrl+F9 output eDP-1 transform 90
 # Rotate output anticlockwise
 bindsym $mod+Shift+F9 output eDP-1 transform 180
+
+# Toggle between wallpapers
+bindsym $mod+Shift+b exec ~/.config/sway/scripts/background-swap.sh
+
+# Toggle background waybar
+bindsym $mod+Shift+w exec ~/.config/waybar/scripts/swap.sh
 
 
 ### Key bindings
