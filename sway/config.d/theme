@@ -6,7 +6,7 @@ exec_always ~/.config/sway/scripts/import-gsettings
 gaps inner 10
 
 # Hide titlebar on windows: 
-default_border pixel 1
+default_border pixel 2
 
 # Default Font
 # font pango:Noto Sans Regular 10
