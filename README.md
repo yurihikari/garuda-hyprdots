@@ -55,3 +55,5 @@ Please be aware of that before starting using my dotfiles.
 This is a work in permanent progress, some stuff may change drastically depending on my mood and taste.
 I'll make different branches if i have to massively change the behavior of the current files so you can
 keep track of the previous work versions.
+
+I am not affiliated in any way to the official Garuda Linux Sway Team. This is a personal ricing using Garuda Linux Sway as the main distro.
