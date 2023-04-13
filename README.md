@@ -27,6 +27,8 @@ cp -r /garuda-sway-config/* ~/.config
 
 Or simply pick what you need from the files, and use it in your own.
 
+For the nwgbar icons, you can use the included script to install them (install.sh inside the nwgbar-icons folder)
+
 ## Keybinds
 Please, refer to this file : https://github.com/yurihikari/garuda-sway-config/blob/c7fafa6c425014971525b5ff9bbf66f1facad5b4/sway/cheatsheet.md
 Or use Meta+Shift+I to get a keybind sheet directly on your terminal.
