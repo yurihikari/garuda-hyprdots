@@ -26,6 +26,9 @@ for_window [shell="x_wayland"] title_format "%class - %title"
 for_window [class="^.*"] border pixel 2
 for_window [class="^.*"] border radius 30
 
+for_window [app_id="^.*"] border pixel 2
+for_window [app_id="^.*"] border radius 30
+
 set $opacity 1
 
 for_window [class=".*"] opacity $opacity
