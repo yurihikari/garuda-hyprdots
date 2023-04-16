@@ -10,7 +10,7 @@ A simple aesthetic (at least for me) sway ricing on Garuda Linux.
 I use some apps not pre-included in the default Garuda Linux desktop. Please install them before using my dotfiles
 to avoid any potential graphical issues.
 - swaylock-effects (https://github.com/mortie/swaylock-effects)
-- rofi-lbonn-wayland (https://github.com/lbonn/rofi)
+- ~~rofi-lbonn-wayland (https://github.com/lbonn/rofi)~~ using wofi by default
 - neofetch
 - cava
 
@@ -52,6 +52,8 @@ https://github.com/catppuccin
 
 Actually working on a script to swap between a set of wallpapers. For now, i'm using primarly this one :
 https://www.pixiv.net/en/artworks/64337772 ( Artist : 焦茶 )
+
+The artist has passed away, may he rest in peace.
 
 ## Notice
 I am using **Garuda Linux Sway** as my distro. Depending on your system, some stuff may not work or break.
