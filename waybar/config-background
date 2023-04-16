@@ -122,9 +122,11 @@
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
         "format": "⚠ Disabled",
         "format-wifi": " {essid}",
-        "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
-        "format-disconnected": "⚠ Disconnected",
-        "on-click": "alacritty -e nmtui"
+        // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
+        "format-ethernet": " Wired",
+        "format-disconnected": "s⚠ Disconnected",
+        // "on-click": "alacritty -e nmtui"
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         "scroll-step": 1,
