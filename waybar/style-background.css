@@ -96,7 +96,7 @@ window#waybar {
 }
 
 #clock, #custom-swap, #custom-cava-internal, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray,#custom-power,#custom-pacman, #custom-launcher {
-    padding: 5px 14px;
+    padding: 5px 8px;
     border-style: solid;
     background-color: shade(@base, 1); 
     opacity: 1;
@@ -225,10 +225,10 @@ window#waybar {
 }
 
 #custom-launcher {
-    background-color: @blue; 
+    background-color: @mauve; 
     color: @base;
     border-radius: 10px;
-    padding: 5px 5px 5px 15px;
+    padding: 5px 2px 5px 12px;
     margin-left: 15px;
 }
 
@@ -238,6 +238,7 @@ window#waybar {
     border-radius: 10px;
     margin-left: 5px;
     margin-right: 15px;
+    padding: 5px 10px;
 }
 
 #window{
