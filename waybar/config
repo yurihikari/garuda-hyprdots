@@ -43,7 +43,7 @@
     "custom/swap": {
         "on-click": "~/.config/waybar/scripts/swap.sh",
         "tooltip": "Swap between waybar configs",
-        "format": "🖌"
+        "format": "<span>🖌</span>",
     },
     "custom/mpd": {
         "format": " {title} - {artist}",
@@ -122,9 +122,11 @@
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
         "format": "⚠ Disabled",
         "format-wifi": " {essid}",
-        "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
+        // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
+        "format-ethernet": " Wired",
         "format-disconnected": "⚠ Disconnected",
-        "on-click": "alacritty -e nmtui"
+        //"on-click": "alacritty -e nmtui"
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         "scroll-step": 1,
