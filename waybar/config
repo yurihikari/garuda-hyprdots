@@ -103,8 +103,10 @@
         // "device": "acpi_video1",
         "format": "{icon} {percent: >3}%",
         "format-icons": ["", ""],
-        "on-scroll-down": "brightnessctl -c backlight set 5%-",
-        "on-scroll-up": "brightnessctl -c backlight set +5%"
+        // "on-scroll-down": "brightnessctl -c backlight set 5%-",
+        "on-scroll-down": "light -A 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob",
+        // "on-scroll-up": "brightnessctl -c backlight set +5%"
+        "on-scroll-up": "light -U 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob"
     },
     "battery": {
         "states": {
@@ -142,7 +144,9 @@
             "car": "",
             "default": ["", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "on-scroll-up": "pamixer -ui 2 && pamixer --get-volume > $SWAYSOCK.wob",
+        "on-scroll-down": "pamixer -ud 2 && pamixer --get-volume > $SWAYSOCK.wob"
     },
      "custom/pacman": {
         "format": " {}",
