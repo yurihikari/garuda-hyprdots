@@ -10,7 +10,7 @@ A simple aesthetic (at least for me) sway ricing on Garuda Linux.
 I use some apps not pre-included in the default Garuda Linux desktop. Please install them before using my dotfiles
 to avoid any potential graphical issues.
 - swaylock-effects (https://github.com/mortie/swaylock-effects)
-- rofi-lbonn-wayland (https://github.com/lbonn/rofi)
+- ~~rofi-lbonn-wayland (https://github.com/lbonn/rofi)~~ using wofi by default
 - neofetch
 - cava
 
@@ -37,11 +37,10 @@ Or use Meta+Shift+I to get a keybind sheet directly on your terminal.
 Swap between each version of the waybar using the paintbrush icon on the bar.
 
 ### Backgroundless Waybar
-![2023-04-08T16:21:44,696336432+02:00](https://user-images.githubusercontent.com/83579522/230726324-1604313c-3e7d-4402-b4b9-2cb802fcdc37.png)
+![image](https://user-images.githubusercontent.com/83579522/232345761-7f57e38a-0a3a-45ad-93f5-6e07bec0e4c6.png)
 
 ### Background Waybar
-![2023-04-10T23:19:51,401151595+02:00](https://user-images.githubusercontent.com/83579522/231001568-f0fd6ef1-36fb-46f7-8e2e-8a22fa01180f.png)
-
+![image](https://user-images.githubusercontent.com/83579522/232345726-ab08a847-fd88-4e23-8006-9b465121a64c.png)
 
 ## Colors
 I'm using primarly Catppuccin Macchiato as my color palette. They also have lot of themes and tutorials
@@ -53,6 +52,8 @@ https://github.com/catppuccin
 
 Actually working on a script to swap between a set of wallpapers. For now, i'm using primarly this one :
 https://www.pixiv.net/en/artworks/64337772 ( Artist : 焦茶 )
+
+The artist has passed away, may he rest in peace.
 
 ## Notice
 I am using **Garuda Linux Sway** as my distro. Depending on your system, some stuff may not work or break.
