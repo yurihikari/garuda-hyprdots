@@ -5,7 +5,6 @@
 }
 
 button, image {
-    background: #24273a;
     border-radius: 25px;
     box-shadow: none;
     color: white;
@@ -20,26 +19,28 @@ button {
     margin: 5px */
     padding: 100px 80px;
     margin: 20px;
+    background: #24273a;
 }
 
 button:hover {
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    border: 2px solid #b7bdf8; 
-    color: #b7bdf8;
+    background-color: #b7bdf8;
+    color: #24273a;
     
 }
 
 button:focus {
     /* background-color: rgba(0, 0, 0, 0.5); */
-    border-color: #b7bdf8;
-    color: #b7bdf8;
+    background-color: #b7bdf8;
+    color: #24273a;
 }
 
 grid {
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 0 0 5px black; 
+    /* box-shadow: 0 0 5px black;  */
     /* e.g. for common background to all buttons */
 }
 
-
+window {
+    background-color: rgba (0, 0, 0, 0);
+}
