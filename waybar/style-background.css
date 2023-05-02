@@ -228,7 +228,7 @@ window#waybar {
     background-color: @mauve; 
     color: @base;
     border-radius: 10px;
-    padding: 5px 2px 5px 12px;
+    padding: 5px 10px;
     margin-left: 15px;
 }
 

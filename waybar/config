@@ -77,9 +77,9 @@
     },
     "clock": {
         "tooltip-format": "{:%A %B %d %Y | %H:%M}",
-        "format": " {:%a %d %b  %I:%M %p}",	//12 hour format
+        "format": "  {:%a %d %b  %I:%M %p}",	//12 hour format
         //"format": " {:%a %d %b  %H:%M}",	//24 hour format
-        "format-alt": " {:%d/%m/%Y  %H:%M:%S}",
+        "format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
         //"timezones": [ "Kolkata" ],
         //"max-length": 200
         "interval": 1
@@ -122,11 +122,11 @@
     },
      "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
-        "format": "⚠ Disabled",
-        "format-wifi": " {essid}",
+        "format": "⚠  Disabled",
+        "format-wifi": "  {essid}",
         // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
-        "format-ethernet": " Wired",
-        "format-disconnected": "⚠ Disconnected",
+        "format-ethernet": "  Wired",
+        "format-disconnected": "⚠  Disconnected",
         //"on-click": "alacritty -e nmtui"
         "on-click": "nm-connection-editor"
     },

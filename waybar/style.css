@@ -256,7 +256,7 @@ window#waybar {
     background-color: shade(@base, 1.1);
     color: @mauve;
     border-radius: 0px 15px 0px 0px;
-    padding: 5px 5px 5px 15px;
+    padding: 5px 10px 5px 10px;
 }
 
 #custom-power {
