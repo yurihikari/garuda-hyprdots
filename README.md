@@ -37,10 +37,13 @@ Or use Meta+Shift+I to get a keybind sheet directly on your terminal.
 Swap between each version of the waybar using the paintbrush icon on the bar.
 
 ### Backgroundless Waybar
-![image](https://user-images.githubusercontent.com/83579522/232345761-7f57e38a-0a3a-45ad-93f5-6e07bec0e4c6.png)
+![2023-04-21T17:36:23,434140552+02:00](https://user-images.githubusercontent.com/83579522/233677727-064ff7fb-1de3-4621-9f47-03f247459861.png)
 
 ### Background Waybar
-![image](https://user-images.githubusercontent.com/83579522/232345726-ab08a847-fd88-4e23-8006-9b465121a64c.png)
+![2023-04-21T17:36:11,166837846+02:00](https://user-images.githubusercontent.com/83579522/233677874-5131e51f-e215-439e-a2da-9fc0202a55a5.png)
+
+### nwgbar
+![2023-04-21T17:36:45,477108425+02:00](https://user-images.githubusercontent.com/83579522/233677921-3beba052-978a-4cd6-9376-f41c4d82d744.png)
 
 ## Colors
 I'm using primarly Catppuccin Macchiato as my color palette. They also have lot of themes and tutorials
