@@ -43,7 +43,7 @@
     "custom/swap": {
         "on-click": "~/.config/waybar/scripts/swap.sh",
         "tooltip": "Swap between waybar configs",
-        "format": "🖌"
+        "format": "Bg ✘"
     },    
     "custom/mpd": {
         "format": " {title} - {artist}",
@@ -77,9 +77,9 @@
     },
     "clock": {
         "tooltip-format": "{:%A %B %d %Y | %H:%M}",
-        "format": " {:%a %d %b  %I:%M %p}",	//12 hour format
+        "format": "  {:%a %d %b  %I:%M %p}",	//12 hour format
         //"format": " {:%a %d %b  %H:%M}",	//24 hour format
-        "format-alt": " {:%d/%m/%Y  %H:%M:%S}",
+        "format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
         //"timezones": [ "Kolkata" ],
         //"max-length": 200
         "interval": 1

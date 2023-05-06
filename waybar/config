@@ -43,8 +43,8 @@
     "custom/swap": {
         "on-click": "~/.config/waybar/scripts/swap.sh",
         "tooltip": "Swap between waybar configs",
-        "format": "<span>🖌</span>",
-    },
+        "format": "Bg ✔"
+    },    
     "custom/mpd": {
         "format": " {title} - {artist}",
         "interval": 5,
@@ -127,7 +127,7 @@
         // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
         "format-ethernet": "  Wired",
         "format-disconnected": "⚠  Disconnected",
-        //"on-click": "alacritty -e nmtui"
+        // "on-click": "alacritty -e nmtui"
         "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
