@@ -13,7 +13,7 @@ default_border pixel 2
 font FiraSans Nerd Font 10
 
 # Thin borders:
-smart_borders on
+smart_borders off
 
 # Set wallpaper:
 # exec ~/.azotebg
@@ -37,12 +37,12 @@ for_window [app_id=".*"] opacity $opacity
 
 ## Window decoration
 # class                 border  backgr. text    indicator child_border
-client.focused           $mauve    $base $text  $lavender $mauve
-client.focused_inactive  $mauve       $base $text  $mauve $mauve
-client.unfocused         $mauve        $base $text  $mauve $mauve
-client.urgent            $peach        $base $peach $overlay0  $peach
-client.placeholder       $base     $base $text  $overlay0  $overlay0
-client.background        $base
+# client.focused           $mauve    $base $text  $lavender $mauve
+# client.focused_inactive  $mauve       $base $text  $mauve $mauve
+# client.unfocused         $mauve        $base $text  $mauve $mauve
+# client.urgent            $peach        $base $peach $overlay0  $peach
+# client.placeholder       $base     $base $text  $overlay0  $overlay0
+# client.background        $base
 
 # client.focused           $base     $base $text  $mauve $base
 # client.focused_inactive  $base       $base $text  $base $base
@@ -51,6 +51,12 @@ client.background        $base
 # client.placeholder       $base     $base $text  $overlay0  $base
 # client.background        $base
 
+client.focused           $mauve    $base $text  $lavender $mauve
+client.focused_inactive  $mantle       $base $text  $mantle $mantle
+client.unfocused         $mantle        $base $text  $mantle $mantle
+client.urgent            $peach        $base $peach $overlay0  $peach
+client.placeholder       $base     $base $text  $overlay0  $overlay0
+client.background        $base
 #
 # Status Bar:
 #
