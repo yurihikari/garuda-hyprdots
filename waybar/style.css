@@ -69,11 +69,16 @@ window#waybar {
     border-radius: 50%;
     /* background-color: @base; */
     margin: 0px 0px;
-    padding: 2 4 2 3;
+    padding: 2 6 2 0;
 }
 
 #workspaces button:hover * {
     color: @pink;
+}
+
+#workspaces button:hover {
+    color: @pink;
+    border-radius: 20px; 
 }
 
 #workspaces * {
@@ -89,8 +94,8 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    /* color: @flamingo;
-    border-radius: 20px; */
+    color: @pink;
+    border-radius: 20px; 
     /* background-color: @flamingo; */
 }
 
