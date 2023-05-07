@@ -43,7 +43,7 @@
     "custom/swap": {
         "on-click": "~/.config/waybar/scripts/swap.sh",
         "tooltip": "Swap between waybar configs",
-        "format": "Bg ✔"
+        "format": "Bg  "
     },    
     "custom/mpd": {
         "format": " {title} - {artist}",
@@ -172,7 +172,7 @@
         "on-click": "~/.config/waybar/scripts/keyhint.sh",
 },
      "custom/launcher": {
-    	"format":" ",
+    	"format":" ",
     	"on-click": "exec nwg-drawer -c 7 -is 70 -spacing 23",
     	"tooltip": false,
 },
