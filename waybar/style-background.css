@@ -68,27 +68,28 @@ window#waybar {
     border-radius: 50%;
     /* background-color: @base; */
     margin: 0px 0px;
-    padding: 2 3 2 3;
+    padding: 2 4 2 3;
 }
 
 #workspaces * {
     color: whitesmoke;
 }
+
 #workspaces {
     border-style: solid;
     background-color: @base;
     opacity: 1;
     border-radius: 10px;
-    margin: 8px 0px;
-    
+    margin: 8px 0px 8px 8px;
 }
 
 #workspaces button.focused {
-    color: @flamingo;
-    border-radius: 20px;
+    /* color: @flamingo;
+    border-radius: 20px; */
     /* background-color: @flamingo; */
 }
-#workspaces button.focused *{
+
+#workspaces button.focused * {
     color: @flamingo;
 }
 #mode {
@@ -112,8 +113,9 @@ window#waybar {
 
 #custom-swap {
     border-radius: 10px;
-    color: white;
+    color: @base;
     margin-left: 15px;
+    background-color: @maroon;
 }
  
 #clock {
