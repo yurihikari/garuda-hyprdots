@@ -2,12 +2,12 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30,
-    "margin": "5 0 0 0",
+    "margin": "0 0 0 0",
     //"width": 1350, // Waybar width
     // Choose the order of the modules idle_inhibitor
-    "modules-left": ["custom/launcher", "custom/swap", "clock","sway/mode", "custom/cava-internal", "sway/window"],
-    "modules-center": ["sway/workspaces"],
-    "modules-right": ["backlight", "pulseaudio", "custom/keyboard-layout", "temperature", "cpu", "battery", "network", "tray", "custom/power"], 
+    "modules-left": ["custom/launcher", "sway/workspaces", "custom/swap", "tray", "sway/mode", "custom/cava-internal"],
+    "modules-center": ["clock"],
+    "modules-right": ["backlight", "pulseaudio", "custom/keyboard-layout", "temperature", "cpu", "battery", "network", "custom/power"], 
     
  // Modules configuration
  
@@ -18,16 +18,16 @@
         // "format": "< %g >",
         // "format_focused" : "< %g ● >",
         "format-icons": {
-        "1": "●",
-        "2": "●",
-		"3": "●",
-		"4": "●",
-		"5": "●",
-		"6": "●",
-		"7": "●",
-		"8": "●",
-		"9": "●",
-		"10": "●",
+        "1": "",
+        "2": "",
+		"3": "",
+		"4": "",
+		"5": "",
+		"6": "",
+		"7": "",
+		"8": "",
+		"9": "",
+		"10": "",
         }
     },
     "mpd": {
