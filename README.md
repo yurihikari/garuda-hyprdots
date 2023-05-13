@@ -2,6 +2,10 @@
 
 A simple aesthetic (at least for me) sway ricing on Garuda Linux.
 
+## Overview
+![merge_from_ofoct (1)](https://github.com/yurihikari/garuda-sway-config/assets/83579522/38c974e8-90cd-4eb0-aac2-1ca99465f35e)
+
+
 ## Additional features
 - Waybar background toggling button (Meta+Shift+w also works)
 - Background switch using Meta+Shift+b. (Backgrounds must be in the ~/.config/sway/backgrounds folder
@@ -37,13 +41,13 @@ Or use Meta+Shift+I to get a keybind sheet directly on your terminal.
 Swap between each version of the waybar using the paintbrush icon on the bar.
 
 ### Backgroundless Waybar
-![image](https://user-images.githubusercontent.com/83579522/236689438-0ceb36b6-6cc1-41bf-bfd0-4894f6c38ed5.png)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/c996f39f-6508-4f23-b707-f7a8778f5ff4)
 
 ### Background Waybar
-![image](https://user-images.githubusercontent.com/83579522/236689389-3f592dca-ad25-4b4f-81ef-e25251cb6d86.png)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/32f7b93b-b3c1-46f9-840b-407ce1a2da6d)
 
 ### nwgbar
-![image](https://user-images.githubusercontent.com/83579522/236689507-8ac97d97-98fd-47a4-b43f-a0bacba513e3.png)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bf02deae-1b64-4ace-b151-df30459ec464)
 
 ## Colors
 I'm using primarly Catppuccin Macchiato as my color palette. They also have lot of themes and tutorials
@@ -51,12 +55,15 @@ to install their theme and color palette into your favorite apps.
 https://github.com/catppuccin
 
 ## Background Image
-![image](https://user-images.githubusercontent.com/83579522/230727420-142e2e36-8b7d-42fa-8571-cbb3eb2787fe.png)
-
 Actually working on a script to swap between a set of wallpapers. For now, i'm using primarly this one :
 https://www.pixiv.net/en/artworks/64337772 ( Artist : 焦茶 )
 
 The artist has passed away, may he rest in peace.
+
+EDIT : I'm now using mainly March 7th Wallpaper
+https://www.pixiv.net/en/artworks/97911234 ( Artist : Rafa )
+
+Put in the background folder located in the sway folder config whatever background you want, and do Meta+Shift+b to switch between backgrounds.
 
 ## Notice
 I am using **Garuda Linux Sway** as my distro. Depending on your system, some stuff may not work or break.
