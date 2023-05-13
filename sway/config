@@ -10,7 +10,7 @@ include $HOME/.config/sway/config.d/*
 # xwayland disable
 
 # Set the background image
-output * bg ~/.config/sway/backgrounds/aesthetic.jpg fill
+output * bg ~/.config/sway/backgrounds/march7.jpg fill
 
 # Set the initial keyboard layout
 input * {
