@@ -1,0 +1,28 @@
+// Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+//
+// Waybar config file
+{
+    "include": "~/.config/hypr/waybar/modules",
+    "name": "main-bar", 			// Waybar name
+    "id": "main-bar", 				// Waybar id
+    "layer": "top", 				// Waybar at top layer
+    //"mode": "dock", 				// Display mode (dock|hide|invisible|overlay)
+    "exclusive": true, 				// Request an exclusive zone from the compositor
+    "passthrough": false, 			// Pass any pointer events to the window under the bar
+    "position": "top", 				// Waybar position (top|bottom|left|right)
+    "height": 34, 					// Waybar height (to be removed for auto height)
+    "width": "", 					// Waybar width (empty for auto width)
+    "spacing": 0, 					// Gaps between modules
+    "margin": 0, 					// Space around the bar
+    "margin-top": 0, 				// Space above the bar
+    "margin-bottom": 0, 			// Space below the bar
+    "margin-left": 0, 				// Space to the left of the bar
+    "margin-right": 0, 				// Space to the right of the bar
+    "fixed-center": true, 			// Center modules position
+    "ipc": true, 					// Control waybar with `swaymsg bar` commands
+    // Choose the order of the modules
+    "modules-left": ["custom/menu", "wlr/workspaces", "idle_inhibitor", "tray"], // "mpd#2", "mpd#3", "mpd#4", "mpd" 
+    //"modules-left": ["custom/menu", "wlr/workspaces", "idle_inhibitor", "tray", "custom/spotify" ],
+    "modules-center": [ "cpu", "cpu#2", "memory", "memory#2", "disk", "disk#2" ],
+    "modules-right": ["pulseaudio", "pulseaudio#2", "backlight", "backlight#2", "battery", "battery#2", "network", "network#2", "clock", "clock#2", "custom/power"],
+}

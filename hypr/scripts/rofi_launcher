@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+
+# Import Current Theme
+DIR="$HOME/.config/hypr"
+RASI="$DIR/rofi/launcher.rasi"
+
+# Run
+rofi \
+    -show drun \
+	-theme ${RASI}
