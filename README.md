@@ -1,6 +1,7 @@
-# Garuda Linux Sway Ricing by yurihikari
+# Garuda Linux Sway and Hyprland Ricing by yurihikari
 
 A simple aesthetic (at least for me) sway ricing on Garuda Linux. It also includes a Hyprland config but you'll have to install Hyprland yourself to use it.
+I edited ArchCraft dotfiles for Hyprland for my base rice. I changed most of the colors and the waybar is the same as in my Sway ricing.
 
 ## Overview
 ![merge_from_ofoct (1)](https://github.com/yurihikari/garuda-sway-config/assets/83579522/38c974e8-90cd-4eb0-aac2-1ca99465f35e)
@@ -68,6 +69,9 @@ Shortcut is unavailable in Hyprland for now.
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bf02deae-1b64-4ace-b151-df30459ec464)
 
 ## Hyprland Preview
+![Screenshot_2023-05-24-20-41-12_20118](https://github.com/yurihikari/garuda-sway-config/assets/83579522/91e7651d-531e-4624-8fb5-8f95ebefbc54)
+![Screenshot_2023-05-24-20-40-57_21091](https://github.com/yurihikari/garuda-sway-config/assets/83579522/66bbdd67-2777-460b-a033-0ac2ddccdaae)
+![Screenshot_2023-05-24-20-38-50_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/218d14d5-7913-4603-aa7e-a597f49ec584)
 
 ## Colors
 I'm using primarly Catppuccin Macchiato as my color palette. They also have lot of themes and tutorials
