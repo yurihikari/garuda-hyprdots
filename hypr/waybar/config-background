@@ -1,3 +1,4 @@
+// Edited for Garuda Linux by yurihikari
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
@@ -72,8 +73,9 @@
         "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
     },      
     "custom/cava-internal": {
-        "exec": "sh ~/.config/waybar/scripts/Cava.sh",
+        "exec": "kill cava & sh ~/.config/waybar/scripts/Cava.sh",
         "format": "{}",
+        "on-click": "sh ~/.config/hypr/scripts/statusbar &",
         "tooltip": false,
         "layer": "below",
         "output": "all"
@@ -178,7 +180,7 @@
     },
     "custom/power": {
       	"format":"⏻",
-       	"on-click": "nwgbar",
+       	"on-click": "~/.config/hypr/scripts/rofi_powermenu",
       	"tooltip": false,
    },
    "custom/keyboard-layout": {
@@ -193,7 +195,7 @@
 },
      "custom/launcher": {
     	"format":" ",
-    	"on-click": "exec wofi -I",
+    	"on-click": "~/.config/hypr/scripts/rofi_launcher",
     	"tooltip": false,
 },
 }
