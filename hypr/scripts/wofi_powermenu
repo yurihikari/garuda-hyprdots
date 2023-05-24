@@ -5,13 +5,13 @@
 ## Wofi Powermenu
 
 ## Files
-CONFIG="$HOME/.config/hypr/wofi/config"
-STYLE="$HOME/.config/hypr/wofi/style.css"
+CONFIG="$HOME/.config/wofi/config"
+STYLE="$HOME/.config/wofi/style.css"
 
 ## Wofi Command
 wofi_command="wofi --show dmenu \
 			--conf ${CONFIG} --style ${STYLE} \
-			--width=300 --height=215 \
+			--width=300 --height=250 \
 			--cache-file=/dev/null \
 			--hide-scroll --no-actions \
 			--define=matching=fuzzy"
@@ -19,11 +19,11 @@ wofi_command="wofi --show dmenu \
 uptime=$(uptime -p | sed -e 's/up //g')
 
 ## Entries
-shutdown=" Shutdown"
-reboot=" Restart"
-lock=" Lock"
-suspend=" Sleep"
-logout=" Logout"
+shutdown=" Shutdown"
+reboot=" Reboot"
+lock=" Lock"
+suspend=" Sleep"
+logout=" Logout"
 
 # Ask for confirmation
 cdialog () {
@@ -53,7 +53,7 @@ open_menu () {
 			fi
 			;;
 		$lock)
-			~/.config/hypr/scripts/lockscreen
+			swaylock
 			;;
 		$suspend)
 			cdialog
