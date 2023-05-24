@@ -12,6 +12,11 @@ for _prs in "${_ps[@]}"; do
 	fi
 done
 
+cava &
+
+# Start gnome keyring
+exec gnome-keyring-daemon --daemonize --start --components=gpg,pkcs11,secrets,ssh &
+
 # Polkit agent
 if [[ ! `pidof xfce-polkit` ]]; then
 	/usr/lib/xfce-polkit/xfce-polkit &
