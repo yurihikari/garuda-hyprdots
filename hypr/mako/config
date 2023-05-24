@@ -1,6 +1,7 @@
 ## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
 ##
 ## Mako configuration file
+# Edited for Garuda Linux by yurihikari
 
 # GLOBAL CONFIGURATION OPTIONS
 max-history=100
@@ -14,13 +15,13 @@ on-touch=dismiss
 on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
 
 # STYLE OPTIONS
-font=JetBrains Mono 10
+# font=JetBrains Mono 10
 width=300
 height=100
 margin=10
 padding=15
-border-size=1
-border-radius=0
+border-size=2
+border-radius=15
 icons=1
 max-icon-size=48
 icon-location=left
@@ -34,9 +35,9 @@ max-visible=5
 layer=overlay
 anchor=top-right
 
-background-color=#20262C
-text-color=#f1fcf9
-border-color=#B4A1DB
+background-color=#24273a
+text-color=#cad3f5
+border-color=#c6a0f6
 progress-color=over #B4A1DB
 
 [urgency=low]
