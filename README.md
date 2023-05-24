@@ -22,10 +22,11 @@ to avoid any potential graphical issues.
 - cava
 - foot *for hyprland*
 - hyprland-git
+- xfce-polkit
 
 Dependency List :
 ```
-swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git
+swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git xfce-polkit
 ```
 
 I used yay to install those packages. You can use your favorite AUR helper.
