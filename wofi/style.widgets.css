@@ -21,7 +21,7 @@ author: "arcticicestudio"
 @define-color base0F #B48EAD;
 
 
-*{
+/* *{
     font-family: UbuntuMono;
 }
 
@@ -60,5 +60,112 @@ color: #cad3f5;
 }
 
 #text:selected {
+} */
+
+@define-color base #24273a;
+@define-color mantle #1e2030;
+@define-color crust #181926;
+
+@define-color text #cad3f5;
+@define-color subtext0 #a5adcb;
+@define-color subtext1 #b8c0e0;
+
+@define-color surface0 #363a4f;
+@define-color surface1 #494d64;
+@define-color surface2 #5b6078;
+
+@define-color overlay0 #6e738d;
+@define-color overlay1 #8087a2;
+@define-color overlay2 #939ab7;
+
+@define-color blue #8aadf4;
+@define-color lavender #b7bdf8;
+@define-color sapphire #7dc4e4;
+@define-color sky #91d7e3;
+@define-color teal #8bd5ca;
+@define-color green #a6da95;
+@define-color yellow #eed49f;
+@define-color peach #f5a97f;
+@define-color maroon #ee99a0;
+@define-color red #ed8796;
+@define-color mauve #c6a0f6;
+@define-color pink #f5bde6;
+@define-color flamingo #f0c6c6;
+@define-color rosewater #f4dbd6;
+
+
+#entry {
+    border-radius: 5px;
+    padding: 5px 2px 5px 2px;
+    margin: 0px 4px 0px 4px;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#entry:selected {
+    color: @text;
+    background-color: @mauve;
+    padding: 7px;
+}
+
+#text:selected {
+    color: @base;
+}
+
+#window {
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    background-color: transparent;
+    font-family: Ubuntu Mono;
+    font-size: 18;
+}
+
+#inner-box {
+    color: @crust;
+    border-radius: 0px;
+    /* margin-right: 180px; */
+}
+
+#input {
+    border: none;
+    background-color: @base;
+    border-radius: 5px;
+    margin: 0px 4px 8px 4px;
+    padding: 2px;
+    color: @text;
+}
+
+#input:focus {
+    border: 1px solid @mauve;
+}
+
+#outer-box {
+    background-color: @crust;
+    border-radius: 10px;
+    border: 1px solid @mauve;
+    padding: 25px;
+    box-shadow: 0px 0px 3px 1px @base;
+    margin: 25px;
+}
+
+#scroll {
+    background-color: @crust;
+}
+
+#text {
+    color: @text;
+    background-color: transparent;
+}
+
+#img {
+    background-color: transparent;
+    margin-right: 15px;
+}

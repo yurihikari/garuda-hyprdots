@@ -1,8 +1,8 @@
-hide_search=true
-hide_scroll=true
+hide_search=false
+hide_scroll=false
 width=1
 show=dmenu
 lines=5
-location=centre
+location=middle
 x=870
 y=455
