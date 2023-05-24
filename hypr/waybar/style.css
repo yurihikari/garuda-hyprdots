@@ -69,7 +69,7 @@ window#waybar {
     /* background-color: @base; */
     margin: 0px 0px;
     padding: 4 6 2 0;
-    margin: 0px 0px 0px 8px;
+    margin: 0px 8px 0px 8px;
 }
 
 #workspaces button:hover {
@@ -87,10 +87,10 @@ window#waybar {
 
 #workspaces {
     border-style: solid;
-    /* background-color: @base; */
+    background-color: @base;
     opacity: 1;
     border-radius: 10px;
-    margin: 8px 0px 8px 8px;
+    margin: 8px 8px 8px 8px;
 }
 
 #workspaces button.active {
@@ -124,7 +124,7 @@ window#waybar {
 #custom-swap {
     border-radius: 10px;
     color: @base;
-    margin-left: 15px;
+    margin-left: 5px;
     background-color: @mauve;
 }
  
