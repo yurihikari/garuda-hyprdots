@@ -33,8 +33,8 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      2px solid;
-    border-radius:               0px;
-    border-color:                @background-alt;
+    border-radius:               15px;
+    border-color:                @border;
     cursor:                      "default";
     background-color:            @background;
 }
