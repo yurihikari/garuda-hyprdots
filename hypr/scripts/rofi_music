@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 ## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+## Edited for Garuda Linux by yurihikari
 
 # Import Current Theme
 DIR="$HOME/.config/hypr"
@@ -13,7 +14,7 @@ if [[ -z "$status" ]]; then
 	mesg="MPD is Offline"
 else
 	prompt="`mpc -f "%artist%" current`"
-	mesg="`mpc -f "%title%" current` :: `mpc status | grep "#" | awk '{print $3}'`"
+	mesg="`mpc -f "%file%" current`"
 fi
 
 # Options
@@ -24,7 +25,7 @@ if [[ "$layout" == 'NO' ]]; then
 	else
 		option_1=" Play"
 	fi
-	option_2=" Stop"
+	option_2=" Stop"
 	option_3=" Previous"
 	option_4=" Next"
 	option_5=" Repeat"
@@ -35,7 +36,7 @@ else
 	else
 		option_1=""
 	fi
-	option_2=""
+	option_2=""
 	option_3=""
 	option_4=""
 	option_5=""
@@ -86,9 +87,9 @@ run_cmd() {
 	elif [[ "$1" == '--opt2' ]]; then
 		mpc -q stop
 	elif [[ "$1" == '--opt3' ]]; then
-		mpc -q prev && ${notify_song} "`mpc -f "%artist%" current`"
+		mpc -q pause && mpc -q prev && mpc -q start && ${notify_song} "`mpc -f "%artist%" current`"
 	elif [[ "$1" == '--opt4' ]]; then
-		mpc -q next && ${notify_song} "`mpc -f "%artist%" current`"
+		mpc -q pause && mpc -q next && mpc -q start && ${notify_song} "`mpc -f "%artist%" current`"
 	elif [[ "$1" == '--opt5' ]]; then
 		mpc -q repeat
 	elif [[ "$1" == '--opt6' ]]; then
