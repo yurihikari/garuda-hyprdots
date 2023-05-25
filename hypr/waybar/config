@@ -6,17 +6,16 @@
     "margin": "0 0 0 0",
     //"width": 1350, // Waybar width
     // Choose the order of the modules idle_inhibitor
-    "modules-left": ["custom/launcher", "wlr/workspaces", "custom/swap", "tray", "custom/cava-internal"],
+    "modules-left": ["custom/launcher", "wlr/workspaces", "custom/swap", "tray", "custom/cava-internal", "mpd#2", "mpd#3", "mpd#4" , "mpd"],
     "modules-center": ["clock"],
     "modules-right": ["backlight", "pulseaudio", "temperature", "memory", "battery", "network", "custom/power"], 
     
  // Modules configuration
  
     // "wlr/workspaces": {
+    //     "disable-scroll": true,
+    //     "all-outputs": true,
     //     "format": "{icon}",
-    //     "sort-by-number": true,
-    //     "active-only": false,
-    //     "on-click": "activate",
     //     // "format": "< %g >",
     //     // "format_focused" : "< %g ● >",
     //     "format-icons": {
@@ -29,7 +28,7 @@
 	// 	"7": "",
 	// 	"8": "",
 	// 	"9": "",
-	// 	"10": ""
+	// 	"10": "",
     //     }
     // },
     "wlr/workspaces": {
@@ -53,21 +52,53 @@
         },
         "on-click": "activate",
    },
-    "mpd": {
-    	"tooltip": false,
-	"format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
-	"format-disconnected": "ﳌ",
-	"format-stopped": "",
-	"state-icons": {
-		"playing": "",
-        	"paused": ""
-        }
+   "mpd": {
+    "tooltip": true,
+    "tooltip-format": "{artist} - {album} - {title} - Total Time : {totalTime:%M:%S}",
+    "format": " {elapsedTime:%M:%S}",
+    "format-disconnected": "⚠  Disconnected",
+    "format-stopped": " Not Playing",
+    "on-click": "mpc toggle",
+    "state-icons": {
+        "playing": "",
+            "paused": ""
+    }
+},
+"mpd#2": {
+    "format": "",
+    "format-disconnected": "",
+    "format-paused": "",
+    "format-stopped": "",
+    // Commands to execute on events
+    "on-click": "mpc -q pause && mpc -q prev && mpc -q start",
+},
+"mpd#3": {
+    "interval": 1,
+    "format": "{stateIcon}",
+    "format-disconnected": "",
+    "format-paused": "{stateIcon}",
+    "format-stopped": "",
+    "state-icons": {
+        "paused": "",
+        "playing": ""
     },
-    "custom/swap": {
-        "on-click": "~/.config/hypr/waybar/scripts/swap.sh",
-        "tooltip": "Swap between waybar configs",
-        "format": "Bg  "
-    },    
+    // Commands to execute on events
+    "on-click": "mpc toggle",
+},
+"mpd#4": {
+    "format": "",
+    "format-disconnected": "",
+    "format-paused": "",
+    "format-stopped": "",
+    // Commands to execute on events
+    "on-click": "mpc -q pause && mpc -q next && mpc -q start",
+},
+"custom/swap": {
+    "on-click": "~/.config/hypr/waybar/scripts/swap.sh",
+    "tooltip": true,
+    "tooltip-format": "Swap between waybar configs",
+    "format": "Bg  "
+},  
     "custom/mpd": {
         "format": " {title} - {artist}",
         "interval": 5,
@@ -185,18 +216,18 @@
       	"tooltip": false,
    },
    "custom/keyboard-layout": {
-      	"exec": "grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+      	"exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
       	// Interval set only as a fallback, as the value is updated by signal
       	"interval": 1,
       	"format": "  {}", // Icon: keyboard
       	// Signal sent by Sway key binding (~/.config/sway/key-bindings)
       	"signal": 1, // SIGHUP
       	"tooltip": false,
-        //"on-click": "~/.config/waybar/scripts/keyhint.sh",
-    },
+        "on-click": "~/.config/waybar/scripts/keyhint.sh",
+},
      "custom/launcher": {
     	"format":" ",
     	"on-click": "~/.config/hypr/scripts/rofi_launcher",
     	"tooltip": false,
-    },
+},
 }
