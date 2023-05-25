@@ -19,6 +19,7 @@
 # Misc
 - SUPER + C: Open color picker
 - CTRL + ALT + L: Lock the screen
+- SUPER + SHIFT + B: Toggle between wallpapers
 
 # Scratchpad
 - SUPER + SHIFT + EQUAL: Move window to a special workspace
