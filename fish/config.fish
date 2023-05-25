@@ -162,5 +162,19 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 # end
 
 function fish_greeting
+    clear
+end
+
+function fishfetch
+    clear
     neofetch
+end
+
+function mpd_update
+    cd ~/Music
+    mpc clear
+    mpc ls | mpc add
+    mpc update
+    mpc listall
+    cd - 
 end
