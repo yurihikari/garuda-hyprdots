@@ -52,11 +52,12 @@ For the nwgbar icons, you can use the included script to install them (install.s
 ## Keybinds
 
 ### Sway
-Please, refer to this file : https://github.com/yurihikari/garuda-sway-config/blob/c7fafa6c425014971525b5ff9bbf66f1facad5b4/sway/cheatsheet.md
+Please, refer to this file : [Sway Cheatsheet](https://github.com/yurihikari/garuda-sway-config/blob/master/sway/cheatsheet.md)
 Or use Meta+Shift+I to get a keybind sheet directly on your terminal.
 
 ### Hyprland
-Work in progress. Most of the keybinds are the same as sway but with minor changes. I'll update this section when i'll have time.
+Please, refer to this file : [Hyprland Cheatsheet](https://github.com/yurihikari/garuda-sway-config/blob/master/hypr/cheatsheet.md)
+Or use Meta+Shift+I to get a keybind sheet directly on your terminal.
 
 ## Waybar
 Swap between each version of the waybar using the paintbrush icon on the bar.
