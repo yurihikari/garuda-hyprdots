@@ -20,13 +20,15 @@ to avoid any potential graphical issues.
 - waybar-hyprland-git 
 - neofetch
 - cava
-- foot *for hyprland*
+- foot
 - hyprland-git
 - xfce-polkit
+- mpd
+- mpc
 
 Dependency List :
 ```
-swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git xfce-polkit
+swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git xfce-polkit mpd mpc
 ```
 
 I used yay to install those packages. You can use your favorite AUR helper.
@@ -70,9 +72,12 @@ Shortcut is unavailable in Hyprland for now.
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bf02deae-1b64-4ace-b151-df30459ec464)
 
 ## Hyprland Preview
-![Screenshot_2023-05-24-20-41-12_20118](https://github.com/yurihikari/garuda-sway-config/assets/83579522/91e7651d-531e-4624-8fb5-8f95ebefbc54)
-![Screenshot_2023-05-24-20-40-57_21091](https://github.com/yurihikari/garuda-sway-config/assets/83579522/66bbdd67-2777-460b-a033-0ac2ddccdaae)
-![Screenshot_2023-05-24-20-38-50_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/218d14d5-7913-4603-aa7e-a597f49ec584)
+![Screenshot_2023-05-25-21-31-37_13389](https://github.com/yurihikari/garuda-sway-config/assets/83579522/5e179d2f-0702-462d-8b86-d4cf3e1f4917)
+![Screenshot_2023-05-25-21-30-56_30237](https://github.com/yurihikari/garuda-sway-config/assets/83579522/9a36bf1e-a72a-4272-9740-74874f2c1cc8)
+![Screenshot_2023-05-25-21-30-46_2127](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bd63818a-826e-4526-b680-8b5f44988d12)
+![Screenshot_2023-05-25-21-30-30_19775](https://github.com/yurihikari/garuda-sway-config/assets/83579522/985f283f-3712-42d7-b25e-7f83fed982b0)
+![Screenshot_2023-05-25-21-21-27_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/f7e0e5f1-c0ef-4e44-9350-10199857992f)
+
 
 ## Colors
 I'm using primarly Catppuccin Macchiato as my color palette. They also have lot of themes and tutorials
