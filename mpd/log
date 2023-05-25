@@ -1,0 +1,255 @@
+May 25 12:08 : update: added /ClariS - ClariS 『ケアレス』 Music Video 【TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-」オープニングテーマ】.mp3
+May 25 12:08 : state_file: Loading state file /home/lightcrimson/.config/mpd/state
+May 25 12:09 : signal_handlers: got SIGHUP, reopening log files and flushing caches
+May 25 12:09 : log: Cycling log files
+May 25 12:09 : log: Done cycling log files
+May 25 12:09 : state_file: Saving state file /home/lightcrimson/.config/mpd/state
+May 25 12:10 : state_file: Loading state file /home/lightcrimson/.config/mpd/state
+May 25 12:12 : state_file: Saving state file /home/lightcrimson/.config/mpd/state
+May 25 12:14 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 12:14 : exception: Stored playlists are disabled
+May 25 12:14 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 12:14 : player: played "ClariS - ClariS 『ケアレス』 Music Video 【TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-」オープニングテーマ】.mp3"
+May 25 12:14 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:14 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:16 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:16 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:16 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:16 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:16 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 12:16 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 12:16 : player: played "ClariS - ClariS 『ケアレス』 Music Video 【TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-」オープニングテーマ】.mp3"
+May 25 12:16 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 12:44 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 12:48 : player: played "ClariS - ClariS 『ケアレス』 Music Video 【TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-」オープニングテーマ】.mp3"
+May 25 12:49 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 12:50 : player: played "ClariS - ClariS 『ケアレス』 Music Video 【TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-」オープニングテーマ】.mp3"
+May 25 12:51 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 12:55 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 12:55 : player: played "ClariS - ClariS 『ケアレス』 Music Video 【TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-」オープニングテーマ】.mp3"
+May 25 12:58 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 13:02 : player: played "ClariS - ClariS 『ケアレス』 Music Video 【TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-」オープニングテーマ】.mp3"
+May 25 13:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 13:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 13:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 13:08 : exception: Stored playlists are disabled
+May 25 13:08 : update: added /BUMP OF CHICKEN - Acacia.mp3
+May 25 13:08 : update: added /CHiCO with HoneyWorks - Gamushara.mp3
+May 25 13:08 : exception: Stored playlists are disabled
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+May 25 13:09 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 13:09 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 13:09 : exception: Failed to commit /home/lightcrimson/.config/mpd/state: File exists
+May 25 13:09 : exception: Failed to commit /home/lightcrimson/.config/mpd/state: File exists
+May 25 13:09 : player: played "CHiCO with HoneyWorks - Gamushara.mp3"
+May 25 13:09 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+May 25 13:09 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
