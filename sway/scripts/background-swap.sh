@@ -42,7 +42,16 @@ echo "Next index: $NEXT_INDEX"
 NEXT_BACKGROUND="${BACKGROUND_LIST[$NEXT_INDEX]}"
 
 # Set the background to the next background
-swaymsg output "*" bg "$NEXT_BACKGROUND" fill
+#swaymsg output "*" bg "$NEXT_BACKGROUND" fill
+killall swaybg
+swaybg --output '*' --mode fill --image $NEXT_BACKGROUND &
 
 # Save the current background in the sway config file
 sed -i "s|^output \* bg.*|output \* bg $NEXT_BACKGROUND fill|" "$HOME/.config/sway/config"
+
+# Update the background file path in the startup script
+sed -i "s|^swaybg --output '.*' --mode fill --image .*|swaybg --output '*' --mode fill --image $NEXT_BACKGROUND \&|" "$HOME/.config/hypr/scripts/startup"
+
+# Send a notification with the new background name with an icon from the current background
+notify-send -i $NEXT_BACKGROUND "Background changed" "$(basename $NEXT_BACKGROUND)"
+
