@@ -9,11 +9,13 @@ set $right l
 
 # Your preferred terminal emulators
 set $term-float alacritty
+set $foot ~/.config/hypr/scripts/terminal
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu wofi -I
+set $music ~/.config/hypr/scripts/rofi_music
 
 set $launcher nwg-drawer -c 7 -is 70 -spacing 23
 # set $launcher wofi
@@ -57,6 +59,7 @@ bindsym $mod+Shift+w exec ~/.config/waybar/scripts/swap.sh
 
     # Open the power menu
     bindsym $mod+Shift+e exec $powermenu
+    bindsym $mod+x exec $powermenu # ArchCraft shortcut
 
     # Kill focused window
     bindsym $mod+q kill
@@ -262,10 +265,11 @@ bindsym XF86AudioMute exec pamixer --toggle-mute && ( pamixer --get-mute && echo
     bindsym XF86AudioPause exec playerctl pause
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
+    bindsym $mod+m exec $music
 #
 # Backlight
 #
-    bindsym XF86MonBrightnessUp exec light -A 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob
+    bindsym XF86MonBrightnessUp exec light -A 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob 
     bindsym XF86MonBrightnessDown exec light -U 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob
 #
 # App shortcuts
