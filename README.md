@@ -16,6 +16,7 @@ Both Sway and Hyprland are almost identical, except Hyprland having rounded app 
 - Waybar background toggling button (Meta+Shift+w also works)
 - Background switch using Meta+Shift+b. (Backgrounds must be in the ~/.config/sway/backgrounds folder
 - Hyprland Config
+- Easily add musics to mpd with the mpd_update function ( Assuming your musics are in ~/Music )
 
 ## Important Dependencies
 I use some apps not pre-included in the default Garuda Linux desktop. Please install them before using my dotfiles
@@ -27,7 +28,6 @@ to avoid any potential graphical issues.
 - cava
 - foot
 - hyprland-git
-- xfce-polkit
 - mpd
 - mpc
 
