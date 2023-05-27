@@ -33,7 +33,7 @@ to avoid any potential graphical issues.
 
 Dependency List :
 ```
-swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git xfce-polkit mpd mpc
+swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git mpd mpc
 ```
 
 I used yay to install those packages. You can use your favorite AUR helper.
