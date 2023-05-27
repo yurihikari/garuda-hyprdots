@@ -21,8 +21,9 @@ if [[ ! `pidof xfce-polkit` ]]; then
 	/usr/lib/xfce-polkit/xfce-polkit &
 fi
 
+pipewire &
 # Set wallpaper
-swaybg --output '*' --mode fill --image ~/.config/sway/backgrounds/march7.jpg &
+swaybg --output '*' --mode fill --image /home/lightcrimson/.config/sway/backgrounds/march7.jpg &
 
 # Apply themes
 # ~/.config/hypr/scripts/gtkthemes &
