@@ -6,7 +6,7 @@
     "margin": "0 0 0 0",
     //"width": 1350, // Waybar width
     // Choose the order of the modules idle_inhibitor
-    "modules-left": ["custom/launcher", "wlr/workspaces", "custom/swap", "tray", "custom/cava-internal", "mpd#2", "mpd#3", "mpd#4" , "mpd"],
+    "modules-left": ["custom/launcher", "wlr/workspaces", "custom/swap", "tray", "custom/cava-internal", "mpd#2", "mpd#3", "mpd#4", "mpd"],
     "modules-center": ["clock"],
     "modules-right": ["backlight", "pulseaudio", "temperature", "memory", "battery", "network", "custom/power"], 
     
@@ -57,7 +57,7 @@
     "tooltip-format": "{artist} - {album} - {title} - Total Time : {totalTime:%M:%S}",
     "format": " {elapsedTime:%M:%S}",
     "format-disconnected": "⚠  Disconnected",
-    "format-stopped": " Not Playing",
+    "format-stopped": " Not Playing",
     "on-click": "mpc toggle",
     "state-icons": {
         "playing": "",
@@ -75,9 +75,9 @@
 "mpd#3": {
     "interval": 1,
     "format": "{stateIcon}",
-    "format-disconnected": "",
+    "format-disconnected": "",
     "format-paused": "{stateIcon}",
-    "format-stopped": "",
+    "format-stopped": "",
     "state-icons": {
         "paused": "",
         "playing": ""
@@ -89,7 +89,7 @@
     "format": "",
     "format-disconnected": "",
     "format-paused": "",
-    "format-stopped": "",
+    "format-stopped": "",
     // Commands to execute on events
     "on-click": "mpc -q pause && mpc -q next && mpc -q start",
 },
@@ -105,7 +105,7 @@
         "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
     },      
     "custom/cava-internal": {
-        "exec": "kill cava & sh ~/.config/waybar/scripts/Cava.sh",
+        "exec": "sh ~/.config/waybar/scripts/Cava.sh",
         "format": "{}",
         "on-click": "sh ~/.config/hypr/scripts/statusbar &",
         "tooltip": false,

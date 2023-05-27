@@ -57,7 +57,7 @@
     "tooltip-format": "{artist} - {album} - {title} - Total Time : {totalTime:%M:%S}",
     "format": " {elapsedTime:%M:%S}",
     "format-disconnected": "⚠  Disconnected",
-    "format-stopped": " Not Playing",
+    "format-stopped": " Not Playing",
     "on-click": "mpc toggle",
     "state-icons": {
         "playing": "",
@@ -75,9 +75,9 @@
 "mpd#3": {
     "interval": 1,
     "format": "{stateIcon}",
-    "format-disconnected": "",
+    "format-disconnected": "",
     "format-paused": "{stateIcon}",
-    "format-stopped": "",
+    "format-stopped": "",
     "state-icons": {
         "paused": "",
         "playing": ""
@@ -89,7 +89,7 @@
     "format": "",
     "format-disconnected": "",
     "format-paused": "",
-    "format-stopped": "",
+    "format-stopped": "",
     // Commands to execute on events
     "on-click": "mpc -q pause && mpc -q next && mpc -q start",
 },
@@ -97,7 +97,7 @@
     "on-click": "~/.config/hypr/waybar/scripts/swap.sh",
     "tooltip": true,
     "tooltip-format": "Swap between waybar configs",
-    "format": "Bg  "
+    "format": "Bg  "
 },  
     "custom/mpd": {
         "format": " {title} - {artist}",
@@ -105,7 +105,7 @@
         "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
     },      
     "custom/cava-internal": {
-        "exec": "kill cava & sh ~/.config/waybar/scripts/Cava.sh",
+        "exec": "sh ~/.config/waybar/scripts/Cava.sh",
         "format": "{}",
         "on-click": "sh ~/.config/hypr/scripts/statusbar &",
         "tooltip": false,
