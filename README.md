@@ -4,8 +4,13 @@ A simple aesthetic (at least for me) sway ricing on Garuda Linux. It also includ
 I edited ArchCraft dotfiles for Hyprland for my base rice. I changed most of the colors and the waybar is the same as in my Sway ricing.
 
 ## Overview
-![merge_from_ofoct (1)](https://github.com/yurihikari/garuda-sway-config/assets/83579522/38c974e8-90cd-4eb0-aac2-1ca99465f35e)
+![Screenshot_2023-05-25-21-31-37_13389](https://github.com/yurihikari/garuda-sway-config/assets/83579522/5e179d2f-0702-462d-8b86-d4cf3e1f4917)
+![Screenshot_2023-05-25-21-30-56_30237](https://github.com/yurihikari/garuda-sway-config/assets/83579522/9a36bf1e-a72a-4272-9740-74874f2c1cc8)
+![Screenshot_2023-05-25-21-30-46_2127](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bd63818a-826e-4526-b680-8b5f44988d12)
+![Screenshot_2023-05-25-21-30-30_19775](https://github.com/yurihikari/garuda-sway-config/assets/83579522/985f283f-3712-42d7-b25e-7f83fed982b0)
+![Screenshot_2023-05-25-21-21-27_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/f7e0e5f1-c0ef-4e44-9350-10199857992f)
 
+Both Sway and Hyprland are almost identical, except Hyprland having rounded app borders and smooth animations.
 
 ## Additional features
 - Waybar background toggling button (Meta+Shift+w also works)
@@ -71,14 +76,6 @@ Shortcut is unavailable in Hyprland for now.
 
 ## nwgbar
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bf02deae-1b64-4ace-b151-df30459ec464)
-
-## Hyprland Preview
-![Screenshot_2023-05-25-21-31-37_13389](https://github.com/yurihikari/garuda-sway-config/assets/83579522/5e179d2f-0702-462d-8b86-d4cf3e1f4917)
-![Screenshot_2023-05-25-21-30-56_30237](https://github.com/yurihikari/garuda-sway-config/assets/83579522/9a36bf1e-a72a-4272-9740-74874f2c1cc8)
-![Screenshot_2023-05-25-21-30-46_2127](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bd63818a-826e-4526-b680-8b5f44988d12)
-![Screenshot_2023-05-25-21-30-30_19775](https://github.com/yurihikari/garuda-sway-config/assets/83579522/985f283f-3712-42d7-b25e-7f83fed982b0)
-![Screenshot_2023-05-25-21-21-27_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/f7e0e5f1-c0ef-4e44-9350-10199857992f)
-
 
 ## Colors
 I'm using primarly Catppuccin Macchiato as my color palette. They also have lot of themes and tutorials
