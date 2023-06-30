@@ -73,11 +73,15 @@ window#waybar {
 
 #workspaces button:hover {
     color: @mauve;
-    border-radius: 20px;
+    box-shadow: none; /* Remove predefined box-shadow */
+    text-shadow: none; /* Remove predefined text-shadow */
+    border: 0px;
+    background: none;
 }
 
 #workspaces button:hover * {
     color: @mauve;
+    background-color: @base;
 }
 
 #workspaces * {

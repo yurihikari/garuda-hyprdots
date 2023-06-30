@@ -66,7 +66,6 @@ window#waybar {
 #workspaces button {
     color: @base;
     border-radius: 50%;
-    /* background-color: @base; */
     margin: 0px 0px;
     padding: 4 6 2 0;
     margin: 0px 8px 0px 8px;
@@ -74,7 +73,11 @@ window#waybar {
 
 #workspaces button:hover {
     color: @mauve;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    box-shadow: none; /* Remove predefined box-shadow */
+    text-shadow: none; /* Remove predefined text-shadow */
+    border: 0px;
+    background: none;
 }
 
 #workspaces button:hover * {
@@ -290,6 +293,10 @@ window#waybar {
 
 #custom-launcher {
     background-color: @mauve;
+    /* background-image: url("/home/lightcrimson/.config/icons/svg/arch.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;  */
     color: @base;
     border-radius: 10px;
     padding: 5px 10px;
