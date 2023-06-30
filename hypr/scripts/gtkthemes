@@ -4,10 +4,14 @@
 ##
 ## Set GTK Themes, Icons, Cursor and Fonts
 
-THEME='Manhattan'
-ICONS='Luv-Folders-Dark'
-FONT='Noto Sans 9'
-CURSOR='Qogirr-Dark'
+# THEME='Manhattan'
+# ICONS='Luv-Folders-Dark'
+# FONT='Noto Sans 9'
+# CURSOR='Qogirr-Dark'
+THEME='Catppuccin-Macchiato-Standard-Lavender-Dark'
+ICONS='Tela-circle-purple-dark'
+FONT='Noto Sans 10'
+CURSOR='capitaine-cursors'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
