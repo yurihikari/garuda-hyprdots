@@ -227,6 +227,7 @@
 },
      "custom/launcher": {
     	"format":" ",
+        //"format": "  ",
     	"on-click": "~/.config/hypr/scripts/rofi_launcher",
     	"tooltip": false,
 },
