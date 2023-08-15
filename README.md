@@ -47,7 +47,7 @@ There is no installation script yet. However, you can clone this repository and 
 *Example* :
 ```bash
 git clone https://github.com/yurihikari/garuda-sway-config.git
-cp -r /garuda-sway-config/* ~/.config
+cp -r garuda-sway-config/* ~/.config
 ```
 
 Or simply pick what you need from the files, and use it in your own.
