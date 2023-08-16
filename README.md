@@ -30,10 +30,11 @@ to avoid any potential graphical issues.
 - hyprland-git
 - mpd
 - mpc
+- sweet-cursor-theme-git
 
 Dependency List :
 ```
-swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git mpd mpc
+swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git
 ```
 
 I used yay to install those packages. You can use your favorite AUR helper.
