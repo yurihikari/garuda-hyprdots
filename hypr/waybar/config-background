@@ -8,7 +8,7 @@
     // Choose the order of the modules idle_inhibitor
     "modules-left": ["custom/launcher", "wlr/workspaces", "custom/swap", "tray", "custom/cava-internal", "mpd#2", "mpd#3", "mpd#4" , "mpd"],
     "modules-center": ["clock"],
-    "modules-right": ["backlight", "pulseaudio", "temperature", "memory", "battery", "network", "custom/power"], 
+    "modules-right": ["backlight", "pulseaudio", "hyprland/language", "temperature", "memory", "battery", "network", "custom/power"], 
     
  // Modules configuration
  
@@ -143,7 +143,7 @@
         "on-click": "alacritty -e htop"
     },
     "memory": {
-        "format": " {: >3}%",
+        "format": " {: >3}%",
         "on-click": "alacritty -e htop"
     },
     "temperature": {
@@ -216,7 +216,7 @@
       	"tooltip": false,
    },
    "custom/keyboard-layout": {
-      	"exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+      	"exec": "~/.config/hypr/waybar/scripts/getInputLayout.sh",
       	// Interval set only as a fallback, as the value is updated by signal
       	"interval": 1,
       	"format": "  {}", // Icon: keyboard
@@ -224,6 +224,9 @@
       	"signal": 1, // SIGHUP
       	"tooltip": false,
         "on-click": "~/.config/waybar/scripts/keyhint.sh",
+},
+"hyprland/language": {
+    "format": "  {}",
 },
      "custom/launcher": {
     	"format":" ",

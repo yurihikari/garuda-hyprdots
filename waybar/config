@@ -74,7 +74,7 @@
     "custom/swap": {
         "on-click": "~/.config/waybar/scripts/swap.sh",
         "tooltip": "Swap between waybar configs",
-        "format": "Bg  "
+        "format": "Bg  "
     },    
     "custom/mpd": {
         "format": " {title} - {artist}",
@@ -120,7 +120,7 @@
         "on-click": "alacritty -e htop"
     },
     "memory": {
-        "format": " {: >3}%",
+        "format": " {: >3}%",
         "on-click": "alacritty -e htop"
     },
     "temperature": {

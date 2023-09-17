@@ -121,6 +121,7 @@ window#waybar {
 #idle_inhibitor,
 #temperature,
 #custom-keyboard-layout,
+#language,
 #backlight,
 #network,
 #pulseaudio,
@@ -264,8 +265,8 @@ window#waybar {
 
 #pulseaudio {
     color: @flamingo;
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
+    /* border-radius: 0 10px 10px 0;
+    margin-right: 10px; */
     /* border-bottom: 2px solid @flamingo; */
 }
 
@@ -334,6 +335,14 @@ window#waybar {
     border-radius: 0 10px 10px 0;
     margin-right: 10px;
 }
+
+#language {
+    color: @peach;
+    /* border-bottom: 2px solid @peach; */
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+}
+
 
 
 
