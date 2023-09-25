@@ -4,11 +4,12 @@ A simple aesthetic (at least for me) sway ricing on Garuda Linux. It also includ
 I edited ArchCraft dotfiles for Hyprland for my base rice. I changed most of the colors and the waybar is the same as in my Sway ricing.
 
 ## Overview
-![Screenshot_2023-05-25-21-31-37_13389](https://github.com/yurihikari/garuda-sway-config/assets/83579522/5e179d2f-0702-462d-8b86-d4cf3e1f4917)
-![Screenshot_2023-05-25-21-30-56_30237](https://github.com/yurihikari/garuda-sway-config/assets/83579522/9a36bf1e-a72a-4272-9740-74874f2c1cc8)
-![Screenshot_2023-05-25-21-30-46_2127](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bd63818a-826e-4526-b680-8b5f44988d12)
-![Screenshot_2023-05-25-21-30-30_19775](https://github.com/yurihikari/garuda-sway-config/assets/83579522/985f283f-3712-42d7-b25e-7f83fed982b0)
-![Screenshot_2023-05-25-21-21-27_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/f7e0e5f1-c0ef-4e44-9350-10199857992f)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/04e410bd-520c-4371-a166-b370d54e319d)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/f2e26753-fe60-4395-bad0-b321a3a08481)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/0f8c82d2-2959-4538-b16c-8cac1d8aee59)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/38fa971c-cc00-4e0a-a645-1b39ba7f9615)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/c6451032-4053-4ae9-a47f-f47c1df09a4b)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/92bfc092-ce88-47d7-a9bd-b3b0d6a396ff)
 
 Both Sway and Hyprland are almost identical, except Hyprland having rounded app borders and smooth animations.
 
@@ -31,10 +32,11 @@ to avoid any potential graphical issues.
 - mpd
 - mpc
 - sweet-cursor-theme-git
+- ttf-font-awesome
 
 Dependency List :
 ```
-swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git
+swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome
 ```
 
 I used yay to install those packages. You can use your favorite AUR helper.
