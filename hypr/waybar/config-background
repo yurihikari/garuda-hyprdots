@@ -6,13 +6,13 @@
     "margin": "0 0 0 0",
     //"width": 1350, // Waybar width
     // Choose the order of the modules idle_inhibitor
-    "modules-left": ["custom/launcher", "wlr/workspaces", "custom/swap", "tray", "custom/cava-internal", "mpd#2", "mpd#3", "mpd#4" , "mpd"],
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/swap", "tray", "custom/cava-internal", "mpd#2", "mpd#3", "mpd#4" , "mpd"],
     "modules-center": ["clock"],
     "modules-right": ["backlight", "pulseaudio", "hyprland/language", "temperature", "memory", "battery", "network", "custom/power"], 
     
  // Modules configuration
  
-    // "wlr/workspaces": {
+    // "hyprland/workspaces": {
     //     "disable-scroll": true,
     //     "all-outputs": true,
     //     "format": "{icon}",
@@ -31,7 +31,7 @@
 	// 	"10": "",
     //     }
     // },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "format": "{icon}",
         "sort-by-number": true,
         "active-only": false,
