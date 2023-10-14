@@ -16,11 +16,13 @@ set $foot ~/.config/hypr/scripts/terminal
 # on the original workspace that the command was run on.
 set $menu wofi -I
 set $music ~/.config/hypr/scripts/rofi_music
+set $screenshot ~/.config/hypr/scripts/rofi_screenshot
 
 set $launcher nwg-drawer -c 7 -is 70 -spacing 23
 # set $launcher wofi
 
 set $powermenu nwgbar -f
+set $rofi_powermenu ~/.config/hypr/scripts/rofi_powermenu
 
 set $cheat $term-float -t cheatsheet -e micro ~/.config/sway/cheatsheet.md
 
@@ -59,7 +61,7 @@ bindsym $mod+Shift+w exec ~/.config/waybar/scripts/swap.sh
 
     # Open the power menu
     bindsym $mod+Shift+e exec $powermenu
-    bindsym $mod+x exec $powermenu # ArchCraft shortcut
+    bindsym $mod+x exec $rofi_powermenu # ArchCraft shortcut
 
     # Kill focused window
     bindsym $mod+q kill
@@ -189,13 +191,13 @@ bindsym $mod+Shift+w exec ~/.config/waybar/scripts/swap.sh
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+space floating toggle
 
     # Swap focus between the tiling area and the floating area
     # bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
-    bindsym $mod+a focus parent
+    # bindsym $mod+a focus parent
 #
 # Scratchpad:
 #
@@ -283,4 +285,5 @@ bindsym XF86AudioMute exec pamixer --toggle-mute && ( pamixer --get-mute && echo
     bindsym print exec /usr/share/sway/scripts/grimshot --notify save output
     bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
     bindsym Alt+print exec /usr/share/sway/scripts/grimshot --notify copy area
+    bindsym $mod+a exec $screenshot
 
