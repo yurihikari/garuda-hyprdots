@@ -61,7 +61,7 @@ bindsym $mod+Shift+w exec ~/.config/waybar/scripts/swap.sh
 
     # Open the power menu
     bindsym $mod+Shift+e exec $powermenu
-    bindsym $mod+x exec $rofi_powermenu # ArchCraft shortcut
+    bindsym $mod+x exec $powermenu # ArchCraft shortcut
 
     # Kill focused window
     bindsym $mod+q kill
