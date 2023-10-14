@@ -78,8 +78,10 @@ window#waybar {
 
 #workspaces button:hover {
     color: @mauve;
-    box-shadow: none; /* Remove predefined box-shadow */
-    text-shadow: none; /* Remove predefined text-shadow */
+    box-shadow: none;
+    /* Remove predefined box-shadow */
+    text-shadow: none;
+    /* Remove predefined text-shadow */
     border: 0px;
     background: none;
 }
@@ -138,6 +140,13 @@ window#waybar {
 /* -----------------------------------------------------------------------------
    * Module styles
    * -------------------------------------------------------------------------- */
+
+#mode {
+    border-radius: 10px;
+    color: @mauve;
+    margin-right: 5px;
+}
+
 #custom-cava-internal {
     border-radius: 10px;
     color: @mauve;
@@ -319,10 +328,6 @@ window#waybar {
       padding: 8px 1rem; */
     margin-right: 10px;
     color: #eceff4;
-}
-
-#mode {
-    margin-bottom: 3px;
 }
 
 #custom-keyboard-layout {

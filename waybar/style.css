@@ -170,6 +170,12 @@ window#waybar {
     font-size: 14px;
 }
 
+#mode {
+    border-radius: 10px;
+    color: @mauve;
+    margin-right: 5px;
+}
+
 #custom-cava-internal {
     border-radius: 10px;
     color: @mauve;
@@ -313,10 +319,6 @@ window#waybar {
      padding: 8px 1rem; */
     margin-right: 10px;
     color: #eceff4;
-}
-
-#mode {
-    margin-bottom: 3px;
 }
 
 #custom-keyboard-layout {
