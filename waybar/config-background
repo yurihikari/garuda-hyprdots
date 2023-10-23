@@ -106,18 +106,7 @@
         "icon-size": 14,
         "spacing": 5
     },
-    // "clock": {
-    //     "tooltip-format": "{:%A %B %d %Y | %H:%M}",
-    //     "format": "  {:%a %d %b  %I:%M %p}",	//12 hour format
-    //     //"format": " {:%a %d %b  %H:%M}",	//24 hour format
-    //     "format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
-    //     //"timezones": [ "Kolkata" ],
-    //     //"max-length": 200
-    //     "interval": 1
-    // },
     "clock": {
-        "format": "  {:%H:%M:%S}",
-  	    "format-alt": "  {:%A, %B %d, %Y (%R)}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode"          : "month",
@@ -140,8 +129,40 @@
             "on-scroll-up": "shift_up",
             "on-scroll-down": "shift_down"
         },
+        "format": "  {:%a %d %b  %I:%M %p}",	//12 hour format
+        // "format": " {:%d %m %Y  %H:%M}",	//24 hour format
+        "format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
+        // //"timezones": [ "Kolkata" ],
+        // //"max-length": 200
         "interval": 1
     },
+    // "clock": {
+    //     "format": "  {:%H:%M:%S}",
+  	//     "format-alt": "  {:%A, %B %d, %Y (%R)}",
+    //     "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    //     "calendar": {
+    //         "mode"          : "month",
+    //         "mode-mon-col"  : 3,
+    //         "weeks-pos"     : "right",
+    //         "on-scroll"     : 1,
+    //         "on-click-right": "mode",
+    //         "format": {
+    //             "months":     "<span color='#ffead3'><b>{}</b></span>",
+    //             "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+    //             "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+    //             "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+    //             "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+    //         }
+    //     },
+    //     "actions": {
+    //         "on-click-right": "mode",
+    //         "on-click-forward": "tz_up",
+    //         "on-click-backward": "tz_down",
+    //         "on-scroll-up": "shift_up",
+    //         "on-scroll-down": "shift_down"
+    //     },
+    //     "interval": 1
+    // },
     "cpu": {
         "format": "﬙ {usage: >3}%",
         "on-click": "alacritty -e htop"
