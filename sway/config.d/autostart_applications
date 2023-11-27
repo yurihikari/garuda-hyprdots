@@ -55,6 +55,9 @@ exec tracker daemon -s
 # Cheatsheet
 exec micro ~/.config/sway/cheatsheet
 
+# MPD
+exec mpd &
+
 # nwg-drawer
 exec_always nwg-drawer -r 
 
