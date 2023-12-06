@@ -3,6 +3,8 @@
 A simple aesthetic (at least for me) sway ricing on Garuda Linux. It also includes a Hyprland config but you'll have to install Hyprland yourself to use it.
 I edited ArchCraft dotfiles for Hyprland for my base rice. I changed most of the colors and the waybar is the same as in my Sway ricing.
 
+Wiki : [Wiki Link](https://wiki.lightcrimson.com/en/garuda-sway-config)
+
 ## Overview
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/04e410bd-520c-4371-a166-b370d54e319d)
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/f2e26753-fe60-4395-bad0-b321a3a08481)
@@ -33,13 +35,14 @@ to avoid any potential graphical issues.
 - mpc
 - sweet-cursor-theme-git
 - ttf-font-awesome
+- hyprpicker
 
 Dependency List :
-```
-swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome
+```bash
+paru -S swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome hyprpicker
 ```
 
-I used yay to install those packages. You can use your favorite AUR helper.
+I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
 **rofi-lbonn-wayland** is not mandatory, but it's a wayland compatible version of rofi. You can use wofi instead.
 
 **I didn't include personal apps like Youtube Music, Discord, VSCode and themes used in google-chrome etc.**
