@@ -13,6 +13,3 @@ configuration{
     display-Network: " 󰤨  Network";
     sidebar-mode: true;
 }
-
-@theme "catppuccin-mocha"
-
