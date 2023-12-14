@@ -35,11 +35,12 @@ to avoid any potential graphical issues.
 - mpc
 - sweet-cursor-theme-git
 - ttf-font-awesome
+- nerd-fonts
 - hyprpicker
 
 Dependency List :
 ```bash
-paru -S swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome hyprpicker
+paru -S swaylock-effects rofi-lbonn-wayland waybar-hyprland-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome nerd-fonts hyprpicker
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
