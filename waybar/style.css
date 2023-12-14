@@ -73,8 +73,10 @@ window#waybar {
 
 #workspaces button:hover {
     color: @mauve;
-    box-shadow: none; /* Remove predefined box-shadow */
-    text-shadow: none; /* Remove predefined text-shadow */
+    box-shadow: none;
+    /* Remove predefined box-shadow */
+    text-shadow: none;
+    /* Remove predefined text-shadow */
     border: 0px;
     background: none;
 }

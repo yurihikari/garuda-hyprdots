@@ -7,21 +7,21 @@
 
 /** ********** Fonts ********** **/
 * {
-    font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
-    font-size: 14px;
+	font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
+	font-size: 14px;
 }
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-    background-color: @background;
+	background-color: @background;
 	color: @foreground;
-    border-bottom: 2px solid @background-alt1;
-    transition-property: background-color;
-    transition-duration: .5s;
+	border-bottom: 2px solid @background-alt1;
+	transition-property: background-color;
+	transition-duration: .5s;
 }
 
 window#waybar.hidden {
-    opacity: 0.5;
+	opacity: 0.5;
 }
 
 /** ********** Custom ********** **/
@@ -49,9 +49,10 @@ window#waybar.hidden {
 	background-color: @green;
 	color: @background;
 	border-radius: 10px;
-	margin: 6px 0px 6px 6px ;
+	margin: 6px 0px 6px 6px;
 	padding: 4px 6px;
 }
+
 #idle_inhibitor.deactivated {
 	background-color: @orange;
 }
@@ -60,26 +61,30 @@ window#waybar.hidden {
 #tray {
 	background-color: @background-alt1;
 	border-radius: 10px;
-	margin: 6px 0px 6px 6px ;
+	margin: 6px 0px 6px 6px;
 	padding: 4px 6px;
 }
-#tray > .passive {
-    -gtk-icon-effect: dim;
+
+#tray>.passive {
+	-gtk-icon-effect: dim;
 }
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
+
+#tray>.needs-attention {
+	-gtk-icon-effect: highlight;
 }
-#tray > .active {
-}
+
+#tray>.active {}
 
 /** ********** MPD ********** **/
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
@@ -90,33 +95,41 @@ window#waybar.hidden {
 	font-size: 12px;
 	font-weight: bold;
 }
+
 #mpd.disconnected {
 	color: @red;
 }
+
 #mpd.stopped {
 	color: @orange;
 }
+
 #mpd.playing {
 	color: @cyan;
 }
-#mpd.paused {
-}
+
+#mpd.paused {}
 
 #mpd.2 {
 	border-radius: 10px 0px 0px 10px;
-	margin: 6px 0px 6px 6px ;
+	margin: 6px 0px 6px 6px;
 	padding: 4px 6px 4px 10px;
 }
+
 #mpd.3 {
-	margin: 6px 0px 6px 0px ;
+	margin: 6px 0px 6px 0px;
 	padding: 4px;
 }
+
 #mpd.4 {
 	border-radius: 0px 10px 10px 0px;
-	margin: 6px 6px 6px 0px ;
+	margin: 6px 6px 6px 0px;
 	padding: 4px 10px 4px 6px;
 }
-#mpd.2,#mpd.3,#mpd.4 {
+
+#mpd.2,
+#mpd.3,
+#mpd.4 {
 	background-color: @background-alt1;
 	font-size: 14px;
 }
@@ -126,7 +139,7 @@ window#waybar.hidden {
 	background-color: @background-alt1;
 	color: @foreground;
 	border-radius: 10px;
-	margin: 6px 0px 6px 6px ;
+	margin: 6px 0px 6px 6px;
 	padding: 4px 8px;
 	font-size: 12px;
 	font-weight: bold;
@@ -137,10 +150,10 @@ window#waybar.hidden {
 }
 
 #custom-spotify.playing {
-    background: linear-gradient(90deg, @magenta 25%, @red 50%, @yellow 75%, @cyan 100%); 
-    background-size: 300% 300%;
-    animation: gradient 10s ease infinite;
-    color: @background;
+	background: linear-gradient(90deg, @magenta 25%, @red 50%, @yellow 75%, @cyan 100%);
+	background-size: 300% 300%;
+	animation: gradient 10s ease infinite;
+	color: @background;
 }
 
 #custom-spotify.offline {
@@ -166,19 +179,20 @@ window#waybar.hidden {
 #pulseaudio {
 	color: @green;
 }
+
 #pulseaudio.bluetooth {
 	color: @cyan;
 }
+
 #pulseaudio.muted {
 	color: @red;
 }
 
-#pulseaudio.2 {
-}
-#pulseaudio.2.bluetooth {
-}
-#pulseaudio.2.muted {
-}
+#pulseaudio.2 {}
+
+#pulseaudio.2.bluetooth {}
+
+#pulseaudio.2.muted {}
 
 /** ********** Backlight ********** **/
 #backlight {
@@ -189,41 +203,46 @@ window#waybar.hidden {
 #battery {
 	color: @magenta;
 }
-#battery.charging {
-}
-#battery.plugged {
-}
+
+#battery.charging {}
+
+#battery.plugged {}
+
 @keyframes blink {
-    to {
-        color: @foreground;
-    }
+	to {
+		color: @foreground;
+	}
 }
+
 #battery.critical:not(.charging) {
 	background-color: @background-alt1;
 }
+
 #battery.2.critical:not(.charging) {
 	background-color: @background-alt2;
-    color: @orange;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+	color: @orange;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 /** ********** Network ********** **/
 #network {
 	color: @blue;
 }
-#network.disconnected,#network.disabled {
+
+#network.disconnected,
+#network.disabled {
 	color: @red;
 }
-#network.linked {
-}
-#network.ethernet {
-}
-#network.wifi {
-}
+
+#network.linked {}
+
+#network.ethernet {}
+
+#network.wifi {}
 
 /** ********** Clock ********** **/
 #clock {
@@ -234,24 +253,28 @@ window#waybar.hidden {
 #workspaces {
 	background-color: @background-alt1;
 	border-radius: 10px;
-	margin: 6px 0px 6px 6px ;
+	margin: 6px 0px 6px 6px;
 	padding: 0px 5px;
 }
-#workspaces button{
+
+#workspaces button {
 	color: @foreground;
 }
-#workspaces button.active{
+
+#workspaces button.active {
 	color: @pink;
 }
-#workspaces button.urgent{
+
+#workspaces button.urgent {
 	color: @red;
 }
-#workspaces button.hidden{
+
+#workspaces button.hidden {
 	color: @yellow;
 }
 
 /** ********** Common style ********** **/
-#backlight, 
+#backlight,
 #battery,
 #clock,
 #cpu,
@@ -261,11 +284,11 @@ window#waybar.hidden {
 #network {
 	background-color: @background-alt1;
 	border-radius: 10px 0px 0px 10px;
-	margin: 6px 0px 6px 0px ;
+	margin: 6px 0px 6px 0px;
 	padding: 4px 6px;
 }
 
-#backlight.2, 
+#backlight.2,
 #battery.2,
 #clock.2,
 #cpu.2,
@@ -278,6 +301,6 @@ window#waybar.hidden {
 	font-size: 12px;
 	font-weight: bold;
 	border-radius: 0px 10px 10px 0px;
-	margin: 6px 6px 6px 0px ;
+	margin: 6px 6px 6px 0px;
 	padding: 5px 6px 4px 6px;
 }
