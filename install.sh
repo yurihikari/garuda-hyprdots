@@ -7,7 +7,7 @@ check_command() {
 
 # Function to install a package if it's not already installed
 install_package() {
-  if ! check_command "$1"; then
+  if check_command "$1"; then
     echo "Installing $1..."
     sudo pacman -S --noconfirm "$1"
   fi
