@@ -102,7 +102,8 @@ fi
 
 # Place the files from garuda-sway-config (where this script is located) inside the .config folder
 echo "Copying files from garuda-sway-config to ~/.config"
-cp -r $DIR/* ~/.config
+# copy but ignore the .git folder, LICENSE, .gitignore and README.md
+cp -r $DIR/* ~/.config --exclude .git --exclude LICENSE --exclude .gitignore --exclude README.md
 
 # Copy nwgbar icons into corresponding folder
 echo "Copying nwgbar icons into /usr/share/nwg-launchers/nwgbar/images"
@@ -112,12 +113,6 @@ if [ ! -d "/usr/share/nwg-launchers/nwgbar/images" ]; then
   sudo mkdir -p /usr/share/nwg-launchers/nwgbar/images
 fi
 sudo cp -r ~/.config/nwgbar-icons /usr/share/nwg-launchers/nwgbar/images
-
-# Delete Git-related folders and specific files
-echo "Deleting Git-related folders"
-rm -rf ~/.config/.git ~/.config/.github
-echo "Deleting not required files"
-rm -f ~/.config/LICENSE ~/.config/.gitignore ~/.config/README.md ~/.config/install.sh
 
 # Ask if the user wants to reboot the system now or not
 echo "Do you want to reboot the system now? (y/n)"
