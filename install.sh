@@ -7,7 +7,7 @@ check_command() {
 
 # Function to install a package if it's not already installed
 install_package() {
-  if check_command "$1"; then
+  if ! check_command "$1"; then
     echo "Installing $1..."
     sudo pacman -S --noconfirm "$1"
   fi
@@ -41,13 +41,15 @@ install_package "waybar-git"
 install_package "neofetch"
 install_package "cava"
 install_package "foot"
-install_package "hyprland-git"
+install_package "hyprland"
 install_package "mpd"
 install_package "mpc"
 install_package "sweet-cursor-theme-git"
 install_package "ttf-font-awesome"
 install_package "nerd-fonts"
 install_package "hyprpicker"
+install_package "pipewire"
+install_package "wireplumber"
 
 # Uninstall wlsunset if installed (Read mode which can't be disabled sometimes)
 sudo pacman -Rns wlsunset
