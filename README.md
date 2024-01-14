@@ -17,7 +17,7 @@ Both Sway and Hyprland are almost identical, except Hyprland having rounded app 
 
 ## Additional features
 - Waybar background toggling button (Meta+Shift+w also works)
-- Background switch using Meta+Shift+b. (Backgrounds must be in the ~/.config/sway/backgrounds folder
+- Background switch using Meta+Shift+b. (Backgrounds must be in the ~/.config/sway/backgrounds folder)
 - Hyprland Config
 - Easily add musics to mpd with the mpd_update function ( Assuming your musics are in ~/Music )
 
@@ -30,17 +30,21 @@ to avoid any potential graphical issues.
 - neofetch
 - cava
 - foot
-- hyprland-git
+- hyprland
 - mpd
 - mpc
 - sweet-cursor-theme-git
 - ttf-font-awesome
 - nerd-fonts
 - hyprpicker
+- pipewire
+- wireplumber
+- nwg-launchers
+- mako 
 
 Dependency List :
 ```bash
-paru -S swaylock-effects rofi-lbonn-wayland waybar-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome nerd-fonts hyprpicker
+paru -S swaylock-effects rofi-lbonn-wayland waybar-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
