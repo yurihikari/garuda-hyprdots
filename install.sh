@@ -1,4 +1,13 @@
 #!/bin/bash
+# Make an ascii art to welcome the user to the script
+echo "###############################################################################################################"
+echo "Welcome to the Garuda Sway Config installation script"
+echo "This script will install all the dependencies required and copy the files from garuda-sway-config to ~/.config"
+echo "Please make sure you have an active internet connection before running this script"
+echo "Press Ctrl+C to exit the script"
+echo "Press Enter to continue"
+echo "###############################################################################################################"
+read
 
 # Get this script directory 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
@@ -6,14 +15,21 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # Get distro name
 distro=$(cat /etc/os-release | grep -w "NAME" | cut -d "=" -f2 | tr -d '"')
 
-# If the distro is Garuda Linux, update the system using update command, else use pacman
-echo "Updating system"
-if [ "$distro" == "Garuda Linux" ]; then
-  echo "Detected Garuda Linux, updating system..."
-  update
+# Ask the user if they want to update the system
+echo "It is recommended to update your system first. Do you want to update the system? (y/n)"
+read answer
+if [ "$answer" != "${answer#[Yy]}" ] ;then
+  # If the distro is Garuda Linux, update the system using update command, else use pacman
+  echo "Updating system"
+  if [ "$distro" == "Garuda Linux" ]; then
+    echo "Detected Garuda Linux, updating system..."
+    update
+  else
+    echo "Not Garuda Linux, updating system using pacman..."
+    sudo pacman -Syu --noconfirm
+  fi
 else
-  echo "Not Garuda Linux, updating system using pacman..."
-  sudo pacman -Syu --noconfirm
+  echo "Skipping system update..."
 fi
 
 # Install paru
@@ -90,6 +106,11 @@ cp -r $DIR/* ~/.config
 
 # Copy nwgbar icons into corresponding folder
 echo "Copying nwgbar icons into /usr/share/nwg-launchers/nwgbar/images"
+# If the folder doesn't exist, create it
+if [ ! -d "/usr/share/nwg-launchers/nwgbar/images" ]; then
+  echo "Creating /usr/share/nwg-launchers/nwgbar/images directory"
+  sudo mkdir -p /usr/share/nwg-launchers/nwgbar/images
+fi
 sudo cp -r ~/.config/nwgbar-icons /usr/share/nwg-launchers/nwgbar/images
 
 # Delete Git-related folders and specific files
@@ -102,9 +123,9 @@ rm -f ~/.config/LICENSE ~/.config/.gitignore ~/.config/README.md ~/.config/insta
 echo "Do you want to reboot the system now? (y/n)"
 read answer
 if [ "$answer" != "${answer#[Yy]}" ] ;then
-  echo "Installation completed successfully. Rebooting in 2 seconds..."
+  echo "Installation completed successfully. Rebooting in 5 seconds..."
   # Wait for 2s before rebooting 
-  sleep 2
+  sleep 5
   sudo reboot now
 else
   echo "Installation completed successfully. Please reboot your system to apply the changes."
