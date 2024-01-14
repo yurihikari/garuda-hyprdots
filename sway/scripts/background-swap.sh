@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the directory where the backgrounds are stored
-BACKGROUND_DIR="$HOME/.config/sway/backgrounds"
+BACKGROUND_DIR="$HOME/.config/backgrounds"
 
 # Get the list of backgrounds
 BACKGROUND_LIST=("$BACKGROUND_DIR"/*)
@@ -20,7 +20,7 @@ echo $wallpaper
 # Print the wallpaper filename and extension
 echo "Current wallpaper : $wallpaper"
 # Get the path of the current background from the sway config file
-CURRENT_BACKGROUND=$HOME/.config/sway/backgrounds/$wallpaper
+CURRENT_BACKGROUND=$HOME/.config/backgrounds/$wallpaper
 echo "Current background: $CURRENT_BACKGROUND"
 
 # Find the index of the current background in the list
