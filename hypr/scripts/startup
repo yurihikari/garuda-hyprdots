@@ -24,7 +24,7 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 pipewire &
 # Set wallpaper
-swaybg --output '*' --mode fill --image /home/lightcrimson/.config/sway/backgrounds/march7.jpg &
+swaybg --output '*' --mode fill --image ~/.config/backgrounds/march7.jpg &
 
 # Apply themes
 # ~/.config/hypr/scripts/gtkthemes &
