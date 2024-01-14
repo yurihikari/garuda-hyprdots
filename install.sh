@@ -2,7 +2,7 @@
 
 # Function to check if a command is installed
 check_command() {
-  command -v "$1" >/dev/null 2>&1 || { echo >&2 "Error: $1 is required but not installed. Aborting."; exit 1; }
+  command -v "$1" >/dev/null 2>&1 || { echo >&2 "$1 is required but not installed."; }
 }
 
 # Function to install a package if it's not already installed
