@@ -90,11 +90,28 @@ important_dependencies=(
   hyprland-git 
 )
 
+# Highly probable that those packages are already installed, but just in case
+conflicting_packages=(
+  swaylock
+  rofi
+  waybar
+  hyprland
+)
+
 echo "Installing dependencies"
 # Loop through the array and install all the dependencies
 for i in "${dependencies[@]}"; do
   install $i
 done
+echo "Dependencies installed successfully"
+
+echo "Uninstalling conflicting packages"
+for i in "${conflicting_packages[@]}"; do
+  if pacman -Qi $i &> /dev/null; then
+    sudo pacman -R $i --noconfirm
+  fi
+done
+echo "Conflicting packages uninstalled successfully"
 
 echo "Installing important dependencies"
 echo "You may be asked to replace some packages. Press y to replace them"
@@ -102,18 +119,20 @@ echo "You may be asked to replace some packages. Press y to replace them"
 for i in "${important_dependencies[@]}"; do
   paru -S $i
 done
-echo "Dependencies installed successfully"
+echo "Important Dependencies installed successfully"
 
 # Uninstall wlsunset if installed (yes, i hate it)
 echo "Uninstalling wlsunset"
 if pacman -Qi wlsunset &> /dev/null; then
   sudo pacman -R wlsunset --noconfirm
 fi
+echo "wlsunset uninstalled successfully"
 
 # Place the files from garuda-sway-config (where this script is located) inside the .config folder
 echo "Copying files from garuda-sway-config to ~/.config"
 # copy but ignore the .git folder, LICENSE, .gitignore and README.md
 rsync -av $DIR/* ~/.config --exclude='.git' --exclude='LICENSE' --exclude='.gitignore' --exclude='README.md' 
+echo "Files copied successfully"
 
 # Copy nwgbar icons into corresponding folder
 echo "Copying nwgbar icons into /usr/share/nwg-launchers/nwgbar/images"
@@ -123,6 +142,7 @@ if [ ! -d "/usr/share/nwg-launchers/nwgbar/images" ]; then
   sudo mkdir -p /usr/share/nwg-launchers/nwgbar/images
 fi
 sudo cp -r ~/.config/nwgbar-icons /usr/share/nwg-launchers/nwgbar/images
+echo "nwgbar icons copied successfully"
 
 # Ask if the user wants to reboot the system now or not
 echo "Do you want to reboot the system now? (y/n)"
