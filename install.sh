@@ -71,7 +71,8 @@ fi
 dependencies=(
   swaylock-effects 
   rofi-lbonn-wayland 
-  waybar-git neofetch 
+  waybar-git 
+  neofetch 
   cava 
   foot 
   hyprland-git 
@@ -90,6 +91,7 @@ echo "Checking for conflicting packages"
 # Check for conflicts and remove them if found
 for package in "${dependencies[@]}"; do
     conflict_package=$(pacman -Qi "$package" 2>/dev/null | grep "Conflicts With" | awk '{print $4}')
+    echo "$conflict_package"
     echo "Checking for $package"
     if [ -n "$conflict_package" ]; then
         echo "Conflicting package found: Need to install $package but found $conflict_package already installed."
