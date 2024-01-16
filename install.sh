@@ -39,7 +39,7 @@ sudo pacman -S paru --noconfirm
 function install {
   if ! pacman -Qi $1 &> /dev/null; then
     echo "Installing $1..."
-    y | paru -S $1
+    paru -S $1
   else
     echo "$1 is already installed. Skipping..."
   fi
@@ -69,13 +69,9 @@ fi
 # Install dependencies using the install function
 # Make an array of all the dependencies (swaylock-effects rofi-lbonn-wayland waybar-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber fish)
 dependencies=(
-  swaylock-effects 
-  rofi-lbonn-wayland 
-  waybar-git 
   neofetch 
   cava 
   foot 
-  hyprland-git 
   mpd 
   mpc 
   sweet-cursor-theme-git 
@@ -87,13 +83,21 @@ dependencies=(
   fish
 )
 
+important_dependencies=(
+  swaylock-effects 
+  rofi-lbonn-wayland 
+  waybar-git 
+  hyprland-git 
+)
+
 echo "Checking for conflicting packages (may not always work)"
 # Check for conflicts and remove them if found
 for package in "${dependencies[@]}"; do
     conflict_package=$(pacman -Qi "$package" 2>/dev/null | grep "Conflicts With" | awk '{print $4}')
     echo "$conflict_package"
     echo "Checking for $package"
-    if [ -n "$conflict_package" ]; then
+    # If the conflict package isn't empty string, or different to "None", then remove it
+    if [ -n "$conflict_package" ] && [ "$conflict_package" != "None" ]; then
         echo "Conflicting package found: Need to install $package but found $conflict_package already installed."
         # Ask the user if they want to remove the conflicting package
         echo "Do you want to remove $conflict_package?(y/n)"
@@ -108,6 +112,12 @@ for i in "${dependencies[@]}"; do
   install $i
 done
 
+echo "Installing important dependencies"
+echo "You may be asked to replace some packages. Press y to replace them"
+# Loop through the array and install all the dependencies
+for i in "${important_dependencies[@]}"; do
+  install $i
+done
 echo "Dependencies installed successfully"
 
 # Uninstall wlsunset if installed (yes, i hate it)
