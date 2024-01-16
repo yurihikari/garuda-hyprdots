@@ -39,7 +39,7 @@ sudo pacman -S paru --noconfirm
 function install {
   if ! pacman -Qi $1 &> /dev/null; then
     echo "Installing $1..."
-    paru -S $1
+    paru -S $1 --noconfirm
   else
     echo "$1 is already installed. Skipping..."
   fi
@@ -90,22 +90,6 @@ important_dependencies=(
   hyprland-git 
 )
 
-echo "Checking for conflicting packages (may not always work)"
-# Check for conflicts and remove them if found
-for package in "${dependencies[@]}"; do
-    conflict_package=$(pacman -Qi "$package" 2>/dev/null | grep "Conflicts With" | awk '{print $4}')
-    echo "$conflict_package"
-    echo "Checking for $package"
-    # If the conflict package isn't empty string, or different to "None", then remove it
-    if [ -n "$conflict_package" ] && [ "$conflict_package" != "None" ]; then
-        echo "Conflicting package found: Need to install $package but found $conflict_package already installed."
-        # Ask the user if they want to remove the conflicting package
-        echo "Do you want to remove $conflict_package?(y/n)"
-        # Remove conflicting package
-        sudo pacman -Rns "$conflict_package"
-    fi
-done
-
 echo "Installing dependencies"
 # Loop through the array and install all the dependencies
 for i in "${dependencies[@]}"; do
@@ -116,7 +100,7 @@ echo "Installing important dependencies"
 echo "You may be asked to replace some packages. Press y to replace them"
 # Loop through the array and install all the dependencies
 for i in "${important_dependencies[@]}"; do
-  install $i
+  paru -S $i
 done
 echo "Dependencies installed successfully"
 
