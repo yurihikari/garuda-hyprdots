@@ -39,7 +39,7 @@ sudo pacman -S paru --noconfirm
 function install {
   if ! pacman -Qi $1 &> /dev/null; then
     echo "Installing $1..."
-    paru -S $1 --noconfirm --skipreview
+    y | paru -S $1
   else
     echo "$1 is already installed. Skipping..."
   fi
@@ -87,7 +87,7 @@ dependencies=(
   fish
 )
 
-echo "Checking for conflicting packages"
+echo "Checking for conflicting packages (may not always work)"
 # Check for conflicts and remove them if found
 for package in "${dependencies[@]}"; do
     conflict_package=$(pacman -Qi "$package" 2>/dev/null | grep "Conflicts With" | awk '{print $4}')
