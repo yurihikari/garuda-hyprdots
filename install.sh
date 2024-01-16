@@ -68,7 +68,6 @@ fi
 
 # Install dependencies using the install function
 # Make an array of all the dependencies (swaylock-effects rofi-lbonn-wayland waybar-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber fish)
-echo "Installing dependencies"
 dependencies=(
   swaylock-effects 
   rofi-lbonn-wayland 
@@ -87,6 +86,21 @@ dependencies=(
   fish
 )
 
+echo "Checking for conflicting packages"
+# Check for conflicts and remove them if found
+for package in "${dependencies[@]}"; do
+    conflict_package=$(pacman -Qi "$package" 2>/dev/null | grep "Conflicts With" | awk '{print $4}')
+    
+    if [ -n "$conflict_package" ]; then
+        echo "Conflicting package found: Need to install $package but found $conflict_package already installed."
+        # Ask the user if they want to remove the conflicting package
+        echo "Do you want to remove $conflict_package?(y/n)"
+        # Remove conflicting package
+        sudo pacman -Rns "$conflict_package"
+    fi
+done
+
+echo "Installing dependencies"
 # Loop through the array and install all the dependencies
 for i in "${dependencies[@]}"; do
   install $i
