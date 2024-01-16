@@ -103,7 +103,7 @@ fi
 # Place the files from garuda-sway-config (where this script is located) inside the .config folder
 echo "Copying files from garuda-sway-config to ~/.config"
 # copy but ignore the .git folder, LICENSE, .gitignore and README.md
-cp -r $DIR/* ~/.config --exclude .git --exclude LICENSE --exclude .gitignore --exclude README.md
+rsync -av $DIR/* ~/.config --exclude='.git' --exclude='LICENSE' --exclude='.gitignore' --exclude='README.md' 
 
 # Copy nwgbar icons into corresponding folder
 echo "Copying nwgbar icons into /usr/share/nwg-launchers/nwgbar/images"
