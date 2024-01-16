@@ -108,6 +108,7 @@ echo "Dependencies installed successfully"
 echo "Uninstalling conflicting packages"
 for i in "${conflicting_packages[@]}"; do
   if ! pacman -Qi $i &> /dev/null; then
+    echo "Removing $i..."
     sudo pacman -Rdd $i --noconfirm
   fi
 done
