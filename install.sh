@@ -107,9 +107,14 @@ echo "Dependencies installed successfully"
 
 echo "Uninstalling conflicting packages"
 for i in "${conflicting_packages[@]}"; do
-  if ! pacman -Qi $i &> /dev/null; then
+  # ask user if they want to uninstall the conflicting packages
+  echo "Do you want to uninstall $i? (y/n)"
+  read answer
+  if [ "$answer" != "${answer#[Yy]}" ] ;then
     echo "Removing $i..."
     sudo pacman -Rdd $i --noconfirm
+  else
+    echo "Skipping $i..."
   fi
 done
 echo "Conflicting packages uninstalled successfully"
