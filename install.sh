@@ -39,7 +39,7 @@ sudo pacman -S paru --noconfirm
 function install {
   if ! pacman -Qi $1 &> /dev/null; then
     echo "Installing $1..."
-    paru -S $1 --noconfirm
+    paru -S $1 --noconfirm --skipreview
   else
     echo "$1 is already installed. Skipping..."
   fi
