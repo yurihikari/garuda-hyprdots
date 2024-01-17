@@ -3,7 +3,7 @@ indicator
 # daemonize
 indicator-caps-lock
 # datestr=%A
-image=$HOME/.config/sway/backgrounds/aesthetic.jpg
+image=$HOME/.config/backgrounds/march7.jpg
 scaling=fill
 # color=00000000
 screenshots

@@ -1,83 +1,69 @@
-# Garuda Sway-WM CheatSheet LightCrimson #
+# Sway Keybinds
 
-   = Super Key
+## Terminal
+- **SUPER + Return:** Launch terminal
+- **SUPER + Shift + Return:** Launch a floating terminal
+- **SUPER + Alt + Return:** Launch terminal with custom size
+- **SUPER + T:** Launch terminal in full screen
 
-# common operations
-           Return      *term* (`alacritty`)
-           q           *quit* (kill focused window)
-           p           *show activities*
-           d           *show app menu (i3 like)* (`rofi`)
-    Shift  d           *show app menu (mac like)* (`...`)
-    Shift  e           *show power menu* (lock/suspend/logout/reboot/shutdown)
-    Shift  c           *reload config files* (`sway reload`)
-           f1          *lock screen* (`swaylock`)
+## Apps
+- **SUPER + N:** Open file manager
+- **SUPER + O:** Open web browser (Google Chrome)
 
-# screenshot
-            PrintSrc    *full screenshot*
-     Shift  PrintSrc    *screenshot options*
+## Rofi
+- **SUPER + D:** Launch Rofi launcher
+- **SUPER + Shift + D:** Launch Rofi (mac-like) app menu
+- **SUPER + E:** Show power menu (lock/suspend/logout/reboot/shutdown)
+- **SUPER + Shift + C:** Reload config files
+- **SUPER + F1:** Lock screen
 
-# application shortcuts
-           n           *file manager* (`thunar`)
-           o           *browser* (`I use google chrome, pick your own`)
+## Screenshot
+- **SUPER + Print:** Full screenshot
+- **Shift + Print:** Screenshot options
 
-# container layout
-           b           *split horizontally* (on next open)
-           v           *split vertically*   (on next open)
-           s           *layout stacked*
-           w           *layout tabbed*
-           e           *toggle split* (?)
-           f           *toggle fullscreen*
-   Shift   Space       *toggle tiling/floating mode*
-           Space       *toggle tiling/floating focus* (`focus mode_toggle`?)
-           a           *focus parent container*
+## Container Layout
+- **SUPER + B:** Split horizontally (on next open)
+- **SUPER + V:** Split vertically (on next open)
+- **SUPER + S:** Layout stacked
+- **SUPER + W:** Layout tabbed
+- **SUPER + E:** Toggle split (?)
+- **SUPER + F:** Toggle fullscreen
+- **SUPER + Shift + Space:** Toggle tiling/floating mode
+- **SUPER + Space:** Toggle tiling/floating focus (focus mode_toggle?)
+- **SUPER + A:** Focus parent container
 
-     left mouse button *move floating window*
-    right mouse button *resize floating window*
+## Window Focus and Location
+- **SUPER + H / Left:** Focus left
+- **SUPER + J / Down:** Focus down
+- **SUPER + K / Up:** Focus up
+- **SUPER + L / Right:** Focus right
+- **SUPER + Shift + H / Left:** Move left
+- **SUPER + Shift + J / Down:** Move down
+- **SUPER + Shift + K / Up:** Move up
+- **SUPER + Shift + L / Right:** Move right
 
-# window focus and location
-           h / Left    *focus left*
-           j / Down    *focus down*
-           k / Up      *focus up*
-           l / Right   *focus right*
-    Shift  h / Left    *move left*
-    Shift  j / Down    *move down*
-    Shift  k / Up      *move up*
-    Shift  l / Right   *move right*
+## Window Size
+- **SUPER + R:** Toggle resize mode
+- **H / Left, J / Down, K / Up, L / Right:** Resize window
+- **Return / Escape:** Return to default mode
 
-# window size
-           r           *toggle resize mode*
-            h / Left
-            j / Down
-            k / Up
-            l / Right
-       Return / Escape  *return to default mode*
+## Scratchpad
+- **SUPER + Equal:** Cycle scratchpad
+- **SUPER + Shift + Equal:** Move scratchpad
 
-# scratchpad
-           Equal       *cycle scratchpad*
-    Shift  Equal       *move scratchpad*
+## Workspaces
+- **SUPER + 1 .. 0:** Switch to workspace 1 .. 10
+- **SUPER + Shift + 1 .. 0:** Move container to workspace 1 .. 10
 
-# workspaces
-           1 .. 0      *switch to workspace 1 .. 10*
-    Shift  1 .. 0      *move container to workspace 1 .. 10*
+## Multimedia Keys
+- *May not work for every keyboard*
+- *May need to hold down the function (fn) key*
 
-# multimedia keys
-  - may not work for every keyboard
-  - may need to hold down the function (`fn`) key
+## Custom Keybindings
+- **SUPER + Shift + B:** Switch between wallpapers
+- **SUPER + Shift + W:** Switch between waybar background/less
 
-# custom keybindings
-    Shift  b           *switch between wallpapers*
-    Shift  w           *switch between waybar background/less*
-
-# notes
-  - *Sway* is documented through man pages unlike i3.
-    To get a overview of what to expect you can read `man 5 sway`.
-    The pages are then spilt into topics - some the important ones 
-    are listed at the bottom of the document. 
-  - *Waybar* is also documented through man pages - `man 5 waybar`. 
-
-  - User configuration files are in `~/.config/`.
-  - Sway configuration files are in `~/.config/sway/config.d/`.
-    `~/.config/sway/config` only includes the files in `config.d`.
-    The file structure is spilt for easier use, where filenames refer 
-    to the part they play - for example `output` for output devices.
-  - Similarly, Waybar configuration is in `~/.config/waybar`.
+## Notes
+- *Sway* is documented through man pages unlike i3...
+- *Waybar* is also documented through man pages - `man 5 waybar`...
+- User configuration files are in `~/.config/`...
