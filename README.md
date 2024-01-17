@@ -26,7 +26,7 @@ I use some apps not pre-included in the default Garuda Linux desktop. Please ins
 to avoid any potential graphical issues.
 - swaylock-effects (https://github.com/mortie/swaylock-effects)
 - rofi-lbonn-wayland (https://github.com/lbonn/rofi) *using wofi by default on sway*
-- waybar-git 
+- waybar
 - neofetch
 - cava
 - foot

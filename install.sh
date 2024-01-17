@@ -88,15 +88,14 @@ dependencies=(
 important_dependencies=(
   swaylock-effects 
   rofi-lbonn-wayland 
-  waybar-git 
   hyprland-git 
+  waybar
 )
 
 # Highly probable that those packages are already installed, but just in case
 conflicting_packages=(
   swaylock
   rofi
-  waybar
   hyprland
 )
 
