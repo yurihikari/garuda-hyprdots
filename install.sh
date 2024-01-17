@@ -32,8 +32,10 @@ else
   echo "Skipping system update..."
 fi
 
+echo "Installing paru"
 # Install paru
 sudo pacman -S paru --noconfirm
+echo "paru installed successfully"
 
 # Function to check if a package is installed, if not, install it using paru
 function install {
