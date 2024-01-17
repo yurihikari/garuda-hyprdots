@@ -44,7 +44,7 @@ to avoid any potential graphical issues.
 
 Dependency List :
 ```bash
-paru -S swaylock-effects rofi-lbonn-wayland waybar-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako
+paru -S swaylock-effects rofi-lbonn-wayland waybar neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
@@ -53,7 +53,9 @@ I used yay to install those packages, but some will need to be installed with Pa
 **I didn't include personal apps like Youtube Music, Discord, VSCode and themes used in google-chrome etc.**
 
 ## Installation
-There is no installation script yet. However, you can clone this repository and copy paste its content in your .config/ folder :
+### Copy Pasting
+You'll need to install the dependencies yourself.
+After you installed the dependencies (some may be missing depending of your distro), just clone the repository and copy/paste the files in the .config directory :
 
 *Example* :
 ```bash
@@ -64,6 +66,23 @@ cp -r garuda-sway-config/* ~/.config
 Or simply pick what you need from the files, and use it in your own.
 
 For the nwgbar icons, you can use the included script to install them (install.sh inside the nwgbar-icons folder)
+
+Reboot and enjoy.
+
+### Install Script (Still under testing...)
+**Disclaimer** : This was only tested on fresh Garuda Linux Sway installs. I am not responsible for any damage the script may cause, even though it's unlikely.
+Run the **install.sh** script located at the root of the repository directory to install the dotfiles and its dependencies.
+
+```bash
+git clone https://github.com/yurihikari/garuda-sway-config.git
+cd ./garuda-sway-config
+# Currently only in the develop branch
+git checkout develop
+./install.sh
+# You'll some interactions sometime, it's not fully automatized
+```
+
+Reboot and enjoy.
 
 ## Keybinds
 
