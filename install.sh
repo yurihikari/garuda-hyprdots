@@ -76,7 +76,7 @@ dependencies=(
   foot 
   mpd 
   mpc 
-  sweet-cursor-theme-git 
+  catppuccin-cursors-macchiato
   ttf-font-awesome 
   nerd-fonts 
   hyprpicker 
