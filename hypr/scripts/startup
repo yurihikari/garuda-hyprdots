@@ -27,7 +27,7 @@ pipewire &
 swaybg --output '*' --mode fill --image ~/.config/backgrounds/march7.jpg &
 
 # Apply themes
-# ~/.config/hypr/scripts/gtkthemes &
+~/.config/hypr/scripts/gtkthemes &
 
 # Lauch notification daemon (mako)
 ~/.config/hypr/scripts/notifications &
