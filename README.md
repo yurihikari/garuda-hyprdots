@@ -14,6 +14,10 @@ Here is the wiki link for those dotfiles if you want a better understanding of h
 
 Wiki : [Wiki Link](https://wiki.lightcrimson.com/en/garuda-sway-config)
 
+The Wiki is down?
+
+You can also use the github wiki : [Github Wiki Link](https://github.com/yurihikari/garuda-sway-config/wiki)
+
 ## About ❓
 A simple aesthetic (at least for me) sway ricing on Garuda Linux. It also includes a Hyprland config but you'll have to install Hyprland yourself to use it.
 I edited ArchCraft dotfiles for Hyprland for my base rice. I changed most of the colors and the waybar is the same as in my Sway ricing.
