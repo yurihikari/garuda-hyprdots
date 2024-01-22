@@ -14,7 +14,7 @@ Here is the wiki link for those dotfiles if you want a better understanding of h
 
 Wiki : [Wiki Link](https://wiki.lightcrimson.com/en/garuda-sway-config)
 
-The Wiki is down?
+The Wiki is down? Check [Upptime Link](https://uptime.lightcrimson.com/)
 
 You can also use the github wiki : [Github Wiki Link](https://github.com/yurihikari/garuda-sway-config/wiki)
 
