@@ -61,9 +61,9 @@ client.background        $base
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-   swaybar_command waybar
-}
+# bar {
+#    swaybar_command waybar
+# }
 
 # Set the background image
 # output * bg ~/Pictures/the_valley.webp fill

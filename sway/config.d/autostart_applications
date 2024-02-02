@@ -25,7 +25,7 @@ exec tail -f $SWAYSOCK.wob | wob
 exec autotiling
 
 # Wlsunset
-exec ~/.config/sway/scripts/light.sh
+# exec ~/.config/sway/scripts/light.sh
 
 # nm-applet
 exec nm-applet --indicator
@@ -63,3 +63,6 @@ exec_always nwg-drawer -r
 
 # swayrd
 exec_always swayrd
+
+# waybar
+exec_always ~/.config/sway/scripts/statusbar
