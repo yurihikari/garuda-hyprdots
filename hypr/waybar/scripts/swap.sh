@@ -4,7 +4,7 @@
 config_file="${HOME}/.config/hypr/waybar/config"
 config_background_file="${HOME}/.config/hypr/waybar/config-background"
 style_file="${HOME}/.config/hypr/waybar/style.css"
-style_background_file="${HOME}/.config/hypr/waybar/style-background.css"
+style_background_file="${HOME}/.config/hypr/waybar/config-background.css"
 
 # Swap names of config files
 mv "${config_file}" "${config_file}.temp"

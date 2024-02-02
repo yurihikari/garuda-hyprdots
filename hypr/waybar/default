@@ -118,7 +118,7 @@
     "on-click": "~/.config/hypr/waybar/scripts/swap.sh",
     "tooltip": true,
     "tooltip-format": "Swap between waybar configs",
-    "format": "Bg  "
+    "format": "Bg  "
   },
   "custom/mpd": {
     "format": " {title} - {artist}",
@@ -128,7 +128,7 @@
   "custom/cava-internal": {
     "exec": "sh ~/.config/waybar/scripts/Cava.sh",
     "format": "{}",
-    //"on-click": "sh ~/.config/hypr/scripts/statusbar &",
+    "on-click": "sh ~/.config/hypr/scripts/statusbar &",
     "tooltip": false,
     "layer": "below",
     "output": "all"
@@ -298,7 +298,7 @@
     "format": "  {}"
   },
   "custom/launcher": {
-    "format": " ",
+    "format": "",
     //"format": "  ",
     "on-click": "~/.config/hypr/scripts/rofi_launcher",
     "tooltip": false

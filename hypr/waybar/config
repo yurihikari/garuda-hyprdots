@@ -56,20 +56,22 @@
     "active-only": false,
     "format-icons": {
       "1": "",
-      "2": "",
+      "2": "󰈹",
       "3": "",
       "4": "",
       "5": "",
       "6": "",
       "7": "",
-      "8": "",
-      "9": "",
+      "8": "",
+      "9": "",
       "10": "",
       "urgent": "",
       "focused": "",
       "default": ""
     },
-    "on-click": "activate"
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1"
   },
   "mpd": {
     "tooltip": true,
@@ -124,9 +126,9 @@
     "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
   },
   "custom/cava-internal": {
-    "exec": "sh ~/.config/waybar/scripts/Cava.sh",
+    "exec": "sh ~/.config/hypr/waybar/scripts/Cava.sh",
     "format": "{}",
-    "on-click": "sh ~/.config/hypr/scripts/statusbar &",
+    //"on-click": "sh ~/.config/hypr/scripts/statusbar &",
     "tooltip": false,
     "layer": "below",
     "output": "all"
@@ -210,7 +212,7 @@
     "on-click": "alacritty -e htop"
   },
   "memory": {
-    "format": " {: >3}%",
+    "format": "󰍛 {: >3}%",
     "on-click": "alacritty -e htop"
   },
   "temperature": {
@@ -278,7 +280,7 @@
     "signal": 8
   },
   "custom/power": {
-    "format": "⏻",
+    "format": "󰐥",
     "on-click": "~/.config/hypr/scripts/rofi_powermenu",
     "tooltip": false
   },
@@ -286,7 +288,7 @@
     "exec": "~/.config/hypr/waybar/scripts/getInputLayout.sh",
     // Interval set only as a fallback, as the value is updated by signal
     "interval": 1,
-    "format": "  {}", // Icon: keyboard
+    "format": "󰌌  {}", // Icon: keyboard
     // Signal sent by Sway key binding (~/.config/sway/key-bindings)
     "signal": 1, // SIGHUP
     "tooltip": false,
