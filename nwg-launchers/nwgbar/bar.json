@@ -11,7 +11,7 @@
   },
   {
     "name": "Logout",
-    "exec": "loginctl terminate-session self",
+    "exec": "swaymsg exit",
     "icon": "/usr/share/nwg-launchers/nwgbar/images/logout.svg"
   },
   {
