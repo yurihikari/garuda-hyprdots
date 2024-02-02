@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+##
+## launch waybar with alt config
+## Edited by yurihikari for Garuda Linux Sway
+
+CONFIG="$HOME/.config/sway/waybar/config"
+STYLE="$HOME/.config/sway/waybar/style.css"
+
+if [[ ! `pidof waybar` ]]; then
+	waybar --bar main-bar --log-level error --config ${CONFIG} --style ${STYLE}
+fi
