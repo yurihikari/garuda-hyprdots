@@ -6,13 +6,17 @@
   <a href="https://github.com/yurihikari/garuda-sway-config/stargazers"><img src="https://img.shields.io/github/stars/yurihikari/garuda-sway-config?color=f5bde6&style=for-the-badge&logo=starship"></a>
   <a href="https://github.com/yurihikari/garuda-sway-config/issues"><img src="https://img.shields.io/github/issues/yurihikari/garuda-sway-config?color=ed8796&style=for-the-badge&logo=codecov"></a>
   <a href="https://github.com/yurihikari/garuda-sway-config/network/members"><img src="https://img.shields.io/github/forks/yurihikari/garuda-sway-config?color=8aadf4&style=for-the-badge&logo=jfrog-bintray"></a>
-  <a href="https://github.com/yurihikari/garuda-sway-config/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-PUBLIC-orange.svg?color=a6da95&style=for-the-badge&logo=mitsubishi"></a>
+  <a href="https://github.com/yurihikari/garuda-sway-config/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-orange.svg?color=a6da95&style=for-the-badge&logo=mitsubishi"></a>
 </p>
 
 ## Wiki 📖
 Here is the wiki link for those dotfiles if you want a better understanding of how it works and how to use it. (Also better table of contents). Let me know if the wiki is down since i'm self-hosting it.
 
 Wiki : [Wiki Link](https://wiki.lightcrimson.com/en/garuda-sway-config)
+
+The Wiki is down? Check [Upptime Link](https://uptime.lightcrimson.com/)
+
+You can also use the github wiki : [Github Wiki Link](https://github.com/yurihikari/garuda-sway-config/wiki)
 
 ## About ❓
 A simple aesthetic (at least for me) sway ricing on Garuda Linux. It also includes a Hyprland config but you'll have to install Hyprland yourself to use it.
