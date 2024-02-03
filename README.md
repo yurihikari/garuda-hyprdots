@@ -51,7 +51,8 @@ to avoid any potential graphical issues.
 - pipewire (who still uses pulseaudio on a wayland setup ?)
 - wireplumber
 - nwg-launchers
-- mako 
+- mako
+- pavucontrol
 
 Dependency List :
 ```bash
