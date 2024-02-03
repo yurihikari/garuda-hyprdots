@@ -83,6 +83,7 @@ dependencies=(
   pipewire 
   wireplumber 
   fish
+  pavucontrol
 )
 
 important_dependencies=(
