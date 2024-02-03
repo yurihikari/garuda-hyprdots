@@ -55,7 +55,7 @@ to avoid any potential graphical issues.
 
 Dependency List :
 ```bash
-paru -S swaylock-effects rofi-lbonn-wayland waybar neofetch cava foot hyprland-git mpd mpc catppuccin-cursors-macchiato ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako
+paru -S swaylock-effects rofi-lbonn-wayland waybar neofetch cava foot hyprland-git mpd mpc catppuccin-cursors-macchiato ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako pavucontrol
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
