@@ -89,7 +89,7 @@ Run the **install.sh** script located at the root of the repository directory to
 git clone https://github.com/yurihikari/garuda-sway-config.git
 cd ./garuda-sway-config
 ./install.sh
-# You'll some interactions sometime, it's not fully automatized
+# You'll have some interactions sometime, it's not fully automatized
 ```
 
 Reboot and enjoy.
