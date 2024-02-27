@@ -84,6 +84,7 @@ dependencies=(
   wireplumber 
   fish
   pavucontrol
+  most
 )
 
 important_dependencies=(
