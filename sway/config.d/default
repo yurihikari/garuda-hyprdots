@@ -36,6 +36,13 @@ exec swayidle -w\
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
+
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set org.gnome.desktop.interface text-scaling-factor 1.33
+    gsettings set org.gnome.desktop.interface cursor-size 32
+}
+
 ## Lock Screen
  bindsym $mod+f1 exec ~/.config/sway/scripts/lockman.sh
 
@@ -73,7 +80,8 @@ bindsym $mod+Shift+w exec ~/.config/waybar/scripts/swap.sh
     bindsym $mod+Shift+d exec $launcher
 
     # Activities
-    bindsym $mod+p exec swayr switch-window
+    # bindsym $mod+p exec swayr switch-window
+    bindsym $mod+p exec hyprpicker
 
     # Activities and workspaces
     bindsym $mod+Shift+p exec swayr switch-workspace-or-window
@@ -107,6 +115,9 @@ bindsym $mod+Shift+w exec ~/.config/waybar/scripts/swap.sh
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
+
+    bindgesture swipe:right workspace prev
+    bindgesture swipe:left workspace next
 
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left

@@ -91,11 +91,13 @@ important_dependencies=(
   rofi-lbonn-wayland 
   hyprland-git 
   waybar
+  swayfx
 )
 
 # Highly probable that those packages are already installed, but just in case
 conflicting_packages=(
   swaylock
+  sway
   rofi
   hyprland
 )

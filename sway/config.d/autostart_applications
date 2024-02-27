@@ -66,3 +66,6 @@ exec_always swayrd
 
 # waybar
 exec_always ~/.config/sway/scripts/statusbar
+
+# import g-settings
+exec_always ~/.config/sway/scripts/gtkthemes

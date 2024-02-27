@@ -8,6 +8,7 @@ input type:touchpad {
       dwt enabled
       tap enabled
       natural_scroll enabled
+      pointer_accel 0.35
 }
 
 # Read `man 5 sway-input` for more information about this section.
