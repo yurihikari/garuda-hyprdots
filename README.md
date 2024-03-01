@@ -115,10 +115,11 @@ Swap between each version of the waybar using the paintbrush icon on the bar.
 Shortcut is unavailable in Hyprland for now.
 
 ### Backgroundless Waybar ⬜
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/c996f39f-6508-4f23-b707-f7a8778f5ff4)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/7d4dea9a-6eaa-425f-a97b-2eb9bd91496b)
 
 ### Background Waybar ⬛
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/32f7b93b-b3c1-46f9-840b-407ce1a2da6d)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/83240e8c-25ba-4c87-86d9-b24944eafba6)
+
 
 ## nwgbar
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bf02deae-1b64-4ace-b151-df30459ec464)
