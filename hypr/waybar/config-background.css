@@ -56,7 +56,7 @@
 }
 
 window#waybar {
-    border-bottom: 4px solid shade(@base, 1.1);
+    border-bottom: 4px solid shade(@mauve, 1.0);
     /* border-radius: 10px; */
     /* background:#2d2a2e; */
     /* background-color: rgba(36, 39, 58, 0.85); */
@@ -79,8 +79,10 @@ window#waybar {
 #workspaces button:hover {
     color: @mauve;
     /* border-radius: 20px; */
-    box-shadow: none; /* Remove predefined box-shadow */
-    text-shadow: none; /* Remove predefined text-shadow */
+    box-shadow: none;
+    /* Remove predefined box-shadow */
+    text-shadow: none;
+    /* Remove predefined text-shadow */
     border: 0px;
     background: none;
 }
@@ -143,6 +145,7 @@ window#waybar {
 #custom-cava-internal {
     border-radius: 10px;
     color: @mauve;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #mpd {
@@ -196,6 +199,7 @@ window#waybar {
     color: @sky;
     border-radius: 10px;
     margin: 8px 10px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #backlight {
@@ -305,6 +309,7 @@ window#waybar {
     color: @mauve;
     border-radius: 0px 15px 0px 0px;
     padding: 5px 10px 5px 10px;
+    border-bottom: 4px solid shade(@mauve, 1.0);
 }
 
 #custom-power {
