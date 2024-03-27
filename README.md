@@ -1,4 +1,4 @@
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/92bfc092-ce88-47d7-a9bd-b3b0d6a396ff)
+![Screenshot_2024-03-27-00-00-15_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/60c7ec51-b9fe-412a-bbce-ccd43225915b)
 
 <h1 align="center"> Yurihikari's Garuda Linux Sway Dotfiles </h1>
 
@@ -151,10 +151,10 @@ keep track of the previous work versions.
 I am not affiliated in any way to the official Garuda Linux Sway Team. This is a personal ricing using Garuda Linux Sway as the main distro.
 
 ## Overview 🖼️
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/04e410bd-520c-4371-a166-b370d54e319d)
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/f2e26753-fe60-4395-bad0-b321a3a08481)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/46e58986-51dd-477e-8289-bc4a4c429926)
+![Screenshot_2024-03-27-00-04-26_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/b950a49a-d7b1-4e8d-a40a-9a50d5968439)
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/0f8c82d2-2959-4538-b16c-8cac1d8aee59)
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/38fa971c-cc00-4e0a-a645-1b39ba7f9615)
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/c6451032-4053-4ae9-a47f-f47c1df09a4b)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/99ae3f0a-6976-4a17-b8eb-caabea3ba3de)
 
 Both Sway and Hyprland are almost identical, except Hyprland having rounded app borders and smooth animations.
