@@ -26,6 +26,8 @@ set $rofi_powermenu ~/.config/hypr/scripts/rofi_powermenu
 
 set $cheat $term-float -t cheatsheet -e micro ~/.config/sway/cheatsheet.md
 
+set $colorpicker ~/.config/hypr/scripts/colorpicker
+
 ### Idle configuration
 exec swayidle -w\
     timeout 1070 'swaylock -f -C ~/.config/swaylock/config'\
@@ -81,7 +83,7 @@ bindsym $mod+Shift+w exec ~/.config/waybar/scripts/swap.sh
 
     # Activities
     # bindsym $mod+p exec swayr switch-window
-    bindsym $mod+p exec hyprpicker
+    bindsym $mod+p exec $colorpicker
 
     # Activities and workspaces
     bindsym $mod+Shift+p exec swayr switch-workspace-or-window
