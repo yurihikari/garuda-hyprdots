@@ -152,7 +152,7 @@ if [ ! -d "/usr/share/nwg-launchers/nwgbar/images" ]; then
   echo "Creating /usr/share/nwg-launchers/nwgbar/images directory"
   sudo mkdir -p /usr/share/nwg-launchers/nwgbar/images
 fi
-sudo cp -r ~/.config/nwgbar-icons /usr/share/nwg-launchers/nwgbar/images
+sudo cp -r ~/.config/nwgbar-icons/* /usr/share/nwg-launchers/nwgbar/images
 echo "nwgbar icons copied successfully"
 
 # Ask if the user wants to reboot the system now or not
