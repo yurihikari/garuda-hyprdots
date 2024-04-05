@@ -93,6 +93,7 @@ important_dependencies=(
   hyprland-git 
   waybar
   swayfx
+  hyprlock-git
 )
 
 # Highly probable that those packages are already installed, but just in case

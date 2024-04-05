@@ -36,6 +36,7 @@ I Love Catpuccin colors.
 I use some apps not pre-included in the default Garuda Linux desktop. Please install them before using my dotfiles
 to avoid any potential graphical issues.
 - swaylock-effects (https://github.com/mortie/swaylock-effects)
+- hyprlock-git
 - rofi-lbonn-wayland (https://github.com/lbonn/rofi) *using wofi by default on sway*
 - waybar
 - neofetch
@@ -58,13 +59,13 @@ to avoid any potential graphical issues.
 
 Dependency List :
 ```bash
-paru -S swaylock-effects rofi-lbonn-wayland waybar neofetch cava foot hyprland-git mpd mpc catppuccin-cursors-macchiato ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx
+paru -S swaylock-effects hyprlock-git rofi-lbonn-wayland waybar neofetch cava foot hyprland-git mpd mpc catppuccin-cursors-macchiato ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
 **rofi-lbonn-wayland** is not mandatory, but it's a wayland compatible version of rofi. You can use wofi instead.
 
-**I didn't include personal apps like Youtube Music, Discord, VSCode and themes used in google-chrome etc. I can start adding them if more people ask me to.**
+**I didn't include personal apps like Youtube Music, Discord, VSCode and themes used in Brave etc. I can start adding them if more people ask me to.**
 
 ## Installation 🔧
 ### Ctrl+C Ctrl+V 😏
