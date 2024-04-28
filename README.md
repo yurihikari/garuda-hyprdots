@@ -116,7 +116,7 @@ Swap between each version of the waybar using the paintbrush icon on the bar.
 Shortcut is unavailable in Hyprland for now.
 
 ### Backgroundless Waybar ⬜
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/7d4dea9a-6eaa-425f-a97b-2eb9bd91496b)
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/fbcf82e5-f917-4f17-8359-9a8c1302a8a9)
 
 ### Background Waybar ⬛
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/83240e8c-25ba-4c87-86d9-b24944eafba6)
@@ -152,10 +152,13 @@ keep track of the previous work versions.
 I am not affiliated in any way to the official Garuda Linux Sway Team. This is a personal ricing using Garuda Linux Sway as the main distro.
 
 ## Overview 🖼️
+![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/a5153162-3cb7-4dfd-9975-466c5d2753b5)
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/46e58986-51dd-477e-8289-bc4a4c429926)
 ![Screenshot_2024-03-27-00-04-26_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/b950a49a-d7b1-4e8d-a40a-9a50d5968439)
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/0f8c82d2-2959-4538-b16c-8cac1d8aee59)
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/38fa971c-cc00-4e0a-a645-1b39ba7f9615)
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/99ae3f0a-6976-4a17-b8eb-caabea3ba3de)
+
+
 
 Both Sway and Hyprland are almost identical, except Hyprland having rounded app borders and smooth animations.
