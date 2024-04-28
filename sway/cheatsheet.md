@@ -8,14 +8,13 @@
 
 ## Apps
 - **SUPER + N:** Open file manager
-- **SUPER + O:** Open web browser (Google Chrome)
 
 ## Rofi
 - **SUPER + D:** Launch Rofi launcher
-- **SUPER + Shift + D:** Launch Rofi (mac-like) app menu
-- **SUPER + E:** Show power menu (lock/suspend/logout/reboot/shutdown)
-- **SUPER + Shift + C:** Reload config files
+- **SUPER + X:** Show power menu (lock/suspend/logout/reboot/shutdown)
 - **SUPER + F1:** Lock screen
+- **SUPER + A:** Screenshot menu
+- **SUPER + M:** Launch Rofi music
 
 ## Screenshot
 - **SUPER + Print:** Full screenshot

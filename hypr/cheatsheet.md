@@ -1,3 +1,5 @@
+# Hyprland Keybinds
+
 # Terminal
 - SUPER + Return: Launch terminal
 - SUPER + SHIFT + Return: Launch a floating terminal
@@ -17,7 +19,7 @@
 - SUPER + A: Take a screenshot with Rofi
 
 # Misc
-- SUPER + C: Open color picker
+- SUPER + P: Open color picker
 - CTRL + ALT + L: Lock the screen
 - SUPER + SHIFT + B: Toggle between wallpapers
 
