@@ -92,7 +92,8 @@
  
  #workspaces {
      border-style: solid;
-     background-color: @base;
+     /* background-color: @base; */
+     background-color: rgba(36, 39, 58, 0.6);
      opacity: 1;
      border-radius: 10px;
      margin: 8px 8px 8px 8px;
@@ -131,9 +132,10 @@
  #custom-pacman,
  #custom-launcher,
  #mpd {
-     padding: 5px 8px;
+     padding: 6px 9px;
      border-style: solid;
-     background-color: shade(@base, 1);
+     /* background-color: shade(@base, 1); */
+     background-color: rgba(36, 39, 58, 0.6);
      opacity: 1;
      margin: 8px 0px;
  }
@@ -169,7 +171,8 @@
  #mpd.2,
  #mpd.3,
  #mpd.4 {
-     background-color: @base;
+     /* background-color: @base; */
+     background-color: rgba(36, 39, 58, 0.6);
      font-size: 14px;
  }
  
