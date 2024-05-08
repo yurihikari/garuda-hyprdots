@@ -38,8 +38,5 @@ swaybg --output '*' --mode fill --image ~/.config/backgrounds/march7.jpg &
 # Start network manager applet
 nm-applet --indicator &
 
-# Temporarily fix for hyprland waybar modules not working
-ln -s $XDG_RUNTIME_DIR/hypr /tmp/hypr 
-
 # Start mpd
 exec mpd &
