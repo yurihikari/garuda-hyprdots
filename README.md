@@ -40,7 +40,7 @@ to avoid any potential graphical issues.
 - rofi-lbonn-wayland (https://github.com/lbonn/rofi) *using wofi by default on sway*
 - waybar
 - neofetch
-- cava
+- cava-git
 - foot
 - hyprland (optional, if you don't want to use it, just remove the hypr folder)
 - mpd
@@ -59,7 +59,7 @@ to avoid any potential graphical issues.
 
 Dependency List :
 ```bash
-paru -S swaylock-effects hyprlock-git rofi-lbonn-wayland waybar neofetch cava foot hyprland-git mpd mpc catppuccin-cursors-macchiato ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx
+paru -S swaylock-effects hyprlock-git rofi-lbonn-wayland waybar neofetch cava-git foot hyprland-git mpd mpc catppuccin-cursors-macchiato ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.

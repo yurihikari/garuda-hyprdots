@@ -72,7 +72,7 @@ fi
 # Make an array of all the dependencies (swaylock-effects rofi-lbonn-wayland waybar-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber fish)
 dependencies=(
   neofetch 
-  cava 
+  cava-git
   foot 
   mpd 
   mpc 
