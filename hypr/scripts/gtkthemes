@@ -8,7 +8,7 @@
 THEME='catppuccin-macchiato-mauve-standard+default'
 ICONS='Tela-circle-purple-dark'
 FONT='Noto Sans 10'
-CURSOR='Catppuccin-Macchiato-Mauve'
+CURSOR='BreezeX-RoséPine'
 CURSOR_SIZE='32'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'

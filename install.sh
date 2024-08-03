@@ -76,7 +76,6 @@ dependencies=(
   foot 
   mpd 
   mpc 
-  catppuccin-cursors-macchiato
   ttf-font-awesome 
   nerd-fonts 
   hyprpicker 
@@ -85,6 +84,8 @@ dependencies=(
   fish
   pavucontrol
   most
+  rose-pine-crusor
+  rose-pine-hyprcursor
 )
 
 important_dependencies=(
