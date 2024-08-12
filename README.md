@@ -37,7 +37,7 @@ I use some apps not pre-included in the default Garuda Linux desktop. Please ins
 to avoid any potential graphical issues.
 - swaylock-effects (https://github.com/mortie/swaylock-effects)
 - hyprlock-git
-- rofi-lbonn-wayland (https://github.com/lbonn/rofi) *using wofi by default on sway*
+- rofi-wayland (https://github.com/lbonn/rofi) *using wofi by default on sway*
 - waybar
 - neofetch
 - cava-git
@@ -72,7 +72,7 @@ to avoid any potential graphical issues.
 
 Dependency List :
 ```bash
-paru -S swaylock-effects hyprlock-git rofi-lbonn-wayland waybar neofetch cava-git foot hyprland-git mpd mpc rose-pine-cursor rose-pine-hyprcursor ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx bluez bluez-utils grimblast gpu-screen-recorder btop networkmanager matugen wl-clipboard swww dart-sass brightnessctl gnome-bluetooth-3.0
+paru -S swaylock-effects hyprlock-git rofi-wayland waybar neofetch cava-git foot hyprland-git mpd mpc rose-pine-cursor rose-pine-hyprcursor ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx bluez bluez-utils grimblast gpu-screen-recorder btop networkmanager matugen wl-clipboard swww dart-sass brightnessctl gnome-bluetooth-3.0
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
