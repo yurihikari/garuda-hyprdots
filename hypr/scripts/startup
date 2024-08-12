@@ -31,7 +31,7 @@ swww-daemon &
 ~/.config/hypr/scripts/gtkthemes &
 
 # Lauch notification daemon (mako)
-~/.config/hypr/scripts/notifications &
+#~/.config/hypr/scripts/notifications &
 
 # Lauch statusbar (waybar)
 ~/.config/hypr/scripts/statusbar &
