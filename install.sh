@@ -122,6 +122,10 @@ echo "Installing dependencies"
 for i in "${dependencies[@]}"; do
   install $i
 done
+
+curl -fsSL https://bun.sh/install | bash && \
+  ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
+
 echo "Dependencies installed successfully"
 
 echo "Uninstalling conflicting packages"
