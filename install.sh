@@ -84,7 +84,7 @@ dependencies=(
   fish
   pavucontrol
   most
-  rose-pine-crusor
+  rose-pine-cursor
   rose-pine-hyprcursor
   bluez
   bluez-utils
