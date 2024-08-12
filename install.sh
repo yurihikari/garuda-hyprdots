@@ -98,6 +98,7 @@ dependencies=(
   dart-sass
   brightnessctl
   gnome-bluetooth-3.0
+  micro
 )
 
 important_dependencies=(
