@@ -7,7 +7,7 @@ const Devices = () => {
         class_name: "menu-section-container",
         vertical: true,
         children: [
-            label(bluetooth),
+            label(),
             Widget.Box({
                 class_name: "menu-items-section",
                 child: Widget.Box({

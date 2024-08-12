@@ -1,80 +1,83 @@
-import { Bluetooth } from "types/service/bluetooth";
-const label = (bluetooth: Bluetooth) => {
-    const searchInProgress = Variable(false);
-    const startRotation = () => {
-        searchInProgress.value = true;
-        setTimeout(() => {
-            searchInProgress.value = false;
-        }, 10 * 1000);
-    };
+//import { Bluetooth } from "types/service/bluetooth";
+const bluetooth = await Service.import("bluetooth");
+const label = () => {
+  const searchInProgress = Variable(false);
+  const startRotation = () => {
+    searchInProgress.value = true;
+    setTimeout(() => {
+      searchInProgress.value = false;
+    }, 10 * 1000);
+  };
 
-    return Widget.Box({
-        class_name: "menu-label-container",
-        hpack: "fill",
+  return Widget.Box({
+    class_name: "menu-label-container",
+    hpack: "fill",
+    vpack: "start",
+    children: [
+      Widget.Label({
+        class_name: "menu-label",
+        vpack: "center",
+        hpack: "start",
+        label: "Bluetooth",
+      }),
+      Widget.Box({
+        class_name: "controls-container",
         vpack: "start",
         children: [
-            Widget.Label({
-                class_name: "menu-label",
-                vpack: "center",
-                hpack: "start",
-                label: "Bluetooth",
+          Widget.Switch({
+            class_name: "menu-switch bluetooth",
+            hexpand: true,
+            hpack: "end",
+            active: bluetooth.bind("enabled"),
+            on_activate: ({ active }) => {
+              searchInProgress.value = false;
+              Utils.execAsync([
+                  "bash",
+                  "-c",
+                  `bluetoothctl power ${active ? "on" : "off"}`,
+              ]).catch((err) =>
+                  console.error(
+                      `bluetoothctl power ${active ? "on" : "off"}`,
+                      err,
+                  ),
+              );
+            //   if (bluetooth.enabled) {
+            //     //Utils.exec("bluetooth off")
+            //     bluetooth.enabled = false;
+            //   } else {
+            //     //Utils.exec("bluetooth on")
+            //     bluetooth.enabled = true;
+            //   }
+            },
+          }),
+          Widget.Separator({
+            class_name: "menu-separator bluetooth",
+          }),
+          Widget.Button({
+            vpack: "center",
+            class_name: "menu-icon-button search",
+            on_primary_click: () => {
+              startRotation();
+              Utils.execAsync([
+                "bash",
+                "-c",
+                "bluetoothctl --timeout 120 scan on",
+              ]).catch((err) => {
+                searchInProgress.value = false;
+                console.error("bluetoothctl --timeout 120 scan on", err);
+              });
+            },
+            child: Widget.Icon({
+              class_name: searchInProgress
+                .bind("value")
+                .as((v) => (v ? "spinning" : "")),
+              icon: "view-refresh-symbolic",
             }),
-            Widget.Box({
-                class_name: "controls-container",
-                vpack: "start",
-                children: [
-                    Widget.Switch({
-                        class_name: "menu-switch bluetooth",
-                        hexpand: true,
-                        hpack: "end",
-                        active: bluetooth.enabled,
-                        on_activate: ({ active }) => {
-                            searchInProgress.value = false;
-                            // Utils.execAsync([
-                            //     "bash",
-                            //     "-c",
-                            //     `bluetoothctl power ${active ? "on" : "off"}`,
-                            // ]).catch((err) =>
-                            //     console.error(
-                            //         `bluetoothctl power ${active ? "on" : "off"}`,
-                            //         err,
-                            //     ),
-                            // );
-                            if (bluetooth.enabled) {
-                                Utils.exec("bluetooth off")
-                            } else {
-                                Utils.exec("bluetooth on")
-                            }
-                        },
-                    }),
-                    Widget.Separator({
-                        class_name: "menu-separator bluetooth",
-                    }),
-                    Widget.Button({
-                        vpack: "center",
-                        class_name: "menu-icon-button search",
-                        on_primary_click: () => {
-                            startRotation();
-                            Utils.execAsync([
-                                "bash",
-                                "-c",
-                                "bluetoothctl --timeout 120 scan on",
-                            ]).catch((err) => {
-                                searchInProgress.value = false;
-                                console.error("bluetoothctl --timeout 120 scan on", err);
-                            });
-                        },
-                        child: Widget.Icon({
-                            class_name: searchInProgress
-                                .bind("value")
-                                .as((v) => (v ? "spinning" : "")),
-                            icon: "view-refresh-symbolic",
-                        }),
-                    }),
-                ],
-            }),
+          }),
         ],
-    });
+      }),
+    ],
+  });
 };
 
 export { label };
