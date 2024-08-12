@@ -86,6 +86,18 @@ dependencies=(
   most
   rose-pine-crusor
   rose-pine-hyprcursor
+  bluez
+  bluez-utils
+  grimblast
+  gpu-screen-recorder
+  btop
+  networkmanager
+  matugen
+  wl-clipboard
+  swww
+  dart-sass
+  brightnessctl
+  gnome-bluetooth-3.0
 )
 
 important_dependencies=(

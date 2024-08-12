@@ -57,10 +57,22 @@ to avoid any potential graphical issues.
 - most
 - pavucontrol
 - swayfx (if you just want sway, comment the swayfx line in the sway/config file)
+- bluez
+- bluez-utils
+- grimblast
+- gpu-screen-recorder
+- btop
+- networkmanager
+- matugen
+- wl-clipboard
+- swww
+- dart-sass
+- brightnessctl
+- gnome-bluetooth-3.0
 
 Dependency List :
 ```bash
-paru -S swaylock-effects hyprlock-git rofi-lbonn-wayland waybar neofetch cava-git foot hyprland-git mpd mpc rose-pine-cursor rose-pine-hyprcursor ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx
+paru -S swaylock-effects hyprlock-git rofi-lbonn-wayland waybar neofetch cava-git foot hyprland-git mpd mpc rose-pine-cursor rose-pine-hyprcursor ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx bluez bluez-utils grimblast gpu-screen-recorder btop networkmanager matugen wl-clipboard swww dart-sass brightnessctl gnome-bluetooth-3.0
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
@@ -163,3 +175,11 @@ I am not affiliated in any way to the official Garuda Linux Sway Team. This is a
 
 
 Both Sway and Hyprland are almost identical, except Hyprland having rounded app borders and smooth animations.
+
+## Special Thanks 🙏
+
+- [Garuda Linux](https://garudalinux.org/) for the amazing distro and base config.
+- [Hyprpanel (Jas-SinghFSU)](https://github.com/Jas-SinghFSU/HyprPanel) for the AGS config.
+- [Archcraft](https://archcraft.io/) for the base Hyprland config and inspiration.
+- [Catppuccin](https://github.com/catppuccin/catppuccin) for their amazing color palette.
+

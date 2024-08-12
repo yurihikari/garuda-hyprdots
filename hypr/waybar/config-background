@@ -56,7 +56,7 @@
     "active-only": false,
     "format-icons": {
       "1": "",
-      "2": "󰈹",
+      "2": "",
       "3": "",
       "4": "",
       "5": "",
@@ -128,6 +128,7 @@
   "custom/cava-internal": {
     "exec": "sh ~/.config/waybar/scripts/Cava.sh",
     "format": "{}",
+    "on-click": "ags -t bluetoothmenu",
     //"on-click": "sh ~/.config/hypr/scripts/statusbar &",
     "tooltip": false,
     "layer": "below",
@@ -166,16 +167,17 @@
         "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
       }
     },
-    "actions": {
-      "on-click-right": "mode",
-      "on-click-forward": "tz_up",
-      "on-click-backward": "tz_down",
-      "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
-    },
+    // "actions": {
+    //   "on-click-right": "mode",
+    //   "on-click-forward": "tz_up",
+    //   "on-click-backward": "tz_down",
+    //   "on-scroll-up": "shift_up",
+    //   "on-scroll-down": "shift_down"
+    // },
+    "on-click": "ags -t calendarmenu",
     "format": "  {:%a %d %b  %I:%M %p}", //12 hour format
     // "format": " {:%d %m %Y  %H:%M}",	//24 hour format
-    "format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
+    //"format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
     // //"timezones": [ "Kolkata" ],
     // //"max-length": 200
     "interval": 1
@@ -229,7 +231,8 @@
     // "on-scroll-down": "brightnessctl -c backlight set 5%-",
     "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
     // "on-scroll-up": "brightnessctl -c backlight set +5%"
-    "on-scroll-up": "~/.config/hypr/scripts/brightness --inc"
+    "on-scroll-up": "~/.config/hypr/scripts/brightness --inc",
+    "on-click": "ags -t energymenu"
   },
   "battery": {
     "states": {
@@ -251,7 +254,8 @@
     "format-ethernet": "  Wired",
     "format-disconnected": "⚠  Disconnected",
     // "on-click": "alacritty -e nmtui"
-    "on-click": "nm-connection-editor"
+    //"on-click": "nm-connection-editor"
+    "on-click": "ags -t networkmenu"
   },
   "pulseaudio": {
     "scroll-step": 1,
@@ -267,7 +271,8 @@
       "car": "",
       "default": ["", ""]
     },
-    "on-click": "pavucontrol",
+    //"on-click": "pavucontrol",
+    "on-click": "ags -t audiomenu",
     "on-scroll-up": "~/.config/hypr/scripts/volume --inc",
     "on-scroll-down": "~/.config/hypr/scripts/volume --dec"
   },
@@ -300,7 +305,8 @@
   "custom/launcher": {
     "format": " ",
     //"format": "  ",
-    "on-click": "~/.config/hypr/scripts/rofi_launcher",
+    //"on-click": "~/.config/hypr/scripts/rofi_launcher",
+    "on-click": "ags -t dashboardmenu",
     "tooltip": false
   }
 }

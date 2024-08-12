@@ -1,0 +1,10 @@
+@import "../colors";
+
+@mixin floating-widget {
+    margin: max($spacing, 8px);
+    border: 0.2rem solid $mauve;
+    background-color: $base;
+    color: $primary_fg;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}

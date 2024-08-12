@@ -1,0 +1,132 @@
+.bar {
+
+  .transparent {
+    background: transparent;
+  }
+
+  .bar-panel-container {
+    margin-top: if($bar-floating, $bar-margin_top, 0em);
+    margin-bottom: if($bar-floating, $bar-margin_bottom, 0em);
+    margin-left: if($bar-floating, $bar-margin_sides, 0em);
+    margin-right: if($bar-floating, $bar-margin_sides, 0em);
+  }
+
+  .bar-panel {
+    background: if($bar-transparent, transparent, $bar-background);
+    border-radius: if($bar-floating, $bar-border_radius, 0em);
+  }
+}
+
+.bar_item_box_visible {
+  background-color: $bar-buttons-background;
+  border-radius: $bar-buttons-radius;
+  padding: 0.2rem 0.9rem;
+  margin: 0.5rem $bar-buttons-spacing;
+
+  &:hover {
+    background: $bar-buttons-hover;
+  }
+
+  &.battery {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-battery-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-battery-hover);
+    }
+  }
+
+  &.bluetooth {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-bluetooth-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-bluetooth-hover);
+    }
+  }
+
+  &.clock {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-clock-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-clock-hover);
+    }
+  }
+
+  &.media {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-media-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-media-hover);
+    }
+  }
+
+  &.dashboard {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-dashboard-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-dashboard-hover);
+    }
+  }
+
+  &.network {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-network-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-network-hover);
+    }
+  }
+
+  &.notifications {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-notifications-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-notifications-hover);
+    }
+  }
+
+  &.systray {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-systray-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-systray-hover);
+    }
+  }
+
+  &.volume {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-volume-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-volume-hover);
+    }
+  }
+
+  &.windowtitle {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-windowtitle-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-windowtitle-hover);
+    }
+  }
+
+  &.workspaces {
+    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-workspaces-background);
+
+    &:hover {
+      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-workspaces-hover);
+    }
+  }
+}
+
+.bar_item_box_hidden {
+  background: none;
+  border-radius: 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.box-left {
+  margin-left: $bar-outer_spacing;
+}
+
+.box-right {
+  margin-right: $bar-outer_spacing;
+}

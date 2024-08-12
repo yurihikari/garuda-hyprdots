@@ -1,0 +1,20 @@
+.bar-button-icon.bluetooth {
+  font-size: 1.15em;
+  color: if($bar-buttons-monochrome, $bar-buttons-icon, $bar-buttons-bluetooth-icon);
+}
+
+.bar-button-label.bluetooth {
+  color: if($bar-buttons-monochrome, $bar-buttons-text, $bar-buttons-bluetooth-text);
+  margin-left: $bar-buttons-bluetooth-spacing;
+}
+
+.bluetooth-disabled-menu {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: $surface2;
+  margin: 6rem 0rem;
+}
+
+.menu-button-isactive {
+  color: if($bar-buttons-monochrome, $bar-buttons-text, $bar-buttons-bluetooth-text);
+}
