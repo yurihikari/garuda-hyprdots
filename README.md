@@ -1,4 +1,4 @@
-![Screenshot_2024-03-27-00-00-15_](https://github.com/yurihikari/garuda-sway-config/assets/83579522/60c7ec51-b9fe-412a-bbce-ccd43225915b)
+![Screenshot_2024-08-12-15-47-28_](https://github.com/user-attachments/assets/1a710652-c55d-4341-b920-cf5de090f232)
 
 <h1 align="center"> Yurihikari's Garuda Linux Sway Dotfiles </h1>
 
