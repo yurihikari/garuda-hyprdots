@@ -107,6 +107,7 @@ important_dependencies=(
   waybar
   swayfx
   hyprlock-git
+  aylurs-gtk-shell
 )
 
 # Highly probable that those packages are already installed, but just in case
