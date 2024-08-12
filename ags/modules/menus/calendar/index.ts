@@ -1,8 +1,7 @@
 import { TimeWidget } from "./time/index.js";
 import { CalendarWidget } from "./calendar.js";
-import { WeatherWidget } from "./weather/index.js";
 import DropDownMenuCentered from "../DropDownMenuCentered.js";
-
+import { MediaWidget } from "./media/index.js";
 export default () => {
   return DropDownMenuCentered({
     name: "calendarmenu",
@@ -19,7 +18,7 @@ export default () => {
             Widget.Box({
               class_name: "calendar-content-items",
               vertical: true,
-              children: [TimeWidget(), CalendarWidget()],
+              children: [TimeWidget(), CalendarWidget(), MediaWidget()],
             }),
           ],
         }),

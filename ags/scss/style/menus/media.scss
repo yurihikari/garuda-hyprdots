@@ -1,6 +1,8 @@
 .menu-items.media {
-  background: if($bar-menus-monochrome, $bar-menus-background, $bar-menus-menu-media-background-color);
-  border-color: if($bar-menus-monochrome, $bar-menus-border-color, $bar-menus-menu-media-border-color);
+  //background: if($bar-menus-monochrome, $bar-menus-background, $bar-menus-menu-media-background-color);
+  background: $mantle;
+  //border-color: if($bar-menus-monochrome, $bar-menus-border-color, $bar-menus-menu-media-border-color);
+  border-color: $mantle;
 }
 
 .menu-items-container.media {
@@ -35,17 +37,20 @@
   }
 
   .media-indicator-current-song-name-label {
-    color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-media-song);
+    //color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-media-song);
+    color: $mauve;
     font-size: 1.35em;
   }
 
   .media-indicator-current-song-author-label {
-    color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-media-artist);
+    //color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-media-artist);
+    color: $flamingo;
     font-size: 1em;
   }
 
   .media-indicator-current-song-album-label {
-    color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-media-album);
+    //color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-media-album);
+    color: $pink;
     font-size: 1em;
   }
 
@@ -70,8 +75,8 @@
     }
 
     &.enabled {
-      background: if($bar-menus-monochrome, $bar-menus-buttons-default, $bar-menus-menu-media-buttons-background);
-
+      //background: if($bar-menus-monochrome, $bar-menus-buttons-default, $bar-menus-menu-media-buttons-background);
+      background: $mauve;
       &:hover {
         background: transparentize(if($bar-menus-monochrome, $bar-menus-buttons-default, $bar-menus-menu-media-buttons-background), 0.5);
       }
@@ -96,14 +101,16 @@
     margin-bottom: 1em;
 
     trough {
-      background: if($bar-menus-monochrome, $bar-menus-slider-background, $bar-menus-menu-media-slider-background);
+      //background: if($bar-menus-monochrome, $bar-menus-slider-background, $bar-menus-menu-media-slider-background);
+      background: $mantle;
       border-radius: 0.2em;
 
       highlight,
       progress {
         border-radius: 0.2em;
         min-height: .85em;
-        background: if($bar-menus-monochrome, $bar-menus-slider-primary, $bar-menus-menu-media-slider-primary);
+        //background: if($bar-menus-monochrome, $bar-menus-slider-primary, $bar-menus-menu-media-slider-primary);
+        background: $mauve;
       }
     }
 

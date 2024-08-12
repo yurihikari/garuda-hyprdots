@@ -13,7 +13,8 @@
 .calendar-menu-item-container {
   border-radius: $bar-menus-card_radius;
   margin-bottom: 1.35em;
-  background: if($bar-menus-monochrome, $bar-menus-cards, $bar-menus-menu-clock-card-color);
+  //background: if($bar-menus-monochrome, $bar-menus-cards, $bar-menus-menu-clock-card-color);
+  background: $mantle;
 }
 
 .calendar-content-items {

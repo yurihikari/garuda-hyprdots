@@ -33,18 +33,20 @@ const Controls = () => {
         class_name: bluetooth
           .bind("enabled")
           .as(
-            (btOn) => `dashboard-button bluetooth ${!btOn ? "disabled" : ""}`,
+            (btOn) => `dashboard-button bluetooth ${!bluetooth.enabled ? "disabled" : ""}`,
           ),
         on_primary_click: () => {
           // Check current state
           if (bluetooth.enabled) {
-            Utils.exec("bluetooth off");
+            //Utils.exec("bluetooth off");
+            bluetooth.enabled = false;
           } else {
-            Utils.exec("bluetooth on");
+            //Utils.exec("bluetooth on");
+            bluetooth.enabled = true;
           }
         },
         child: Widget.Label({
-          label: bluetooth.bind("enabled").as((btOn) => (btOn ? "󰂯" : "󰂲")),
+          label: bluetooth.bind("enabled").as((btOn) => (bluetooth.enabled ? "󰂯" : "󰂲")),
         }),
       }),
       Widget.Button({

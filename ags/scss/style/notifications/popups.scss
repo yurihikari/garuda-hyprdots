@@ -3,10 +3,13 @@
 }
 
 .notification-card {
-  color: $notification-text;
-  background: $notification-background;
+  //color: $notification-text;
+  color: $text;
+  //background: $notification-background;
+  background: $base;
   margin: 0.45em;
-  border: 0.15em solid transparentize($notification-border, 0.5);
+  //border: 0.15em solid transparentize($notification-border, 0.5);
+  border: 0.15em solid $mauve;
   min-width: 26em;
   min-height: 6rem;
   border-radius: 0.6em;
