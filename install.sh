@@ -102,7 +102,7 @@ dependencies=(
 
 important_dependencies=(
   swaylock-effects 
-  rofi-lbonn-wayland 
+  rofi-wayland 
   hyprland-git 
   waybar
   swayfx
