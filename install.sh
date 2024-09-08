@@ -103,19 +103,15 @@ dependencies=(
 )
 
 important_dependencies=(
-  swaylock-effects 
   rofi-wayland 
   hyprland-git 
   waybar
-  swayfx
   hyprlock-git
   aylurs-gtk-shell
 )
 
 # Highly probable that those packages are already installed, but just in case
 conflicting_packages=(
-  swaylock
-  sway
   rofi
   hyprland
 )
@@ -161,20 +157,10 @@ fi
 echo "wlsunset uninstalled successfully"
 
 # Place the files from garuda-sway-config (where this script is located) inside the .config folder
-echo "Copying files from garuda-sway-config to ~/.config"
+echo "Copying files from garuda-hyprdots to ~/.config"
 # copy but ignore the .git folder, LICENSE, .gitignore and README.md
 rsync -av $DIR/* ~/.config --exclude='.git' --exclude='LICENSE' --exclude='.gitignore' --exclude='README.md' 
 echo "Files copied successfully"
-
-# Copy nwgbar icons into corresponding folder
-echo "Copying nwgbar icons into /usr/share/nwg-launchers/nwgbar/images"
-# If the folder doesn't exist, create it
-if [ ! -d "/usr/share/nwg-launchers/nwgbar/images" ]; then
-  echo "Creating /usr/share/nwg-launchers/nwgbar/images directory"
-  sudo mkdir -p /usr/share/nwg-launchers/nwgbar/images
-fi
-sudo cp -r ~/.config/nwgbar-icons/* /usr/share/nwg-launchers/nwgbar/images
-echo "nwgbar icons copied successfully"
 
 # Ask if the user wants to reboot the system now or not
 echo "Do you want to reboot the system now? (y/n)"
