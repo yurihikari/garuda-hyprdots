@@ -28,7 +28,7 @@ The aim of this repository is to provide a simple and easy to use ricing for Gar
 I Love Catpuccin colors.
 
 ## Additional features 👍
-- Waybar background toggling button (Meta+Shift+w also works)
+- Waybar themes switch
 - Background switch using Meta+Shift+b. (Backgrounds must be in the ~/.config/sway/backgrounds folder)
 - Hyprland Config
 - Easily add musics to mpd with the mpd_update function ( Assuming your musics are in ~/Music )
