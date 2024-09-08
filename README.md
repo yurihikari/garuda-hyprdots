@@ -11,6 +11,8 @@
 </p>
 
 ## Wiki 📖
+**I NO LONGER MAINTAIN THE SWAY DOTFILES**
+
 Here is the wiki link for those dotfiles if you want a better understanding of how it works and how to use it. (Also better table of contents). Let me know if the wiki is down since i'm self-hosting it.
 
 Wiki : [Wiki Link](https://wiki.lightcrimson.com/en/garuda-sway-config)
