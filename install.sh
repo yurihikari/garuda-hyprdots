@@ -99,6 +99,7 @@ dependencies=(
   brightnessctl
   gnome-bluetooth-3.0
   micro
+  blueberry
 )
 
 important_dependencies=(
