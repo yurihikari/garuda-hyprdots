@@ -2,31 +2,26 @@
 
 # Set the directory where the backgrounds are stored
 BACKGROUND_DIR="$HOME/.config/backgrounds"
+CURRENT_BACKGROUND_FILE="$HOME/.config/hypr/env/.current_background"
 
 # Get the list of backgrounds
 BACKGROUND_LIST=("$BACKGROUND_DIR"/*)
 echo "Background list: ${BACKGROUND_LIST[@]}"
 
-# Read the Sway config line from a file
-config_line=$(grep -oP "(?<=output \* bg ).*(?= fill)" $HOME/.config/sway/config)
-
-# Extract the wallpaper filename and extension using basename
-wallpaper=$(basename $config_line)
-
-# Print the wallpaper filename and extension
-echo $wallpaper
-
-# Print the wallpaper filename and extension
-echo "Current wallpaper : $wallpaper"
-# Get the path of the current background from the sway config file
-CURRENT_BACKGROUND=$HOME/.config/backgrounds/$wallpaper
+# Check if the current background file exists, otherwise set a default
+if [[ -f "$CURRENT_BACKGROUND_FILE" ]]; then
+    CURRENT_BACKGROUND=$(cat "$CURRENT_BACKGROUND_FILE")
+else
+    # Set the first background as the default if no current background is set
+    CURRENT_BACKGROUND="${BACKGROUND_LIST[0]}"
+    echo "$CURRENT_BACKGROUND" > "$CURRENT_BACKGROUND_FILE"
+fi
 echo "Current background: $CURRENT_BACKGROUND"
 
 # Find the index of the current background in the list
 CURRENT_INDEX=0
 for i in "${!BACKGROUND_LIST[@]}"; do
-    echo "Comparing ${BACKGROUND_LIST[$i]} with $CURRENT_BACKGROUND"
-    if [[ "${BACKGROUND_LIST[$i]}" == "${CURRENT_BACKGROUND}" ]]; then
+    if [[ "${BACKGROUND_LIST[$i]}" == "$CURRENT_BACKGROUND" ]]; then
         CURRENT_INDEX=$i
         echo "Current index: $CURRENT_INDEX"
         break
@@ -39,18 +34,13 @@ echo "Next index: $NEXT_INDEX"
 
 # Get the path of the next background
 NEXT_BACKGROUND="${BACKGROUND_LIST[$NEXT_INDEX]}"
+echo "Next background: $NEXT_BACKGROUND"
 
 # Set the background to the next background
-#swaymsg output "*" bg "$NEXT_BACKGROUND" fill
-#killall swaybg
-#swaybg --output '*' --mode fill --image $NEXT_BACKGROUND &
 swww img $NEXT_BACKGROUND --transition-type grow --transition-fps 120 --transition-pos 'top-right' --transition-duration 2
-# Save the current background in the sway config file
-sed -i "s|^output \* bg.*|output \* bg $NEXT_BACKGROUND fill|" "$HOME/.config/sway/config"
 
-# Update the background file path in the startup script
-#sed -i "s|^swaybg --output '.*' --mode fill --image .*|swaybg --output '*' --mode fill --image $NEXT_BACKGROUND \&|" "$HOME/.config/hypr/scripts/startup"
+# Save the current background in the file for persistence
+echo "$NEXT_BACKGROUND" > "$CURRENT_BACKGROUND_FILE"
 
-# Send a notification with the new background name with an icon from the current background
+# Send a notification with the new background name and an icon from the current background
 notify-send -i $NEXT_BACKGROUND "Background changed" "$(basename $NEXT_BACKGROUND)"
-
