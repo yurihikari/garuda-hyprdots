@@ -1,0 +1,315 @@
+// Edited for Garuda Linux by yurihikari
+{
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
+  "height": 30,
+  "margin": "0 0 0 0",
+  //"width": 1350, // Waybar width
+  // Choose the order of the modules idle_inhibitor
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "custom/swap",
+    "tray",
+    "custom/cava-internal",
+    "mpd#2",
+    "mpd#3",
+    "mpd#4",
+    "mpd"
+  ],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "backlight",
+    "pulseaudio",
+    "hyprland/language",
+    "temperature",
+    "memory",
+    "battery",
+    "network",
+    "custom/power"
+  ],
+
+  // Modules configuration
+
+  // "hyprland/workspaces": {
+  //     "disable-scroll": true,
+  //     "all-outputs": true,
+  //     "format": "{icon}",
+  //     // "format": "< %g >",
+  //     // "format_focused" : "< %g ● >",
+  //     "format-icons": {
+  //     "1": "",
+  //     "2": "",
+  // 	"3": "",
+  // 	"4": "",
+  // 	"5": "",
+  // 	"6": "",
+  // 	"7": "",
+  // 	"8": "",
+  // 	"9": "",
+  // 	"10": "",
+  //     }
+  // },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "sort-by-number": true,
+    "active-only": false,
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": "",
+      "urgent": "",
+      "focused": "",
+      "default": ""
+    },
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1"
+  },
+  "mpd": {
+    "tooltip": true,
+    "tooltip-format": "{artist} - {album} - {title} - Total Time : {totalTime:%M:%S}",
+    "format": " {elapsedTime:%M:%S}",
+    "format-disconnected": "⚠  Disconnected",
+    "format-stopped": " Not Playing",
+    "on-click": "mpc toggle",
+    "state-icons": {
+      "playing": "",
+      "paused": ""
+    }
+  },
+  "mpd#2": {
+    "format": "",
+    "format-disconnected": "",
+    "format-paused": "",
+    "format-stopped": "",
+    // Commands to execute on events
+    "on-click": "mpc -q pause && mpc -q prev && mpc -q start"
+  },
+  "mpd#3": {
+    "interval": 1,
+    "format": "{stateIcon}",
+    "format-disconnected": "",
+    "format-paused": "{stateIcon}",
+    "format-stopped": "",
+    "state-icons": {
+      "paused": "",
+      "playing": ""
+    },
+    // Commands to execute on events
+    "on-click": "mpc toggle"
+  },
+  "mpd#4": {
+    "format": "",
+    "format-disconnected": "",
+    "format-paused": "",
+    "format-stopped": "",
+    // Commands to execute on events
+    "on-click": "mpc -q pause && mpc -q next && mpc -q start"
+  },
+  "custom/swap": {
+    "on-click": "~/.config/hypr/waybar/scripts/change-theme.sh",
+    "tooltip": true,
+    "tooltip-format": "Swap between waybar configs",
+    "format": "Themes  "
+  },
+  "custom/mpd": {
+    "format": " {title} - {artist}",
+    "interval": 5,
+    "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
+  },
+  "custom/cava-internal": {
+    "exec": "sh ~/.config/waybar/scripts/Cava.sh",
+    "format": "{}",
+    //"on-click": "ags -t bluetoothmenu",
+    //"on-click": "sh ~/.config/hypr/scripts/statusbar &",
+    "on-click": "blueberry",
+    "tooltip": false,
+    "layer": "below",
+    "output": "all"
+  },
+  "sway/mode": {
+    "format": "<span style=\"italic\">{}</span>"
+  },
+  "sway/window": {
+    "format": "~ {app_id}"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+  "tray": {
+    "icon-size": 14,
+    "spacing": 5
+  },
+  "clock": {
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    // "actions": {
+    //   "on-click-right": "mode",
+    //   "on-click-forward": "tz_up",
+    //   "on-click-backward": "tz_down",
+    //   "on-scroll-up": "shift_up",
+    //   "on-scroll-down": "shift_down"
+    // },
+    //"on-click": "ags -t calendarmenu",
+    //"on-right-click": "ags -t mediamenu",
+    "format": "  {:%a %d %b  %I:%M %p}", //12 hour format
+    // "format": " {:%d %m %Y  %H:%M}",	//24 hour format
+    //"format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
+    // //"timezones": [ "Kolkata" ],
+    // //"max-length": 200
+    "interval": 1
+  },
+  // "clock": {
+  //     "format": "  {:%H:%M:%S}",
+  //     "format-alt": "  {:%A, %B %d, %Y (%R)}",
+  //     "tooltip-format": "<tt><small>{calendar}</small></tt>",
+  //     "calendar": {
+  //         "mode"          : "month",
+  //         "mode-mon-col"  : 3,
+  //         "weeks-pos"     : "right",
+  //         "on-scroll"     : 1,
+  //         "on-click-right": "mode",
+  //         "format": {
+  //             "months":     "<span color='#ffead3'><b>{}</b></span>",
+  //             "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+  //             "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+  //             "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+  //             "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+  //         }
+  //     },
+  //     "actions": {
+  //         "on-click-right": "mode",
+  //         "on-click-forward": "tz_up",
+  //         "on-click-backward": "tz_down",
+  //         "on-scroll-up": "shift_up",
+  //         "on-scroll-down": "shift_down"
+  //     },
+  //     "interval": 1
+  // },
+  "cpu": {
+    "format": "﬙ {usage: >3}%",
+    "on-click": "alacritty -e htop"
+  },
+  "memory": {
+    "format": "󰍛 {: >3}%",
+    // "on-click": "alacritty -e htop"
+    "on-click": "alacritty -e btop"
+  },
+  "temperature": {
+    // "thermal-zone": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C ",
+    "format": "  {temperatureC}°C"
+  },
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{icon} {percent: >3}%",
+    "format-icons": ["", ""],
+    // "on-scroll-down": "brightnessctl -c backlight set 5%-",
+    "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
+    // "on-scroll-up": "brightnessctl -c backlight set +5%"
+    "on-scroll-up": "~/.config/hypr/scripts/brightness --inc",
+    //"on-click": "ags -t energymenu"
+  },
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity: >3}%",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": ["", "", "", "", ""]
+    //"format-icons": ["", "", "", "", "", "", "", "", "", ""]
+  },
+  "network": {
+    // "interface": "wlp2s0", // (Optional) To force the use of this interface
+    "format": "⚠  Disabled",
+    "format-wifi": "  {essid}",
+    // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
+    "format-ethernet": "  Wired",
+    "format-disconnected": "⚠  Disconnected",
+    "on-click": "alacritty -e nmtui"
+    //"on-click": "nm-connection-editor"
+    //"on-click": "ags -t networkmenu"
+  },
+  "pulseaudio": {
+    "scroll-step": 1,
+    "format": "{icon} {volume: >3}%",
+    "format-bluetooth": "{icon} {volume: >3}%",
+    "format-muted": " muted",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "on-click": "pavucontrol",
+    //"on-click": "ags -t audiomenu",
+    "on-scroll-up": "~/.config/hypr/scripts/volume --inc",
+    "on-scroll-down": "~/.config/hypr/scripts/volume --dec"
+  },
+  "custom/pacman": {
+    "format": " {}",
+    "interval": 7200, // every two hours
+    "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'", // # of updates and tooltip details
+    "exec-if": "exit 0", // always run; consider advanced run conditions
+    "on-click": "alacritty -e sudo pacman -Syu", // update system
+    "signal": 8
+  },
+  "custom/power": {
+    "format": "󰐥",
+    "on-click": "~/.config/hypr/scripts/rofi_powermenu",
+    "tooltip": false
+  },
+  "custom/keyboard-layout": {
+    "exec": "~/.config/hypr/waybar/scripts/getInputLayout.sh",
+    // Interval set only as a fallback, as the value is updated by signal
+    "interval": 1,
+    "format": "󰌌  {}", // Icon: keyboard
+    // Signal sent by Sway key binding (~/.config/sway/key-bindings)
+    "signal": 1, // SIGHUP
+    "tooltip": false,
+    "on-click": "~/.config/waybar/scripts/keyhint.sh"
+  },
+  "hyprland/language": {
+    "format": "  {}"
+  },
+  "custom/launcher": {
+    "format": " ",
+    //"format": "  ",
+    "on-click": "~/.config/hypr/scripts/rofi_launcher",
+    //"on-click": "ags -t dashboardmenu",
+    "tooltip": false
+  }
+}

@@ -1,0 +1,291 @@
+/* =============================================================================
+ *
+ * Waybar configuration
+ *
+ * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+ *
+ * =========================================================================== */
+
+/* -----------------------------------------------------------------------------
+ * Keyframes
+ * -------------------------------------------------------------------------- */
+
+ @import "latte.css";
+
+/* -----------------------------------------------------------------------------
+    * Base styles
+    * -------------------------------------------------------------------------- */
+
+/* Reset all styles */
+* {
+    color: @lavender;
+    border: 0;
+    padding: 0 0;
+    font-family: UbuntuMono;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+window#waybar {
+    border-bottom: 4px solid shade(#1E1E2E, 1.0);
+    background-color: #1E1E2E;
+}
+
+#workspaces button {
+    color: @text;
+    border-radius: 50%;
+    margin: 0px 8px;
+    padding: 2px 6px 2px 0;
+}
+
+#workspaces button:hover * {
+    color: @mauve;
+}
+
+#workspaces button:hover {
+    color: @mauve;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0px;
+    background: none;
+}
+
+#workspaces * {
+    color: @text;
+}
+
+#workspaces {
+    border-style: solid;
+    background-color: @base;
+    opacity: 1;
+    border-radius: 10px;
+    margin: 8px 6px 8px 8px;
+}
+
+#workspaces button.active {
+    color: @mauve;
+    border-radius: 20px;
+}
+
+#workspaces button.active * {
+    color: @mauve;
+}
+
+#mode {
+    color: #ebcb8b;
+}
+
+#clock,
+#custom-swap,
+#custom-background,
+#custom-cava-internal,
+#battery,
+#cpu,
+#memory,
+#idle_inhibitor,
+#temperature,
+#custom-keyboard-layout,
+#language,
+#backlight,
+#network,
+#pulseaudio,
+#mode,
+#tray,
+#custom-power,
+#custom-pacman,
+#mpd {
+    padding: 5px 8px;
+    border: solid;
+    background-color: shade(@base, 1.1);
+    opacity: 1;
+    margin: 8px 0;
+}
+
+/* -----------------------------------------------------------------------------
+    * Module styles
+    * -------------------------------------------------------------------------- */
+
+#custom-cava-internal {
+    border-radius: 10px;
+    color: @base;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#mpd {
+    border-radius: 10px;
+    color: @base;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#mpd.2 {
+    border-radius: 10px 0px 0px 10px;
+    margin: 8px 0px 8px 6px;
+    padding: 4px 12px 4px 10px;
+}
+
+#mpd.3 {
+    border-radius: 0px;
+    margin: 8px 0px;
+    padding: 4px;
+}
+
+#mpd.4 {
+    border-radius: 0px 10px 10px 0px;
+    margin: 8px 0px;
+    padding: 4px 10px 4px 14px;
+}
+
+#mpd.2,
+#mpd.3,
+#mpd.4 {
+    background-color: @base;
+    color: @mauve;
+    font-size: 14px;
+}
+
+#custom-swap {
+    border-radius: 10px;
+    color: @mauve;
+    margin-left: 5px;
+    background-color: @base;
+}
+
+#custom-background {
+    border-radius: 0px 10px 10px 0px;
+    background-color: @base;
+    color: white;
+    padding: 5px 14px 5px 5px;
+}
+
+#clock {
+    color: @mauve;
+    border-radius: 10px;
+    margin: 8px 10px;
+    background-color: @base;
+}
+
+#backlight {
+    color: @yellow;
+    border-radius: 10px 0 0 10px;
+}
+
+#battery {
+    color: #1E2030;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+}
+
+#battery.charging {
+    color: @teal;
+}
+
+@keyframes blink {
+    to {
+        color: @red;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: #bf616a;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    color: @sky;
+}
+
+#cpu #cpu-icon {
+    color: @sky;
+}
+
+#memory {
+    color: @sky;
+}
+
+#network.disabled {
+    color: #bf616a;
+}
+
+#network {
+    color: @green;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#network.disconnected {
+    color: #bf616a;
+}
+
+#pulseaudio {
+    color: @flamingo;
+}
+
+#pulseaudio.muted {
+    color: #3b4252;
+}
+
+#temperature {
+    color: @teal;
+    border-radius: 10px 0 0 10px;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#idle_inhibitor {
+    background-color: #ebcb8b;
+    color: @base;
+}
+
+#tray {
+    margin: 8px 10px;
+    border-radius: 10px;
+    background-color: #1E1E2E;
+}
+
+#custom-launcher {
+    background-color: shade(@mauve, 1.0);
+    color: @base;
+    border-radius: 0px 15px 0px 0px;
+    padding: 5px 10px 5px 10px;
+    border-bottom: 4px solid shade(@mauve, 1.0);
+}
+
+#custom-power {
+    color: @base;
+    background-color: @red;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 15px;
+    padding: 5px 10px;
+}
+
+#window {
+    border-style: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #eceff4;
+}
+
+#mode {
+    margin-bottom: 3px;
+}
+
+#custom-keyboard-layout {
+    color: @peach;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+}
+
+#language {
+    color: @peach;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+}

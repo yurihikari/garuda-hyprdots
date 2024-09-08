@@ -115,75 +115,25 @@
     "on-click": "mpc -q pause && mpc -q next && mpc -q start"
   },
   "custom/swap": {
-    "on-click": "~/.config/hypr/waybar/scripts/swap.sh",
+    "on-click": "~/.config/hypr/waybar/scripts/change-theme.sh",
     "tooltip": true,
     "tooltip-format": "Swap between waybar configs",
-    "format": "Bg  "
+    "format": "Themes  "
   },
   "custom/mpd": {
     "format": " {title} - {artist}",
     "interval": 5,
     "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
   },
-  "cava#left": {
-    "autosens": 1,
-    "bar_delimiter": 0,
-    "bars": 18,
-    "format-icons": [
-      "<span foreground='#cba6f7'>▁</span>",
-      "<span foreground='#cba6f7'>▂</span>",
-      "<span foreground='#cba6f7'>▃</span>",
-      "<span foreground='#cba6f7'>▄</span>",
-      "<span foreground='#89b4fa'>▅</span>",
-      "<span foreground='#89b4fa'>▆</span>",
-      "<span foreground='#89b4fa'>▇</span>",
-      "<span foreground='#89b4fa'>█</span>"
-    ],
-    "framerate": 60,
-    "higher_cutoff_freq": 10000,
-    "input_delay": 2,
-    "lower_cutoff_freq": 50,
-    "method": "pipewire",
-    "monstercat": false,
-    "reverse": false,
-    "source": "auto",
-    "stereo": true,
-    "waves": false
-  },
   "custom/cava-internal": {
-    "exec": "sh ~/.config/hypr/waybar/scripts/Cava.sh",
+    "exec": "sh ~/.config/waybar/scripts/Cava.sh",
     "format": "{}",
-    "on-click": "ags -t bluetoothmenu",
+    //"on-click": "ags -t bluetoothmenu",
     //"on-click": "sh ~/.config/hypr/scripts/statusbar &",
+    "on-click": "blueberry",
     "tooltip": false,
     "layer": "below",
     "output": "all"
-  },
-  "cava": {
-    //"cava_config": "/home/sentience/.config/cava/config",
-    "autosens": 1,
-    "bar_delimiter": 0,
-    "bars": 18,
-    "format-icons": [
-      "<span foreground='#cba6f7'>▁</span>",
-      "<span foreground='#cba6f7'>▂</span>",
-      "<span foreground='#cba6f7'>▃</span>",
-      "<span foreground='#cba6f7'>▄</span>",
-      "<span foreground='#89b4fa'>▅</span>",
-      "<span foreground='#89b4fa'>▆</span>",
-      "<span foreground='#89b4fa'>▇</span>",
-      "<span foreground='#89b4fa'>█</span>"
-    ],
-    "framerate": 60,
-    "higher_cutoff_freq": 10000,
-    "input_delay": 2,
-    "lower_cutoff_freq": 50,
-    "method": "pipewire",
-    "monstercat": false,
-    "reverse": false,
-    "source": "auto",
-    "stereo": true,
-    "waves": false
   },
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
@@ -225,7 +175,8 @@
     //   "on-scroll-up": "shift_up",
     //   "on-scroll-down": "shift_down"
     // },
-    "on-click": "ags -t calendarmenu",
+    //"on-click": "ags -t calendarmenu",
+    //"on-right-click": "ags -t mediamenu",
     "format": "  {:%a %d %b  %I:%M %p}", //12 hour format
     // "format": " {:%d %m %Y  %H:%M}",	//24 hour format
     //"format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
@@ -266,7 +217,8 @@
   },
   "memory": {
     "format": "󰍛 {: >3}%",
-    "on-click": "alacritty -e htop"
+    // "on-click": "alacritty -e htop"
+    "on-click": "alacritty -e btop"
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -283,7 +235,7 @@
     "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
     // "on-scroll-up": "brightnessctl -c backlight set +5%"
     "on-scroll-up": "~/.config/hypr/scripts/brightness --inc",
-    "on-click": "ags -t energymenu"
+    //"on-click": "ags -t energymenu"
   },
   "battery": {
     "states": {
@@ -304,9 +256,9 @@
     // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
     "format-ethernet": "  Wired",
     "format-disconnected": "⚠  Disconnected",
-    // "on-click": "alacritty -e nmtui"
+    "on-click": "alacritty -e nmtui"
     //"on-click": "nm-connection-editor"
-    "on-click": "ags -t networkmenu"
+    //"on-click": "ags -t networkmenu"
   },
   "pulseaudio": {
     "scroll-step": 1,
@@ -322,8 +274,8 @@
       "car": "",
       "default": ["", ""]
     },
-    //"on-click": "pavucontrol",
-    "on-click": "ags -t audiomenu",
+    "on-click": "pavucontrol",
+    //"on-click": "ags -t audiomenu",
     "on-scroll-up": "~/.config/hypr/scripts/volume --inc",
     "on-scroll-down": "~/.config/hypr/scripts/volume --dec"
   },
@@ -356,8 +308,8 @@
   "custom/launcher": {
     "format": " ",
     //"format": "  ",
-    //"on-click": "~/.config/hypr/scripts/rofi_launcher",
-    "on-click": "ags -t dashboardmenu",
+    "on-click": "~/.config/hypr/scripts/rofi_launcher",
+    //"on-click": "ags -t dashboardmenu",
     "tooltip": false
   }
 }

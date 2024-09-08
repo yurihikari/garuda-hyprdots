@@ -56,7 +56,7 @@
     "active-only": false,
     "format-icons": {
       "1": "",
-      "2": "󰈹",
+      "2": "",
       "3": "",
       "4": "",
       "5": "",
@@ -115,10 +115,10 @@
     "on-click": "mpc -q pause && mpc -q next && mpc -q start"
   },
   "custom/swap": {
-    "on-click": "~/.config/hypr/waybar/scripts/swap.sh",
+    "on-click": "~/.config/hypr/waybar/scripts/change-theme.sh",
     "tooltip": true,
     "tooltip-format": "Swap between waybar configs",
-    "format": "Bg  "
+    "format": "Themes  "
   },
   "custom/mpd": {
     "format": " {title} - {artist}",
@@ -128,7 +128,9 @@
   "custom/cava-internal": {
     "exec": "sh ~/.config/waybar/scripts/Cava.sh",
     "format": "{}",
-    "on-click": "sh ~/.config/hypr/scripts/statusbar &",
+    //"on-click": "ags -t bluetoothmenu",
+    //"on-click": "sh ~/.config/hypr/scripts/statusbar &",
+    "on-click": "blueberry",
     "tooltip": false,
     "layer": "below",
     "output": "all"
@@ -166,16 +168,18 @@
         "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
       }
     },
-    "actions": {
-      "on-click-right": "mode",
-      "on-click-forward": "tz_up",
-      "on-click-backward": "tz_down",
-      "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
-    },
+    // "actions": {
+    //   "on-click-right": "mode",
+    //   "on-click-forward": "tz_up",
+    //   "on-click-backward": "tz_down",
+    //   "on-scroll-up": "shift_up",
+    //   "on-scroll-down": "shift_down"
+    // },
+    //"on-click": "ags -t calendarmenu",
+    //"on-right-click": "ags -t mediamenu",
     "format": "  {:%a %d %b  %I:%M %p}", //12 hour format
     // "format": " {:%d %m %Y  %H:%M}",	//24 hour format
-    "format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
+    //"format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
     // //"timezones": [ "Kolkata" ],
     // //"max-length": 200
     "interval": 1
@@ -213,7 +217,8 @@
   },
   "memory": {
     "format": "󰍛 {: >3}%",
-    "on-click": "alacritty -e htop"
+    // "on-click": "alacritty -e htop"
+    "on-click": "alacritty -e btop"
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -229,7 +234,8 @@
     // "on-scroll-down": "brightnessctl -c backlight set 5%-",
     "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
     // "on-scroll-up": "brightnessctl -c backlight set +5%"
-    "on-scroll-up": "~/.config/hypr/scripts/brightness --inc"
+    "on-scroll-up": "~/.config/hypr/scripts/brightness --inc",
+    //"on-click": "ags -t energymenu"
   },
   "battery": {
     "states": {
@@ -250,8 +256,9 @@
     // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
     "format-ethernet": "  Wired",
     "format-disconnected": "⚠  Disconnected",
-    // "on-click": "alacritty -e nmtui"
-    "on-click": "nm-connection-editor"
+    "on-click": "alacritty -e nmtui"
+    //"on-click": "nm-connection-editor"
+    //"on-click": "ags -t networkmenu"
   },
   "pulseaudio": {
     "scroll-step": 1,
@@ -268,6 +275,7 @@
       "default": ["", ""]
     },
     "on-click": "pavucontrol",
+    //"on-click": "ags -t audiomenu",
     "on-scroll-up": "~/.config/hypr/scripts/volume --inc",
     "on-scroll-down": "~/.config/hypr/scripts/volume --dec"
   },
@@ -298,9 +306,10 @@
     "format": "  {}"
   },
   "custom/launcher": {
-    "format": "",
+    "format": " ",
     //"format": "  ",
     "on-click": "~/.config/hypr/scripts/rofi_launcher",
+    //"on-click": "ags -t dashboardmenu",
     "tooltip": false
   }
 }
