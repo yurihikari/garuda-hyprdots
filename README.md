@@ -1,6 +1,7 @@
 ![Screenshot_2024-08-12-15-47-28_](https://github.com/user-attachments/assets/1a710652-c55d-4341-b920-cf5de090f232)
 
-<h1 align="center"> Yurihikari's Garuda Linux Sway Dotfiles </h1>
+<h1 align="center"> Yurihikari's Garuda Linux Dotfiles </h1>
+
 
 <p align="center">
   <a href="https://github.com/yurihikari/garuda-sway-config/stargazers"><img src="https://img.shields.io/github/stars/yurihikari/garuda-sway-config?color=f5bde6&style=for-the-badge&logo=starship"></a>
@@ -71,10 +72,11 @@ to avoid any potential graphical issues.
 - gnome-bluetooth-3.0
 - aylurs-gtk-shell
 - micro
+- blueberry
 
 Dependency List :
 ```bash
-paru -S swaylock-effects hyprlock-git rofi-wayland waybar neofetch cava-git foot hyprland-git mpd mpc rose-pine-cursor rose-pine-hyprcursor ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx bluez bluez-utils grimblast gpu-screen-recorder btop networkmanager matugen wl-clipboard swww dart-sass brightnessctl gnome-bluetooth-3.0 aylurs-gtk-shell micro
+paru -S swaylock-effects hyprlock-git rofi-wayland waybar neofetch cava-git foot hyprland-git mpd mpc rose-pine-cursor rose-pine-hyprcursor ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx bluez bluez-utils grimblast gpu-screen-recorder btop networkmanager matugen wl-clipboard swww dart-sass brightnessctl gnome-bluetooth-3.0 aylurs-gtk-shell micro blueberry
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
@@ -131,14 +133,10 @@ Swap between each version of the waybar using the paintbrush icon on the bar.
 Shortcut is unavailable in Hyprland for now.
 
 ### Backgroundless Waybar ⬜
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/fbcf82e5-f917-4f17-8359-9a8c1302a8a9)
+![image](https://github.com/user-attachments/assets/643d7949-6968-4c43-9c99-869583e84704)
 
 ### Background Waybar ⬛
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/83240e8c-25ba-4c87-86d9-b24944eafba6)
-
-
-## nwgbar
-![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/bf02deae-1b64-4ace-b151-df30459ec464)
+![image](https://github.com/user-attachments/assets/995b9496-ef2d-444f-8572-e7f51f71d2f2)
 
 ## Colors 🖌️
 I'm using primarly Catppuccin Macchiato as my color palette. They also have lot of themes and tutorials
@@ -164,7 +162,7 @@ This is a work in permanent progress, some stuff may change drastically dependin
 I'll make different branches if i have to massively change the behavior of the current files so you can
 keep track of the previous work versions.
 
-I am not affiliated in any way to the official Garuda Linux Sway Team. This is a personal ricing using Garuda Linux Sway as the main distro.
+I am not affiliated in any way to the official Garuda Linux Team. This is a personal ricing using Garuda Linux Sway as the main distro.
 
 ## Overview 🖼️
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/a5153162-3cb7-4dfd-9975-466c5d2753b5)
@@ -173,10 +171,6 @@ I am not affiliated in any way to the official Garuda Linux Sway Team. This is a
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/0f8c82d2-2959-4538-b16c-8cac1d8aee59)
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/38fa971c-cc00-4e0a-a645-1b39ba7f9615)
 ![image](https://github.com/yurihikari/garuda-sway-config/assets/83579522/99ae3f0a-6976-4a17-b8eb-caabea3ba3de)
-
-
-
-Both Sway and Hyprland are almost identical, except Hyprland having rounded app borders and smooth animations.
 
 ## Special Thanks 🙏
 
