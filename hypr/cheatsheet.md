@@ -22,6 +22,7 @@
 - SUPER + P: Open color picker
 - CTRL + ALT + L: Lock the screen
 - SUPER + SHIFT + B: Toggle between wallpapers
+- SUPER + SHIFT + T: Launch waybar themes change script
 
 # Scratchpad
 - SUPER + SHIFT + EQUAL: Move window to a special workspace
