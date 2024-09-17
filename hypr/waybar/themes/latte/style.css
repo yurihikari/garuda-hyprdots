@@ -22,9 +22,17 @@
     color: @lavender;
     border: 0px;
     padding: 0px 0px;
-    font-family: UbuntuMono;
+    font-family: "JetBrainsMono Nerd Font";
     font-size: 18px;
     font-weight: bold;
+}
+
+tooltip {
+    background-color: shade(@crust, 1);
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin: 8px;
+    border: 2px solid shade(@blue, 1);
 }
 
 window#waybar {
