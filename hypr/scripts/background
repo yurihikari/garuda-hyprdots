@@ -6,41 +6,37 @@ CURRENT_BACKGROUND_FILE="$HOME/.config/hypr/env/.current_background"
 
 # Get the list of backgrounds
 BACKGROUND_LIST=("$BACKGROUND_DIR"/*)
-echo "Background list: ${BACKGROUND_LIST[@]}"
 
-# Check if the current background file exists, otherwise set a default
-if [[ -f "$CURRENT_BACKGROUND_FILE" ]]; then
-    CURRENT_BACKGROUND=$(cat "$CURRENT_BACKGROUND_FILE")
-else
-    # Set the first background as the default if no current background is set
-    CURRENT_BACKGROUND="${BACKGROUND_LIST[0]}"
-    echo "$CURRENT_BACKGROUND" > "$CURRENT_BACKGROUND_FILE"
+# Prepare the background list for yad --list
+backgrounds_string=$(printf "%s\n" "${BACKGROUND_LIST[@]}")
+
+# Use Yad to display the list of backgrounds with a preview
+selected_background=$(echo "$backgrounds_string" | yad --list --title="Select a Background" \
+  --column="Backgrounds" --image-column="Preview:IMG" --separator=" " --height=400 --width=600 \
+  --button=Cancel:1 --button=Apply:0 --item-icon "${BACKGROUND_LIST[@]}" --image-on-top)
+
+# Capture the exit status of Yad
+response=$?
+
+# If the user clicks Cancel (exit status 1), exit the script
+if [ $response -eq 1 ]; then
+  exit 1
 fi
-echo "Current background: $CURRENT_BACKGROUND"
 
-# Find the index of the current background in the list
-CURRENT_INDEX=0
-for i in "${!BACKGROUND_LIST[@]}"; do
-    if [[ "${BACKGROUND_LIST[$i]}" == "$CURRENT_BACKGROUND" ]]; then
-        CURRENT_INDEX=$i
-        echo "Current index: $CURRENT_INDEX"
-        break
-    fi
-done
+# Trim any leading/trailing spaces and remove any extra formatting
+selected_background=$(echo "$selected_background" | sed 's/|.*//')
 
-# Calculate the index of the next background
-NEXT_INDEX=$(( (CURRENT_INDEX + 1) % ${#BACKGROUND_LIST[@]} ))
-echo "Next index: $NEXT_INDEX"
+# If no background is selected, exit
+if [ -z "$selected_background" ]; then
+  exit 1
+fi
 
-# Get the path of the next background
-NEXT_BACKGROUND="${BACKGROUND_LIST[$NEXT_INDEX]}"
-echo "Next background: $NEXT_BACKGROUND"
+# Set the selected background and save it to the current background file
+echo "$selected_background" > "$CURRENT_BACKGROUND_FILE"
 
-# Set the background to the next background
-swww img $NEXT_BACKGROUND --transition-type grow --transition-fps 120 --transition-pos 'top-right' --transition-duration 2
-
-# Save the current background in the file for persistence
-echo "$NEXT_BACKGROUND" > "$CURRENT_BACKGROUND_FILE"
+# Apply the selected background using swww
+swww img $selected_background --transition-type grow --transition-fps 120 --transition-pos 'top-right' --transition-duration 2
 
 # Send a notification with the new background name and an icon from the current background
-notify-send -i $NEXT_BACKGROUND "Background changed" "$(basename $NEXT_BACKGROUND)"
+notify-send -i $selected_background "Background changed" "$(basename "$selected_background")"
+
