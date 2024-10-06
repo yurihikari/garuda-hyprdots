@@ -4,7 +4,7 @@ set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
 # set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -gx MANPAGER most 
-
+set -gx QT_QPA_PLATFORM xcb
 
 ## Export variable need for qt-theme
 if type "qtile" >> /dev/null 2>&1
@@ -178,3 +178,5 @@ function mpd_update
     mpc listall
     cd - 
 end
+
+oh-my-posh init fish --config ~/.config/oh-my-posh/themes/catppuccin_macchiato.omp.json | source

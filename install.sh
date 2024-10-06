@@ -100,6 +100,7 @@ dependencies=(
   gnome-bluetooth-3.0
   micro
   blueberry
+  oh-my-posh
 )
 
 important_dependencies=(
