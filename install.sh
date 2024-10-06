@@ -101,6 +101,7 @@ dependencies=(
   micro
   blueberry
   oh-my-posh
+  wofi-emoji
 )
 
 important_dependencies=(
