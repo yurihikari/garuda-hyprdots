@@ -4,12 +4,12 @@
     "separator": " : "
   },
   "logo": {
-    	"source": "~/.config/fastfetch/pngs/icon.png", // Replace with your icon
-    	"type": "kitty",
-    	"height": 18,
-    	"padding": {
-    		"top": 2
-    	}
+    "source": "~/.config/fastfetch/pngs/icon.png", // Replace with your icon
+    "type": "kitty",
+    "height": 18,
+    "padding": {
+      "top": 2
+    }
   },
   "modules": [
     {
@@ -25,8 +25,8 @@
       "format": "    We thirst for the seven wailings. "
     },
     {
-        "type": "custom",
-        "format": "     We bear the koan of Jericho. "
+      "type": "custom",
+      "format": "     We bear the koan of Jericho. "
     },
     {
       "type": "custom",

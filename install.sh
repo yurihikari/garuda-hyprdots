@@ -165,6 +165,10 @@ echo "Copying files from garuda-hyprdots to ~/.config"
 rsync -av $DIR/* ~/.config --exclude='.git' --exclude='LICENSE' --exclude='.gitignore' --exclude='README.md' 
 echo "Files copied successfully"
 
+# Edit some config files
+# Adding btop theme
+echo "color_theme = $HOME/.config/btop/themes/catppuccin_macchiato.theme" >> $HOME/.config/btop/btop.conf
+
 # Ask if the user wants to reboot the system now or not
 echo "Do you want to reboot the system now? (y/n)"
 read answer
