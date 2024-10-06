@@ -22,7 +22,11 @@
     },
     {
       "type": "custom",
-      "format": "    We thirst for the seven wailings. We bear the koan of Jericho. "
+      "format": "    We thirst for the seven wailings. "
+    },
+    {
+        "type": "custom",
+        "format": "     We bear the koan of Jericho. "
     },
     {
       "type": "custom",
