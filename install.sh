@@ -71,7 +71,7 @@ fi
 # Install dependencies using the install function
 # Make an array of all the dependencies (swaylock-effects rofi-lbonn-wayland waybar-git neofetch cava foot hyprland-git mpd mpc sweet-cursor-theme-git ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber fish)
 dependencies=(
-  neofetch 
+  fastfetch 
   cava-git
   foot 
   mpd 
