@@ -102,6 +102,7 @@ dependencies=(
   blueberry
   oh-my-posh
   wofi-emoji
+  kitty
 )
 
 important_dependencies=(
