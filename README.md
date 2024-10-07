@@ -42,7 +42,7 @@ to avoid any potential graphical issues.
 - hyprlock-git
 - rofi-wayland (https://github.com/lbonn/rofi) *using wofi by default on sway*
 - waybar
-- neofetch
+- fastfetch
 - cava-git
 - foot
 - hyprland (optional, if you don't want to use it, just remove the hypr folder)
@@ -75,10 +75,11 @@ to avoid any potential graphical issues.
 - aylurs-gtk-shell
 - micro
 - blueberry
+- kitty
 
 Dependency List :
 ```bash
-paru -S swaylock-effects hyprlock-git rofi-wayland waybar neofetch cava-git foot hyprland-git mpd mpc rose-pine-cursor rose-pine-hyprcursor ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx bluez bluez-utils grimblast gpu-screen-recorder btop networkmanager matugen wl-clipboard swww dart-sass brightnessctl gnome-bluetooth-3.0 aylurs-gtk-shell micro blueberry
+paru -S swaylock-effects hyprlock-git rofi-wayland waybar fastfetch cava-git foot hyprland-git mpd mpc rose-pine-cursor rose-pine-hyprcursor ttf-font-awesome nerd-fonts hyprpicker pipewire wireplumber nwg-launchers mako most pavucontrol swayfx bluez bluez-utils grimblast gpu-screen-recorder btop networkmanager matugen wl-clipboard swww dart-sass brightnessctl gnome-bluetooth-3.0 aylurs-gtk-shell micro blueberry kitty
 ```
 
 I used yay to install those packages, but some will need to be installed with Paru. You can use your favorite AUR helper.
