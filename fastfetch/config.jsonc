@@ -4,7 +4,7 @@
     "separator": " : "
   },
   "logo": {
-    "source": "~/.config/fastfetch/pngs/icon.png", // Replace with your icon
+    "source": "~/.config/fastfetch/pngs/icon.png",
     "type": "kitty",
     "height": 18,
     "padding": {
@@ -33,34 +33,39 @@
       "format": ""
     },
     {
+      "type": "host",
+      "key": "   PC",
+      "keyColor": "magenta"
+    },
+    {
       "type": "os",
       "key": "   OS",
-      "keyColor": "38;5;19" // Dark Blue
+      "keyColor": "blue"
     },
     {
       "type": "kernel",
       "key": "   Kernel",
-      "keyColor": "97" // White
+      "keyColor": "green"
     },
     {
       "type": "packages",
       "key": "  󰏗 Packages",
-      "keyColor": "34" // Keeping the same
+      "keyColor": "34"
     },
     {
       "type": "display",
       "key": "  󱍜 Display",
-      "keyColor": "38;5;208" // Random: Bright Orange
+      "keyColor": "38;5;208"
     },
     {
       "type": "wm",
       "key": "   WM",
-      "keyColor": "38;5;81" // Light Blue
+      "keyColor": "38;5;81"
     },
     {
       "type": "terminal",
       "key": "   Terminal",
-      "keyColor": "90" // Grey
+      "keyColor": "38;5;81"
     },
     {
       "type": "media",
