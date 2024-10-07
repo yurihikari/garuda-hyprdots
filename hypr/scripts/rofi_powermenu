@@ -9,7 +9,7 @@ RASI="$DIR/rofi/powermenu.rasi"
 CNFR="$DIR/rofi/confirm.rasi"
 
 # Theme Elements
-prompt="`hostname` (`echo $DESKTOP_SESSION`)"
+prompt="`hostname` (`echo $XDG_CURRENT_DESKTOP`)"
 mesg="Uptime : `uptime -p | sed -e 's/up //g'`"
 
 # Options
