@@ -1,5 +1,10 @@
 /**
- * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Rofi Theme File
+ * Rofi Version: 1.7.3
  **/
 
 /*****----- Configuration -----*****/
@@ -21,7 +26,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       510px;
+    width:                       800px;
     x-offset:                    0px;
     y-offset:                    0px;
     margin:                      0px;
@@ -36,40 +41,44 @@ window {
 /*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
-    spacing:                     10px;
+    spacing:                     20px;
     margin:                      0px;
-    padding:                     30px;
+    padding:                     20px;
     background-color:            transparent;
-    children:                    [ "inputbar", "message", "listview" ];
+    children:                    [ "inputbar", "listview", "message" ];
 }
 
 /*****----- Inputbar -----*****/
 inputbar {
     enabled:                     true;
-    spacing:                     10px;
-    padding:                     0px;
+    spacing:                     25px;
+    padding:                     100px 50px;
     border:                      0px;
-    border-radius:               0px;
+    border-radius:               20px;
     border-color:                @selected;
     background-color:            transparent;
+    background-image:            url("~/.config/backgrounds/cat-waves-macchiato.png", width);
     text-color:                  @foreground;
-    children:                    [ "textbox-prompt-colon", "prompt"];
+    children:                    [ "dummy", "textbox-prompt-colon", "prompt", "dummy"];
 }
 
+dummy{
+    background-color:            transparent;
+}
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
-    str:                         " ";
-    padding:                     10px 14px;
-    border-radius:               0px;
-    background-color:            var(urgent);
+    str:                         "  ";
+    padding:                     10px 13px;
+    border-radius:               10px;
+    background-color:            @urgent;
     text-color:                  @background;
 }
 prompt {
     enabled:                     true;
     padding:                     10px;
-    border-radius:               0px;
-    background-color:            var(active);
+    border-radius:               10px;
+    background-color:            @active;
     text-color:                  @background;
 }
 
@@ -79,7 +88,7 @@ message {
     margin:                      0px;
     padding:                     10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               10px;
     border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  @foreground;
@@ -88,7 +97,7 @@ textbox {
     background-color:            inherit;
     text-color:                  inherit;
     vertical-align:              0.5;
-    horizontal-align:            0.0;
+    horizontal-align:            0.5;
 }
 
 /*****----- Listview -----*****/
@@ -100,7 +109,7 @@ listview {
     scrollbar:                   false;
     layout:                      vertical;
     
-    spacing:                     10px;
+    spacing:                     20px;
     background-color:            transparent;
     cursor:                      "default";
 }
@@ -108,16 +117,16 @@ listview {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    padding:                     15px;
+    padding:                     30px 10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               20px;
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;
 }
 element-text {
-    font:                        "feather 20";
+    font:                        "feather 28";
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;

@@ -2,8 +2,7 @@
 
 /* Text Font */
 
-/* 
-{
-    font: "Iosevka Nerd Font 10";
+
+* {
+    font: "JetBrainsMonoNL Nerd Font Mono 16";
 }
-*/
