@@ -30,7 +30,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       700px;
+    width:                       1000px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -39,8 +39,8 @@ window {
     border-radius:               20px;
     cursor:                      "default";
     background-color:            @background;
-    border-color:                @border;
     border:                      2px solid;
+    border-color:                @border;
 }
 
 /*****----- Main Box -----*****/
@@ -83,7 +83,7 @@ textbox-prompt-colon {
 entry {
     enabled:                     true;
     expand:                      false;
-    width:                       250px;
+    width:                       300px;
     padding:                     12px 16px;
     border-radius:               100%;
     background-color:            @background-alt;
@@ -105,7 +105,7 @@ mode-switcher{
     text-color:                  @foreground;
 }
 button {
-    width:                       45px;
+    width:                       80px;
     padding:                     12px;
     border-radius:               100%;
     background-color:            @background-alt;
@@ -120,8 +120,8 @@ button selected {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     1;
-    lines:                       7;
+    columns:                     2;
+    lines:                       8;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
