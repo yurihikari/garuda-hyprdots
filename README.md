@@ -142,7 +142,7 @@ https://github.com/catppuccin
 DEFAULT : Using mainly March 7th Wallpaper
 https://www.pixiv.net/en/artworks/97911234 ( Artist : Rafa )
 
-Put in the background folder located in the sway folder config whatever background you want, and do Meta+Shift+b to switch between backgrounds.
+Put in the ~/.config/backgrounds whatever background you want, and do Meta+Shift+b to switch between backgrounds.
 
 ## Notice 📓
 I am using **Garuda Linux Sway** as my distro. Depending on your system, some stuff may not work or break.
