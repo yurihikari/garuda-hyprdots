@@ -15,9 +15,7 @@
 
 Here is the wiki link for those dotfiles if you want a better understanding of how it works and how to use it. (Also better table of contents). Let me know if the wiki is down since i'm self-hosting it.
 
-Wiki : [Wiki Link](https://wiki.lightcrimson.com/en/garuda-sway-config)
-
-The Wiki is down? Check [Upptime Link](https://uptime.lightcrimson.com/)
+Wiki : [Wiki Link](https://dotfiledocs.lightcrimson.com/)
 
 You can also use the github wiki : [Github Wiki Link](https://github.com/yurihikari/garuda-sway-config/wiki)
 
