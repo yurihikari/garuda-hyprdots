@@ -5,11 +5,11 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#8aadf4",
-          "foreground": "#24273a",
+          "background": "#363a4f",
+          "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "{{ .UserName }} ",
+          "template": "󰣇 {{ .UserName }} ",
           "type": "session"
         },
         {
@@ -52,8 +52,8 @@
             "time_format": "15:04"
           },
           "style": "diamond",
-          "template": " \u2665 {{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "\ue0b0",
+          "template": "  {{ .CurrentDate | date .Format }} ",
+          "trailing_diamond": "\ue0b4",
           "type": "time"
         }
       ],
@@ -61,19 +61,26 @@
     },
     {
       "alignment": "left",
+      "newline": true,
       "segments": [
         {
-          "background": "#f1fa8c",
-          "foreground": "#282a36",
-          "invert_powerline": true,
-          "leading_diamond": "\ue0b2",
-          "style": "diamond",
-          "template": " \ue7ad {{.Profile}}{{if .Region}}@{{.Region}}{{end}}",
-          "trailing_diamond": "\ue0b4",
-          "type": "aws"
+          "foreground": "#C6A0F6",
+          "style": "plain",
+          "template": "\u2570\u2500",
+          "type": "text"
+        },
+        {
+          "foreground": "#f5bde6",
+          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\ue285\ueab6 ",
+          "type": "status"
         }
       ],
-      "type": "rprompt"
+      "type": "prompt"
     }
   ],
   "final_space": true,
