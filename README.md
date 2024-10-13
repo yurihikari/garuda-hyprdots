@@ -17,7 +17,7 @@ Here is the wiki link for those dotfiles if you want a better understanding of h
 
 Wiki : [Wiki Link](https://dotfiledocs.lightcrimson.com/)
 
-You can also use the github wiki : [Github Wiki Link](https://github.com/yurihikari/garuda-sway-config/wiki)
+You can also use the github wiki : [Github Wiki Link](https://github.com/yurihikari/garuda-hyprdots/wiki)
 
 ## About ❓
 A simple aesthetic (at least for me) sway ricing on Garuda Linux. It also includes a Hyprland config but you'll have to install Hyprland yourself to use it.
@@ -118,7 +118,7 @@ Feel free to contribute and make a pull request if you want to add something to 
 ## Keybinds ⌨️
 
 ### Hyprland
-Please, refer to this file : [Hyprland Cheatsheet](https://wiki.lightcrimson.com/en/garuda-sway-config/hyprland-keybinds)
+Please, refer to this file : [Hyprland Cheatsheet](https://dotfiledocs.lightcrimson.com/en/keybinds)
 Or use Meta+Shift+I to get a keybind sheet directly on your terminal.
 
 ## Waybar 📊
