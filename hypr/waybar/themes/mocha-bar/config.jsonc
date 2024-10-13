@@ -213,12 +213,12 @@
   // },
   "cpu": {
     "format": "﬙ {usage: >3}%",
-    "on-click": "alacritty -e htop"
+    "on-click": "kitty -e htop"
   },
   "memory": {
     "format": "󰍛 {: >3}%",
-    // "on-click": "alacritty -e htop"
-    "on-click": "alacritty -e btop"
+    // "on-click": "kitty -e htop"
+    "on-click": "kitty -e btop"
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -256,7 +256,7 @@
     // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
     "format-ethernet": "  Wired",
     "format-disconnected": "⚠  Disconnected",
-    "on-click": "alacritty -e nmtui"
+    "on-click": "kitty -e nmtui"
     //"on-click": "nm-connection-editor"
     //"on-click": "ags -t networkmenu"
   },
@@ -284,7 +284,7 @@
     "interval": 7200, // every two hours
     "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'", // # of updates and tooltip details
     "exec-if": "exit 0", // always run; consider advanced run conditions
-    "on-click": "alacritty -e sudo pacman -Syu", // update system
+    "on-click": "kitty -e sudo pacman -Syu", // update system
     "signal": 8
   },
   "custom/power": {
