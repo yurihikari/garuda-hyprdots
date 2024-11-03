@@ -1,21 +1,19 @@
-.notification-card-container {
-  margin-top: 3.5rem;
-}
-
 .notification-card {
-  //color: $notification-text;
-  color: $text;
-  //background: $notification-background;
-  background: $base;
+  color: $notification-text;
+  background: $notification-background;
   margin: 0.45em;
-  //border: 0.15em solid transparentize($notification-border, 0.5);
-  border: 0.15em solid $mauve;
+  border: 0.15em solid transparentize($notification-border, 0.5);
   min-width: 26em;
   min-height: 6rem;
-  border-radius: 0.6em;
+  border-radius: $notification-border_radius;
+  opacity: $notification-opacity * 0.01;
 }
 
 .notification-card-container {
+  * {
+    font-size: $font-size * $notification-scaling * 0.01;
+  }
+
   padding: 1px;
 }
 
@@ -26,8 +24,8 @@
 
 .notification-card-image {
   border-radius: 0.4em;
-  min-width: 1.5em;
-  min-height: 1.5em;
+  min-width: 2.5em;
+  min-height: 2.5em;
   padding: 0.85em 0.85em;
   background-size: contain;
   background-repeat: no-repeat;
@@ -97,7 +95,7 @@
   background: $notification-close_button-background;
   color: $notification-close_button-label;
   min-width: 2.1em;
-  border-radius: 0rem 0.35em 0.35em 0em;
+  border-radius: 0rem $notification-border_radius*0.7 $notification-border_radius*0.7 0em;
 
   label {
     font-size: 1.5em;

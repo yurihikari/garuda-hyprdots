@@ -1,132 +1,181 @@
 .bar {
+    * {
+        font-size: $font-size * $bar-scaling * 0.01;
+    }
 
-  .transparent {
-    background: transparent;
-  }
+    .bar-panel-container {
+        margin-top: if($bar-floating, $bar-margin_top, 0em);
+        margin-bottom: if($bar-floating, $bar-margin_bottom, 0em);
+        margin-left: if($bar-floating, $bar-margin_sides, 0em);
+        margin-right: if($bar-floating, $bar-margin_sides, 0em);
+    }
 
-  .bar-panel-container {
-    margin-top: if($bar-floating, $bar-margin_top, 0em);
-    margin-bottom: if($bar-floating, $bar-margin_bottom, 0em);
-    margin-left: if($bar-floating, $bar-margin_sides, 0em);
-    margin-right: if($bar-floating, $bar-margin_sides, 0em);
-  }
+    .bar-panel {
+        $bar-opacity-ratio: $bar-opacity * 0.01;
+        $transparency-value: 1 - $bar-opacity-ratio;
+        background: if($bar-transparent, transparent, transparentize($bar-background, $transparency-value));
+        border-radius: if($bar-floating, $bar-border_radius, 0em);
 
-  .bar-panel {
-    background: if($bar-transparent, transparent, $bar-background);
-    border-radius: if($bar-floating, $bar-border_radius, 0em);
-  }
+        &.withBorder {
+            border-top: if(
+                $bar-border_location == 'top' or $bar-border_location == 'horizontal' or $bar-border_location == 'full',
+                $bar-border_width solid,
+                none
+            );
+            border-bottom: if(
+                $bar-border_location == 'bottom' or $bar-border_location == 'horizontal' or $bar-border_location ==
+                    'full',
+                $bar-border_width solid,
+                none
+            );
+            border-left: if(
+                $bar-border_location == 'left' or $bar-border_location == 'vertical' or $bar-border_location == 'full',
+                $bar-border_width solid,
+                none
+            );
+            border-right: if(
+                $bar-border_location == 'right' or $bar-border_location == 'vertical' or $bar-border_location == 'full',
+                $bar-border_width solid,
+                none
+            );
+            border-color: $bar-border_color;
+        }
+    }
 }
 
+$bar-button-background-opacity-ratio: $bar-buttons-background_opacity * 0.01;
+$transparency-value: 1 - $bar-button-background-opacity-ratio;
+
+$bar-button-background-hover-opacity-ratio: $bar-buttons-background_hover_opacity * 0.01;
+$transparency-value-hover: 1 - $bar-button-background-hover-opacity-ratio;
+
 .bar_item_box_visible {
-  background-color: $bar-buttons-background;
-  border-radius: $bar-buttons-radius;
-  padding: 0.2rem 0.9rem;
-  margin: 0.5rem $bar-buttons-spacing;
+    background-color: transparentize($bar-buttons-background, $transparency-value);
+    border-radius: $bar-buttons-radius;
+    margin: $bar-buttons-y_margins $bar-buttons-spacing;
+    opacity: $bar-buttons-opacity * 0.01;
+    padding: $bar-buttons-padding_y $bar-buttons-padding_x;
 
-  &:hover {
-    background: $bar-buttons-hover;
-  }
+    &.style3 {
+        border-bottom-left-radius: 1.3em;
+        border-top-right-radius: 1.3em;
+    }
 
-  &.battery {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-battery-background);
+    &.style4 {
+        border-bottom-right-radius: 1.3em;
+        border-top-left-radius: 1.3em;
+    }
 
     &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-battery-hover);
+        opacity: $bar-buttons-background_hover_opacity * 0.01;
     }
-  }
 
-  &.bluetooth {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-bluetooth-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-bluetooth-hover);
+    &.battery {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-battery-background),
+            $transparency-value
+        );
     }
-  }
 
-  &.clock {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-clock-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-clock-hover);
+    &.bluetooth {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-bluetooth-background),
+            $transparency-value
+        );
     }
-  }
 
-  &.media {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-media-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-media-hover);
+    &.clock {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-clock-background),
+            $transparency-value
+        );
     }
-  }
 
-  &.dashboard {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-dashboard-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-dashboard-hover);
+    &.media {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-media-background),
+            $transparency-value
+        );
     }
-  }
 
-  &.network {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-network-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-network-hover);
+    &.dashboard {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-dashboard-background),
+            $transparency-value
+        );
     }
-  }
 
-  &.notifications {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-notifications-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-notifications-hover);
+    &.network {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-network-background),
+            $transparency-value
+        );
     }
-  }
 
-  &.systray {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-systray-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-systray-hover);
+    &.notifications {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-notifications-background),
+            $transparency-value
+        );
     }
-  }
 
-  &.volume {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-volume-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-volume-hover);
+    &.systray {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-systray-background),
+            $transparency-value
+        );
+        &:hover {
+            opacity: 1;
+        }
     }
-  }
 
-  &.windowtitle {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-windowtitle-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-windowtitle-hover);
+    &.volume {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-volume-background),
+            $transparency-value
+        );
     }
-  }
 
-  &.workspaces {
-    background-color: if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-workspaces-background);
-
-    &:hover {
-      background: if($bar-buttons-monochrome, $bar-buttons-hover, $bar-buttons-workspaces-hover);
+    &.windowtitle {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-windowtitle-background),
+            $transparency-value
+        );
     }
-  }
+
+    &.workspaces {
+        background-color: transparentize(
+            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-workspaces-background),
+            $transparency-value
+        );
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &.style2 {
+        padding: 0em;
+    }
+}
+
+.no-label.style2 {
+    .bar-button-icon {
+        border-top-right-radius: $bar-buttons-radius;
+        border-bottom-right-radius: $bar-buttons-radius;
+    }
 }
 
 .bar_item_box_hidden {
-  background: none;
-  border-radius: 0rem;
-  padding: 0rem 0rem 0rem 0rem;
-  margin: 0rem 0rem 0rem 0rem;
+    background: none;
+    border-radius: 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
 }
 
 .box-left {
-  margin-left: $bar-outer_spacing;
+    margin-left: $bar-outer_spacing;
 }
 
 .box-right {
-  margin-right: $bar-outer_spacing;
+    margin-right: $bar-outer_spacing;
 }

@@ -18,7 +18,7 @@ startRecording() {
 
     target="$2"
 
-    outputFile="recording_$(date +%Y-%m-%d_%H-%M-%S).mkv"
+    outputFile="recording_$(date +%Y-%m-%d_%H-%M-%S).mp4"
     outputPath="$outputDir/$outputFile"
     mkdir -p "$outputDir"
 
@@ -27,7 +27,15 @@ startRecording() {
         exit 1
     fi
 
-    gpu-screen-recorder -w "$target" -f 60 -a "$(pactl get-default-sink).monitor" -o "$outputPath" &
+    GPU_TYPE=$(lspci | grep -E 'VGA|3D' | grep -Ev '00:02.0|Integrated' >/dev/null && echo "" || echo "-encoder cpu")
+
+    gpu-screen-recorder \
+        -w "$target" \
+        -f 60 \
+        -k h264 \
+        -a "$(pactl get-default-sink).monitor" \
+        -o "$outputPath" \
+        $GPU_TYPE &
 
     echo "Recording started. Output will be saved to $outputPath"
 }
@@ -38,14 +46,16 @@ stopRecording() {
         exit 1
     fi
 
-    pkill -f gpu-screen-recorder
-    recentFile=$(ls -t "$outputDir"/recording_*.mkv | head -n 1)
+    pkill -SIGINT -f gpu-screen-recorder
+
+    recentFile=$(ls -t "$outputDir"/recording_*.mp4 | head -n 1)
+
     notify-send "Recording stopped" "Your recording has been saved." \
         -i video-x-generic \
         -a "Screen Recorder" \
         -t 10000 \
         -u normal \
-        --action="scriptAction:-dolphin $outputDir=Directory" \
+        --action="scriptAction:-xdg-open $outputDir=Directory" \
         --action="scriptAction:-xdg-open $recentFile=Play"
 }
 

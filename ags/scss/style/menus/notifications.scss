@@ -1,11 +1,16 @@
+.notification-menu-content * {
+  font-size: $font-size * $bar-menus-menu-notifications-scaling * 0.01;
+}
+
 .notification-card-container.menu {
   margin: 0em;
-  min-width: 30.6em;
-  min-height: 48em;
+  min-width: 30.6em * $bar-menus-menu-notifications-scaling * 0.01;
+  min-height: $bar-menus-menu-notifications-height * $bar-menus-menu-notifications-scaling * 0.01;
   background: if($bar-menus-monochrome, $bar-menus-background, $bar-menus-menu-notifications-background);
   border: $bar-menus-border-size solid if($bar-menus-monochrome, $bar-menus-border-color, $bar-menus-menu-notifications-border);
   border-radius: $bar-menus-border-radius;
   margin-right: 0.45em;
+  opacity: $bar-menus-opacity * 0.01;
 
   .window-content.notificationsmenu-window {
     margin-right: 0.50em;
@@ -27,11 +32,12 @@
 
   .notification-card.menu {
     background: $notification-background;
-    min-width: 26.2em;
+    min-width: 26.2em * $bar-menus-menu-notifications-scaling * 0.01;
+    font-size: $font-size * $bar-menus-menu-notifications-scaling * 0.01;
     border: 0.15em solid $notification-border;
     border-radius: 0em;
-    border-bottom-left-radius: 0.4em;
-    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: $notification-border_radius;
+    border-top-left-radius: $notification-border_radius;
     margin: 0em;
   }
 
@@ -49,6 +55,7 @@
 
   .menu-label.notifications {
     margin: 0em;
+    font-size: $font-size * $bar-menus-menu-notifications-scaling * 0.01;
     color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-notifications-label);
   }
 
@@ -87,7 +94,7 @@
   .clear-notifications-button {
     margin-right: 0.3em;
 
-    &:hover label {
+    &:hover label:not(.removing) {
       color: transparentize(if($bar-menus-monochrome, $bar-menus-buttons-default, $bar-menus-menu-notifications-clear), 0.5);
     }
   }
@@ -95,6 +102,23 @@
   .clear-notifications-label {
     color: if($bar-menus-monochrome, $bar-menus-buttons-default, $bar-menus-menu-notifications-clear);
     font-size: 1.5em;
+
+    &.removing {
+      color: $bar-menus-buttons-disabled;
+    }
+  }
+
+  scrollbar {
+    margin-right: 0.2em;
+    min-width: $bar-menus-menu-notifications-scrollbar-width;
+    border-radius: $bar-menus-menu-notifications-scrollbar-radius;
+    background: transparent;
+
+    slider {
+      min-width: $bar-menus-menu-notifications-scrollbar-width;
+      border-radius: $bar-menus-menu-notifications-scrollbar-radius;
+      background: $bar-menus-menu-notifications-scrollbar-color;
+    }
   }
 }
 
@@ -106,11 +130,11 @@
   }
 
   .bell {
-    font-size: 10em;
+    font-size: 10em * $bar-menus-menu-notifications-scaling * 0.01;
   }
 
   .message {
-    font-size: 1.5em;
+    font-size: 1.5em * $bar-menus-menu-notifications-scaling * 0.01;
   }
 }
 
@@ -118,7 +142,7 @@
   background: $notification-close_button-background;
   color: $notification-close_button-label;
   min-width: 2.1em;
-  border-radius: 0rem 0.35em 0.35em 0em;
+  border-radius: 0rem $notification-border_radius $notification-border_radius 0em;
 
   label {
     font-size: 1.5em;
@@ -126,5 +150,43 @@
 
   &:hover {
     background: transparentize($notification-close_button-background , 0.5);
+  }
+}
+
+.notification-menu-pager {
+  background: $bar-menus-menu-notifications-pager-background;
+  border-radius: $bar-menus-border-radius;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+
+  .pager-button {
+    margin: 0em;
+    padding: 0.25em 1em;
+    color: $bar-menus-menu-notifications-pager-button;
+
+    .pager-button-label {
+      font-size: 2em;
+    }
+
+    &:hover {
+      .pager-button-label {
+        color: transparentize($bar-menus-menu-notifications-pager-button, 0.4);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .pager-label {
+    color: $bar-menus-menu-notifications-pager-label;
+  }
+
+  .disabled {
+    color: transparentize($bar-menus-menu-notifications-pager-button, 0.8);
+
+    &:hover {
+      .pager-button-label {
+        color: transparentize($bar-menus-menu-notifications-pager-button, 0.8);
+      }
+    }
   }
 }

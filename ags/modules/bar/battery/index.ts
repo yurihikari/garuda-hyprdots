@@ -1,35 +1,38 @@
-const battery = await Service.import("battery");
+const battery = await Service.import('battery');
 import Gdk from 'gi://Gdk?version=3.0';
-import EventHandler from 'types/widgets/button.ts'
-import { openMenu } from "../utils.js";
-import options from "options";
+import { openMenu } from '../utils.js';
+import options from 'options';
+import { BarBoxChild } from 'lib/types/bar.js';
+import Button from 'types/widgets/button.js';
+import { Attribute, Child } from 'lib/types/widget.js';
+import { runAsyncCommand, throttledScrollHandler } from 'customModules/utils.js';
 
-const { label: show_label } = options.bar.battery;
+const { label: show_label, rightClick, middleClick, scrollUp, scrollDown, hideLabelWhenFull } = options.bar.battery;
 
-const BatteryLabel = () => {
+const BatteryLabel = (): BarBoxChild => {
     const isVis = Variable(battery.available);
 
-    const batIcon = Utils.merge([battery.bind("percent"), battery.bind("charging"), battery.bind("charged")],
+    const batIcon = Utils.merge(
+        [battery.bind('percent'), battery.bind('charging'), battery.bind('charged')],
         (batPercent: number, batCharging, batCharged) => {
-            if (batCharged)
-                return `battery-level-100-charged-symbolic`;
-            else
-                return `battery-level-${Math.floor(batPercent / 10) * 10}${batCharging ? '-charging' : ''}-symbolic`;
-        });
+            if (batCharged) return `battery-level-100-charged-symbolic`;
+            else return `battery-level-${Math.floor(batPercent / 10) * 10}${batCharging ? '-charging' : ''}-symbolic`;
+        },
+    );
 
-    battery.connect("changed", ({ available }) => {
+    battery.connect('changed', ({ available }) => {
         isVis.value = available;
     });
 
-    const formatTime = (seconds: number) => {
+    const formatTime = (seconds: number): Record<string, number> => {
         const hours = Math.floor(seconds / 3600);
         const minutes = Math.floor((seconds % 3600) / 60);
         return { hours, minutes };
     };
 
-    const generateTooltip = (timeSeconds: number, isCharging: boolean, isCharged: boolean) => {
+    const generateTooltip = (timeSeconds: number, isCharging: boolean, isCharged: boolean): string => {
         if (isCharged) {
-            return "Fully Charged!!!";
+            return 'Fully Charged!!!';
         }
 
         const { hours, minutes } = formatTime(timeSeconds);
@@ -42,25 +45,50 @@ const BatteryLabel = () => {
 
     return {
         component: Widget.Box({
-            class_name: "battery",
-            visible: battery.bind("available"),
-            tooltip_text: battery.bind("time_remaining").as((t) => t.toString()),
+            className: Utils.merge(
+                [options.theme.bar.buttons.style.bind('value'), show_label.bind('value')],
+                (style, showLabel) => {
+                    const styleMap = {
+                        default: 'style1',
+                        split: 'style2',
+                        wave: 'style3',
+                        wave2: 'style3',
+                    };
+                    return `battery-container ${styleMap[style]} ${!showLabel ? 'no-label' : ''}`;
+                },
+            ),
+            visible: battery.bind('available'),
+            tooltip_text: battery.bind('time_remaining').as((t) => t.toString()),
             children: Utils.merge(
-                [battery.bind("available"), show_label.bind("value")],
-                (batAvail, showLabel) => {
+                [
+                    battery.bind('available'),
+                    show_label.bind('value'),
+                    battery.bind('charged'),
+                    hideLabelWhenFull.bind('value'),
+                ],
+                (batAvail, showLabel, isCharged, hideWhenFull) => {
                     if (batAvail && showLabel) {
                         return [
                             Widget.Icon({
-                                class_name: "bar-button-icon battery",
-                                icon: batIcon
+                                class_name: 'bar-button-icon battery',
+                                icon: batIcon,
                             }),
-                            Widget.Label({
-                                class_name: "bar-button-label battery",
-                                label: battery.bind("percent").as((p) => `${Math.floor(p)}%`),
-                            }),
+                            ...(hideWhenFull && isCharged
+                                ? []
+                                : [
+                                      Widget.Label({
+                                          class_name: 'bar-button-label battery',
+                                          label: battery.bind('percent').as((p) => `${Math.floor(p)}%`),
+                                      }),
+                                  ]),
                         ];
                     } else if (batAvail && !showLabel) {
-                        return [Widget.Icon({ icon: batIcon })];
+                        return [
+                            Widget.Icon({
+                                class_name: 'bar-button-icon battery',
+                                icon: batIcon,
+                            }),
+                        ];
                     } else {
                         return [];
                     }
@@ -69,20 +97,34 @@ const BatteryLabel = () => {
             setup: (self) => {
                 self.hook(battery, () => {
                     if (battery.available) {
-                        self.tooltip_text = generateTooltip(
-                            battery.time_remaining,
-                            battery.charging,
-                            battery.charged,
-                        );
+                        self.tooltip_text = generateTooltip(battery.time_remaining, battery.charging, battery.charged);
                     }
                 });
             },
         }),
         isVis,
-        boxClass: "battery",
+        boxClass: 'battery',
         props: {
-            on_primary_click: (clicked: any, event: Gdk.Event) => {
-                openMenu(clicked, event, "energymenu");
+            setup: (self: Button<Child, Attribute>): void => {
+                self.hook(options.bar.scrollSpeed, () => {
+                    const throttledHandler = throttledScrollHandler(options.bar.scrollSpeed.value);
+
+                    self.on_secondary_click = (clicked: Button<Child, Attribute>, event: Gdk.Event): void => {
+                        runAsyncCommand(rightClick.value, { clicked, event });
+                    };
+                    self.on_middle_click = (clicked: Button<Child, Attribute>, event: Gdk.Event): void => {
+                        runAsyncCommand(middleClick.value, { clicked, event });
+                    };
+                    self.on_scroll_up = (clicked: Button<Child, Attribute>, event: Gdk.Event): void => {
+                        throttledHandler(scrollUp.value, { clicked, event });
+                    };
+                    self.on_scroll_down = (clicked: Button<Child, Attribute>, event: Gdk.Event): void => {
+                        throttledHandler(scrollDown.value, { clicked, event });
+                    };
+                });
+            },
+            onPrimaryClick: (clicked: Button<Child, Attribute>, event: Gdk.Event): void => {
+                openMenu(clicked, event, 'energymenu');
             },
         },
     };

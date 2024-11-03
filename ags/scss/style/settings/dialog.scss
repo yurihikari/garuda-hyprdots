@@ -1,11 +1,8 @@
 window.settings-dialog {
+  opacity: $bar-menus-opacity * 0.01;
   background-color: $bar-menus-cards;
   color: $bar-menus-text;
 
-  $padding: 0.5em;
-  $primary_bg: $bar-menus-background;
-  $spacing: 0.4em;
-  $radius: 0.5em;
   $widget-bg: $bar-menus-cards;
   $border: none;
   $fg: $bar-menus-text;
@@ -16,8 +13,8 @@ window.settings-dialog {
 
   .header {
     background-color: transparentize($bar-menus-background, 0.1);
-    border-bottom-left-radius: $bar-menus-border-radius/2;
-    border-bottom-right-radius: $bar-menus-border-radius/2;
+    border-bottom-left-radius: $bar-menus-border-radius * 0.5;
+    border-bottom-right-radius: $bar-menus-border-radius * 0.5;
     padding: $padding;
 
     button {
@@ -172,6 +169,19 @@ window.settings-dialog {
     font-size: 0.75em;
     margin-top: 0.2em;
     color: $bar-menus-dimtext;
+  }
+
+  .options-sublabel-link {
+
+    label {
+      font-size: 0.75em;
+      margin-top: 0.2em;
+      color: $bar-menus-dimtext;
+    }
+
+    &:hover label {
+      color: $bar-menus-listitems-active;
+    }
   }
 
   .inputter-container {
@@ -337,7 +347,7 @@ dialog {
         background: $bar-menus-iconbuttons-active;
         min-width: 3em;
         min-height: 2em;
-        border-radius: $bar-menus-border-radius / 2;
+        border-radius: $bar-menus-border-radius * 0.5;
 
         &:disabled {
           background: $bar-menus-buttons-disabled;
@@ -376,4 +386,22 @@ dialog {
   margin-right: 1em;
   font-size: 1em;
   color: $yellow;
+}
+
+.options-import,
+.options-export {
+  border-radius: $bar-menus-border-radius * 0.5;
+  color: $bar-menus-buttons-text;
+  padding: 0.35em 0.35em;
+  background: $bar-menus-buttons-default;
+  margin-right: 1em;
+  margin-left: 0.5em;
+
+  &:hover {
+    background: transparentize($bar-menus-buttons-default, 0.8);
+  }
+}
+
+.options-import {
+  margin-right: 0em;
 }

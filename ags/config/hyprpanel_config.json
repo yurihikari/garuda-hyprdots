@@ -1,0 +1,94 @@
+{
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.bar.menus.monochrome": false,
+  "wallpaper.pywal": false,
+  "theme.matugen_settings.mode": "dark",
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "systray",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "battery",
+        "clock",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "scalingPriority": "hyprland",
+  "theme.font.size": "1.0rem",
+  "menus.media.hideAuthor": false,
+  "bar.workspaces.hideUnoccupied": true,
+  "menus.dashboard.powermenu.avatar.image": "",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "librewolf",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Librewolf",
+  "menus.dashboard.shortcuts.left.shortcut2.tooltip": "Youtube Music",
+  "menus.dashboard.shortcuts.left.shortcut2.command": "youtube-music",
+  "menus.dashboard.shortcuts.left.shortcut3.command": "vesktop",
+  "menus.dashboard.shortcuts.left.shortcut4.command": "bash .config/hypr/scripts/rofi_launcher",
+  "menus.dashboard.shortcuts.right.shortcut1.command": "bash .config/hypr/scripts/colorpicker",
+  "menus.dashboard.shortcuts.right.shortcut3.command": "bash .config/hypr/scripts/rofi_screenshot",
+  "menus.dashboard.shortcuts.left.shortcut2.icon": "",
+  "bar.workspaces.show_numbered": true,
+  "bar.workspaces.numbered_active_indicator": "underline",
+  "bar.workspaces.applicationIconOncePerWorkspace": true,
+  "bar.workspaces.workspaceMask": false,
+  "bar.workspaces.workspaces": 0,
+  "menus.clock.weather.unit": "imperial",
+  "menus.clock.weather.enabled": true,
+  "menus.bluetooth.batteryState": "connected",
+  "menus.bluetooth.showBattery": false,
+  "theme.font.name": "JetBrainsMonoNL Nerd Font Propo Medium Italic",
+  "theme.bar.location": "top",
+  "theme.bar.floating": false,
+  "menus.media.hideAlbum": false,
+  "terminal": "kitty",
+  "bar.customModules.cpu.round": false,
+  "bar.customModules.ram.round": false,
+  "bar.customModules.ram.labelType": "used/total",
+  "bar.customModules.storage.labelType": "used",
+  "menus.clock.time.military": false,
+  "menus.clock.time.hideSeconds": false,
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "",
+  "menus.clock.weather.location": "Los Angeles",
+  "menus.clock.weather.key": ""
+}

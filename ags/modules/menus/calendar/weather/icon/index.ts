@@ -1,27 +1,18 @@
-import { Weather } from "lib/types/weather";
-import { Variable } from "types/variable";
-import icons from "../../../../icons/index.js";
+import { Weather } from 'lib/types/weather';
+import { Variable } from 'types/variable';
+import { getWeatherStatusTextIcon } from 'globals/weather.js';
+import { BoxWidget } from 'lib/types/widget';
 
-export const TodayIcon = (theWeather: Variable<Weather>) => {
+export const TodayIcon = (theWeather: Variable<Weather>): BoxWidget => {
     return Widget.Box({
-        vpack: "center",
-        hpack: "start",
-        class_name: "calendar-menu-weather today icon container",
-        children: [
-            Widget.Icon({
-                class_name: "calendar-menu-weather today icon",
-                icon: theWeather.bind("value").as((v) => {
-                    let iconQuery = v.current.condition.text
-                        .trim()
-                        .toLowerCase()
-                        .replaceAll(" ", "_");
-
-                    if (!v.current.is_day && iconQuery === "partly_cloudy") {
-                        iconQuery = "partly_cloudy_night";
-                    }
-                    return icons.weather[iconQuery];
-                }),
+        vpack: 'center',
+        hpack: 'start',
+        class_name: 'calendar-menu-weather today icon container',
+        child: Widget.Label({
+            class_name: 'calendar-menu-weather today icon txt-icon',
+            label: theWeather.bind('value').as((w) => {
+                return getWeatherStatusTextIcon(w);
             }),
-        ],
+        }),
     });
 };

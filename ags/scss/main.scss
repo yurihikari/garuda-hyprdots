@@ -11,7 +11,11 @@
 @import "style/common/floating-widget.scss";
 @import "style/common/widget-button.scss";
 
+//general styles
+@import "style/common/general";
+
 //modules - bar
+@import "style/bar/bar";
 @import "style/bar/menu";
 @import "style/bar/audio";
 @import "style/bar/media";
@@ -23,12 +27,12 @@
 @import "style/bar/systray";
 @import "style/bar/notifications";
 @import "style/bar/power";
-@import "style/bar/bar";
 @import "style/bar/battery";
 
 //modules - menus
 @import "style/menus/menu";
 @import "style/menus/power";
+@import "style/menus/powerdropdown";
 @import "style/menus/audiomenu";
 @import "style/menus/network";
 @import "style/menus/bluetooth";
@@ -45,4 +49,6 @@
 @import "style/osd/index";
 
 //settings dialog
-@import "style/settings/dialog"
+@import "style/settings/dialog";
+
+@import "style/customModules/style";
