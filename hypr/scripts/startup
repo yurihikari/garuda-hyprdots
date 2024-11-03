@@ -23,6 +23,7 @@ exec gnome-keyring-daemon --daemonize --start --components=gpg,pkcs11,secrets,ss
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 pipewire &
+wireplumber &
 # Set wallpaper
 # swaybg --output '*' --mode fill --image ~/.config/backgrounds/march7.jpg &
 swww-daemon &
@@ -30,17 +31,20 @@ swww-daemon &
 # Apply themes
 ~/.config/hypr/scripts/gtkthemes &
 
-# Lauch notification daemon (mako)
+# Lauch notification daemon (mako) Enable if not using AGS
 ~/.config/hypr/scripts/notifications &
 
-# Lauch statusbar (waybar)
+# Lauch statusbar (waybar) Disable if using AGS
 ~/.config/hypr/scripts/statusbar &
 
 # Start network manager applet
 nm-applet --indicator &
 
+# Start tuxedo-control-center Let it commented if not using Tuxedo
+#tuxedo-control-center --tray &
+
 # Start mpd
 exec mpd &
 
-# Start AGS
-#exec ags &
+# Start AGS Enable if not using Waybar
+# exec ags &
