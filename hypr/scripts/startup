@@ -47,4 +47,7 @@ nm-applet --indicator &
 exec mpd &
 
 # Start AGS Enable if not using Waybar
-# exec ags &
+# For v1
+#exec agsv1 &
+# For v2
+#exec hyprpanel &
