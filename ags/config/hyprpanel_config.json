@@ -4,7 +4,7 @@
   "wallpaper.pywal": false,
   "theme.matugen_settings.mode": "dark",
   "bar.layouts": {
-    "0": {
+    "*": {
       "left": [
         "dashboard",
         "workspaces",
@@ -19,36 +19,7 @@
         "network",
         "bluetooth",
         "battery",
-        "clock",
-        "notifications"
-      ]
-    },
-    "1": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "windowtitle"
-      ],
-      "middle": [
-        "media"
-      ],
-      "right": [
-        "volume",
-        "clock",
-        "notifications"
-      ]
-    },
-    "2": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "windowtitle"
-      ],
-      "middle": [
-        "media"
-      ],
-      "right": [
-        "volume",
+        "kbinput",
         "clock",
         "notifications"
       ]
