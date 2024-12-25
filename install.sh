@@ -110,13 +110,14 @@ important_dependencies=(
   hyprland-git 
   waybar
   hyprlock-git
-  aylurs-gtk-shell
+  ags-hyprpanel-git
 )
 
 # Highly probable that those packages are already installed, but just in case
 conflicting_packages=(
   rofi
   hyprland
+  aylurs-gtk-shell
 )
 
 echo "Installing dependencies"
