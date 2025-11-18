@@ -107,16 +107,16 @@ dependencies=(
 
 important_dependencies=(
   rofi-wayland 
-  hyprland-git 
+  hyprland
   waybar
-  hyprlock-git
+  hyprlock
   ags-hyprpanel-git
 )
 
 # Highly probable that those packages are already installed, but just in case
 conflicting_packages=(
   rofi
-  hyprland
+  hyprland-git
   aylurs-gtk-shell
 )
 
