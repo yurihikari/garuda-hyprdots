@@ -1,3 +1,5 @@
+**⚠️⚠️⚠️ UNMAINTAINED IN FAVOR OF https://github.com/yurihikari/ml4w-lightcrimson-dotfiles ⚠️⚠️⚠️**
+
 ![Screenshot_2024-10-07-23-34-21_](https://github.com/user-attachments/assets/0cd1f344-7857-48c5-adb9-62894d24eecb)
 
 <h1 align="center"> Yurihikari's Garuda Linux Dotfiles </h1>
